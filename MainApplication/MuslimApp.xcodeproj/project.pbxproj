@@ -18,14 +18,6 @@
 		EFB90BDA218C7F4000CAEC2E /* SubApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; };
 		EFB90BDB218C7F4000CAEC2E /* SubApplication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFB90BE4218C7F8B00CAEC2E /* SubApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90BE3218C7F8B00CAEC2E /* SubApplication.swift */; };
-		EFB90C4C218C835F00CAEC2E /* LowonganKerjaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C48218C82F200CAEC2E /* LowonganKerjaMuslim.framework */; };
-		EFB90C4D218C835F00CAEC2E /* LowonganKerjaMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C48218C82F200CAEC2E /* LowonganKerjaMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFB90C50218C835F00CAEC2E /* AgendaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C3F218C82ED00CAEC2E /* AgendaMuslim.framework */; };
-		EFB90C51218C835F00CAEC2E /* AgendaMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C3F218C82ED00CAEC2E /* AgendaMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFB90C54218C835F00CAEC2E /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C36218C82E700CAEC2E /* Networking.framework */; };
-		EFB90C55218C835F00CAEC2E /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C36218C82E700CAEC2E /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFB90C58218C835F00CAEC2E /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C2D218C82DB00CAEC2E /* Database.framework */; };
-		EFB90C59218C835F00CAEC2E /* Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C2D218C82DB00CAEC2E /* Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,90 +42,6 @@
 			remoteGlobalIDString = EFB90BC4218C7F4000CAEC2E;
 			remoteInfo = SubApplication;
 		};
-		EFB90C2C218C82DB00CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C27218C82DB00CAEC2E /* Database.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EFB90B7E218C7DB600CAEC2E;
-			remoteInfo = Database;
-		};
-		EFB90C2E218C82DB00CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C27218C82DB00CAEC2E /* Database.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EFB90B87218C7DB600CAEC2E;
-			remoteInfo = DatabaseTests;
-		};
-		EFB90C35218C82E700CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C30218C82E700CAEC2E /* Networking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EFB90B5A218C7D7D00CAEC2E;
-			remoteInfo = Networking;
-		};
-		EFB90C37218C82E700CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C30218C82E700CAEC2E /* Networking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EFB90B63218C7D7D00CAEC2E;
-			remoteInfo = NetworkingTests;
-		};
-		EFB90C3E218C82ED00CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C39218C82ED00CAEC2E /* AgendaMuslim.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EFB90B2D218C7D0D00CAEC2E;
-			remoteInfo = AgendaMuslim;
-		};
-		EFB90C40218C82ED00CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C39218C82ED00CAEC2E /* AgendaMuslim.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EFB90B36218C7D0D00CAEC2E;
-			remoteInfo = AgendaMuslimTests;
-		};
-		EFB90C47218C82F200CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C42218C82F200CAEC2E /* LowonganKerjaMuslim.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EFB90BF4218C80ED00CAEC2E;
-			remoteInfo = LowonganKerjaMuslim;
-		};
-		EFB90C49218C82F200CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C42218C82F200CAEC2E /* LowonganKerjaMuslim.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EFB90BFD218C80ED00CAEC2E;
-			remoteInfo = LowonganKerjaMuslimTests;
-		};
-		EFB90C4E218C835F00CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C42218C82F200CAEC2E /* LowonganKerjaMuslim.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EFB90BF3218C80ED00CAEC2E;
-			remoteInfo = LowonganKerjaMuslim;
-		};
-		EFB90C52218C835F00CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C39218C82ED00CAEC2E /* AgendaMuslim.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EFB90B2C218C7D0D00CAEC2E;
-			remoteInfo = AgendaMuslim;
-		};
-		EFB90C56218C835F00CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C30218C82E700CAEC2E /* Networking.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EFB90B59218C7D7D00CAEC2E;
-			remoteInfo = Networking;
-		};
-		EFB90C5A218C835F00CAEC2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFB90C27218C82DB00CAEC2E /* Database.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EFB90B7D218C7DB600CAEC2E;
-			remoteInfo = Database;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -143,11 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EFB90C55218C835F00CAEC2E /* Networking.framework in Embed Frameworks */,
-				EFB90C59218C835F00CAEC2E /* Database.framework in Embed Frameworks */,
-				EFB90C4D218C835F00CAEC2E /* LowonganKerjaMuslim.framework in Embed Frameworks */,
 				EFB90BDB218C7F4000CAEC2E /* SubApplication.framework in Embed Frameworks */,
-				EFB90C51218C835F00CAEC2E /* AgendaMuslim.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,11 +73,6 @@
 		EFB90BD4218C7F4000CAEC2E /* SubApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplicationTests.swift; sourceTree = "<group>"; };
 		EFB90BD6218C7F4000CAEC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFB90BE3218C7F8B00CAEC2E /* SubApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplication.swift; sourceTree = "<group>"; };
-		EFB90C27218C82DB00CAEC2E /* Database.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Database.xcodeproj; path = ../Modules/Database/Database.xcodeproj; sourceTree = "<group>"; };
-		EFB90C30218C82E700CAEC2E /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = ../Modules/Networking/Networking.xcodeproj; sourceTree = "<group>"; };
-		EFB90C39218C82ED00CAEC2E /* AgendaMuslim.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AgendaMuslim.xcodeproj; path = ../SubApplication/AgendaMuslim/AgendaMuslim.xcodeproj; sourceTree = "<group>"; };
-		EFB90C42218C82F200CAEC2E /* LowonganKerjaMuslim.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LowonganKerjaMuslim.xcodeproj; path = ../SubApplication/LowonganKerjaMuslim/LowonganKerjaMuslim.xcodeproj; sourceTree = "<group>"; };
-		EFB90C5C218C84EA00CAEC2E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,11 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFB90C54218C835F00CAEC2E /* Networking.framework in Frameworks */,
-				EFB90C58218C835F00CAEC2E /* Database.framework in Frameworks */,
-				EFB90C4C218C835F00CAEC2E /* LowonganKerjaMuslim.framework in Frameworks */,
 				EFB90BDA218C7F4000CAEC2E /* SubApplication.framework in Frameworks */,
-				EFB90C50218C835F00CAEC2E /* AgendaMuslim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,15 +105,10 @@
 		EFB90B05218C7CAE00CAEC2E = {
 			isa = PBXGroup;
 			children = (
-				EFB90C5C218C84EA00CAEC2E /* README.md */,
 				EFB90B10218C7CAE00CAEC2E /* MuslimApp */,
 				EFB90BC6218C7F4000CAEC2E /* SubApplication */,
 				EFB90BD3218C7F4000CAEC2E /* SubApplicationTests */,
 				EFB90B0F218C7CAE00CAEC2E /* Products */,
-				EFB90C42218C82F200CAEC2E /* LowonganKerjaMuslim.xcodeproj */,
-				EFB90C39218C82ED00CAEC2E /* AgendaMuslim.xcodeproj */,
-				EFB90C30218C82E700CAEC2E /* Networking.xcodeproj */,
-				EFB90C27218C82DB00CAEC2E /* Database.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,42 +162,6 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		EFB90C28218C82DB00CAEC2E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EFB90C2D218C82DB00CAEC2E /* Database.framework */,
-				EFB90C2F218C82DB00CAEC2E /* DatabaseTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EFB90C31218C82E700CAEC2E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EFB90C36218C82E700CAEC2E /* Networking.framework */,
-				EFB90C38218C82E700CAEC2E /* NetworkingTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EFB90C3A218C82ED00CAEC2E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EFB90C3F218C82ED00CAEC2E /* AgendaMuslim.framework */,
-				EFB90C41218C82ED00CAEC2E /* AgendaMuslimTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EFB90C43218C82F200CAEC2E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EFB90C48218C82F200CAEC2E /* LowonganKerjaMuslim.framework */,
-				EFB90C4A218C82F200CAEC2E /* LowonganKerjaMuslimTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -335,10 +189,6 @@
 			);
 			dependencies = (
 				EFB90BD9218C7F4000CAEC2E /* PBXTargetDependency */,
-				EFB90C4F218C835F00CAEC2E /* PBXTargetDependency */,
-				EFB90C53218C835F00CAEC2E /* PBXTargetDependency */,
-				EFB90C57218C835F00CAEC2E /* PBXTargetDependency */,
-				EFB90C5B218C835F00CAEC2E /* PBXTargetDependency */,
 			);
 			name = MuslimApp;
 			productName = MuslimApp;
@@ -419,24 +269,6 @@
 			mainGroup = EFB90B05218C7CAE00CAEC2E;
 			productRefGroup = EFB90B0F218C7CAE00CAEC2E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EFB90C3A218C82ED00CAEC2E /* Products */;
-					ProjectRef = EFB90C39218C82ED00CAEC2E /* AgendaMuslim.xcodeproj */;
-				},
-				{
-					ProductGroup = EFB90C28218C82DB00CAEC2E /* Products */;
-					ProjectRef = EFB90C27218C82DB00CAEC2E /* Database.xcodeproj */;
-				},
-				{
-					ProductGroup = EFB90C43218C82F200CAEC2E /* Products */;
-					ProjectRef = EFB90C42218C82F200CAEC2E /* LowonganKerjaMuslim.xcodeproj */;
-				},
-				{
-					ProductGroup = EFB90C31218C82E700CAEC2E /* Products */;
-					ProjectRef = EFB90C30218C82E700CAEC2E /* Networking.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				EFB90B0D218C7CAE00CAEC2E /* MuslimApp */,
@@ -445,65 +277,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		EFB90C2D218C82DB00CAEC2E /* Database.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Database.framework;
-			remoteRef = EFB90C2C218C82DB00CAEC2E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EFB90C2F218C82DB00CAEC2E /* DatabaseTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DatabaseTests.xctest;
-			remoteRef = EFB90C2E218C82DB00CAEC2E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EFB90C36218C82E700CAEC2E /* Networking.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Networking.framework;
-			remoteRef = EFB90C35218C82E700CAEC2E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EFB90C38218C82E700CAEC2E /* NetworkingTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NetworkingTests.xctest;
-			remoteRef = EFB90C37218C82E700CAEC2E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EFB90C3F218C82ED00CAEC2E /* AgendaMuslim.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AgendaMuslim.framework;
-			remoteRef = EFB90C3E218C82ED00CAEC2E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EFB90C41218C82ED00CAEC2E /* AgendaMuslimTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AgendaMuslimTests.xctest;
-			remoteRef = EFB90C40218C82ED00CAEC2E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EFB90C48218C82F200CAEC2E /* LowonganKerjaMuslim.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = LowonganKerjaMuslim.framework;
-			remoteRef = EFB90C47218C82F200CAEC2E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EFB90C4A218C82F200CAEC2E /* LowonganKerjaMuslimTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = LowonganKerjaMuslimTests.xctest;
-			remoteRef = EFB90C49218C82F200CAEC2E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EFB90B0C218C7CAE00CAEC2E /* Resources */ = {
@@ -575,26 +348,6 @@
 			isa = PBXTargetDependency;
 			target = EFB90BC4218C7F4000CAEC2E /* SubApplication */;
 			targetProxy = EFB90BD8218C7F4000CAEC2E /* PBXContainerItemProxy */;
-		};
-		EFB90C4F218C835F00CAEC2E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LowonganKerjaMuslim;
-			targetProxy = EFB90C4E218C835F00CAEC2E /* PBXContainerItemProxy */;
-		};
-		EFB90C53218C835F00CAEC2E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AgendaMuslim;
-			targetProxy = EFB90C52218C835F00CAEC2E /* PBXContainerItemProxy */;
-		};
-		EFB90C57218C835F00CAEC2E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Networking;
-			targetProxy = EFB90C56218C835F00CAEC2E /* PBXContainerItemProxy */;
-		};
-		EFB90C5B218C835F00CAEC2E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Database;
-			targetProxy = EFB90C5A218C835F00CAEC2E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
