@@ -19,3 +19,4 @@ Gitflow:
     2. Develop -> Development merge request
     3. Bugfix -> Bug
     4. Feature -> Full feature branch
+
