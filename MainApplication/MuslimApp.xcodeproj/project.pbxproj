@@ -209,6 +209,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF1B88B0218D0D9F00A71AFE /* HomeLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				EFB90C5F218C899500CAEC2E /* HomeController.swift */,
+			);
+			path = HomeLauncher;
+			sourceTree = "<group>";
+		};
+		EF1B88B5218D0DAE00A71AFE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B88B6218D0DDC00A71AFE /* Authentication */,
+				EF1B88B0218D0D9F00A71AFE /* HomeLauncher */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EF1B88B6218D0DDC00A71AFE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B88B9218D0E2100A71AFE /* Login */,
+				EF1B88B7218D0DE800A71AFE /* Registration */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		EF1B88B7218D0DE800A71AFE /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		EF1B88B9218D0E2100A71AFE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		EFB90B05218C7CAE00CAEC2E = {
 			isa = PBXGroup;
 			children = (
@@ -243,7 +283,7 @@
 				EFB90B1A218C7CAE00CAEC2E /* LaunchScreen.storyboard */,
 				EFB90B1D218C7CAE00CAEC2E /* Info.plist */,
 				EFB90C5D218C883800CAEC2E /* Application.swift */,
-				EFB90C5F218C899500CAEC2E /* HomeController.swift */,
+				EF1B88B5218D0DAE00A71AFE /* Scenes */,
 			);
 			path = MuslimApp;
 			sourceTree = "<group>";
