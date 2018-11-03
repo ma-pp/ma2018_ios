@@ -9,7 +9,7 @@
 import Foundation
 import SubApplication
 
-public class Application: SubApplication {
+public final class Application: SubApplication {
     public var thumbnail: UIImage? = UIImage(
         named: "thumbnail_home",
         in: Bundle.bundle,

@@ -29,11 +29,7 @@ class HomeController: UIViewController {
 
 extension HomeController: UICollectionViewDataSource {
     private var items: [SubApplication] {
-        return [MicroserviceManager.shared.applications,
-                MicroserviceManager.shared.applications,
-                MicroserviceManager.shared.applications,
-                MicroserviceManager.shared.applications]
-            .flatMap({ $0.map({ $0 })})
+        return MicroserviceManager.shared.applications
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -65,7 +61,7 @@ extension HomeController: UICollectionViewDelegate {
 
 extension HomeController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150, height: 140)
+        return CGSize(width: 150, height: 170)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

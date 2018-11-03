@@ -12,4 +12,5 @@ public protocol SubApplication {
     var title: String { get }
     var thumbnail: UIImage? { get }
     func prepareController() -> UIViewController
+    init()
 }

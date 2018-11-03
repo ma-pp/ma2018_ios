@@ -1,12 +1,12 @@
 //
 //  Application.swift
-//  AgendaMuslim
+//  KakakAsuh
 //
-//  Created by PondokiOS on 11/2/18.
+//  Created by PondokiOS on 11/3/18.
 //  Copyright © 2018 PondokiOS. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import SubApplication
 
 public final class Application: SubApplication {
@@ -20,7 +20,7 @@ public final class Application: SubApplication {
         fatalError()
     }
     
-    public let title = "Agenda Muslim"
+    public let title = "Kakak Asuh"
     public init() {}
 }
 
@@ -30,3 +30,4 @@ extension Application {
         static let bundle = MODULE_BUNDLE
     }
 }
+

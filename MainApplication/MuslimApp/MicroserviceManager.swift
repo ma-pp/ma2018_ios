@@ -1,5 +1,5 @@
 //
-//  SubApplication.swift
+//  MicroserviceManager.swift
 //  MuslimApp
 //
 //  Created by PondokiOS on 11/3/18.
@@ -8,9 +8,14 @@
 
 import Foundation
 import SubApplication
+
 // SubApplications
 import AgendaMuslim
 import LowonganKerjaMuslim
+import AmalanYaumiyah
+import KakakAsuh
+import CatatanMuslim
+import JadwalShalat
 
 final class MicroserviceManager {
     static let shared = MicroserviceManager()
@@ -18,7 +23,11 @@ final class MicroserviceManager {
     
     lazy var applications: [SubApplication] = [
         AgendaMuslim.Application(),
-        LowonganKerjaMuslim.Application()
+        LowonganKerjaMuslim.Application(),
+        AmalanYaumiyah.Application(),
+        KakakAsuh.Application(),
+        CatatanMuslim.Application(),
+        JadwalShalat.Application()
     ]
 }
 
