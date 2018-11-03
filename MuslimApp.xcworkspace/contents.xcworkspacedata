@@ -11,6 +11,9 @@
       location = "container:"
       name = "Modules">
       <FileRef
+         location = "group:Modules/Common/Common.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Modules/Networking/Networking.xcodeproj">
       </FileRef>
       <FileRef
@@ -20,6 +23,18 @@
    <Group
       location = "container:"
       name = "SubApplications">
+      <FileRef
+         location = "group:SubApplications/KakakAsuh/KakakAsuh.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SubApplications/JadwalShalat/JadwalShalat.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SubApplications/CatatanMuslim/CatatanMuslim.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SubApplications/AmalanYaumiyah/AmalanYaumiyah.xcodeproj">
+      </FileRef>
       <FileRef
          location = "group:SubApplications/LowonganKerjaMuslim/LowonganKerjaMuslim.xcodeproj">
       </FileRef>

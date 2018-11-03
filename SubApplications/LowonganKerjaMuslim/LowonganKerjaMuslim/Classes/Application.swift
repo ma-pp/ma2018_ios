@@ -9,8 +9,26 @@
 import Foundation
 import SubApplication
 
-public class Application: SubApplication {
+public final class Application: SubApplication {
+    public var thumbnail: UIImage? = UIImage(
+        named: "thumbnail_home",
+        in: Bundle.bundle,
+        compatibleWith: nil
+    )
+    
+    public func prepareController() -> UIViewController {
+        fatalError()
+    }
+    
     public let title = "Loker Muslim"
     
-    public init() {}
+    public init() {
+    }
+}
+
+extension Application {
+    struct Bundle {
+        private init() {}
+        static let bundle = MODULE_BUNDLE
+    }
 }

@@ -7,9 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFAA18E4218D1FDC003C7508 /* MicroserviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E3218D1FDC003C7508 /* MicroserviceManager.swift */; };
+		EFAA18E8218D2293003C7508 /* LauncherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E6218D2293003C7508 /* LauncherCell.swift */; };
+		EFAA18E9218D2293003C7508 /* LauncherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA18E7218D2293003C7508 /* LauncherCell.xib */; };
+		EFAA191A218D29DA003C7508 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; };
+		EFAA191B218D29DA003C7508 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA191D218D2A75003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA191C218D2A75003C7508 /* Configuration.swift */; };
+		EFAA1920218D2C82003C7508 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA191F218D2C82003C7508 /* Networking.framework */; };
+		EFAA1921218D2C82003C7508 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA191F218D2C82003C7508 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA1923218D2C82003C7508 /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1922218D2C82003C7508 /* Database.framework */; };
+		EFAA1924218D2C82003C7508 /* Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1922218D2C82003C7508 /* Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA1926218D2C82003C7508 /* LowonganKerjaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */; };
+		EFAA1927218D2C82003C7508 /* LowonganKerjaMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA1929218D2C82003C7508 /* AgendaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */; };
+		EFAA192A218D2C82003C7508 /* AgendaMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA192C218D2D92003C7508 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA192B218D2D92003C7508 /* HomeController.xib */; };
+		EFAA192E218D3A23003C7508 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA192D218D3A23003C7508 /* UIView+Extension.swift */; };
+		EFAA19E0218D54B6003C7508 /* KakakAsuh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19DF218D54B6003C7508 /* KakakAsuh.framework */; };
+		EFAA19E1218D54B6003C7508 /* KakakAsuh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19DF218D54B6003C7508 /* KakakAsuh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA19E3218D54BD003C7508 /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */; };
+		EFAA19E4218D54BD003C7508 /* CatatanMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA19E6218D54CE003C7508 /* JadwalShalat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */; };
+		EFAA19E7218D54CE003C7508 /* JadwalShalat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA19E9218D54CE003C7508 /* AmalanYaumiyah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */; };
+		EFAA19EA218D54CE003C7508 /* AmalanYaumiyah.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */; };
 		EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B13218C7CAE00CAEC2E /* ViewController.swift */; };
-		EFB90B17218C7CAE00CAEC2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB90B15218C7CAE00CAEC2E /* Main.storyboard */; };
 		EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */; };
 		EFB90B1C218C7CAE00CAEC2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB90B1A218C7CAE00CAEC2E /* LaunchScreen.storyboard */; };
 		EFB90BCE218C7F4000CAEC2E /* SubApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; };
@@ -18,6 +41,8 @@
 		EFB90BDA218C7F4000CAEC2E /* SubApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; };
 		EFB90BDB218C7F4000CAEC2E /* SubApplication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFB90BE4218C7F8B00CAEC2E /* SubApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90BE3218C7F8B00CAEC2E /* SubApplication.swift */; };
+		EFB90C5E218C883800CAEC2E /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90C5D218C883800CAEC2E /* Application.swift */; };
+		EFB90C60218C899500CAEC2E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90C5F218C899500CAEC2E /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +77,15 @@
 			dstSubfolderSpec = 10;
 			files = (
 				EFB90BDB218C7F4000CAEC2E /* SubApplication.framework in Embed Frameworks */,
+				EFAA191B218D29DA003C7508 /* Common.framework in Embed Frameworks */,
+				EFAA19E1218D54B6003C7508 /* KakakAsuh.framework in Embed Frameworks */,
+				EFAA19E7218D54CE003C7508 /* JadwalShalat.framework in Embed Frameworks */,
+				EFAA1921218D2C82003C7508 /* Networking.framework in Embed Frameworks */,
+				EFAA1927218D2C82003C7508 /* LowonganKerjaMuslim.framework in Embed Frameworks */,
+				EFAA1924218D2C82003C7508 /* Database.framework in Embed Frameworks */,
+				EFAA19E4218D54BD003C7508 /* CatatanMuslim.framework in Embed Frameworks */,
+				EFAA192A218D2C82003C7508 /* AgendaMuslim.framework in Embed Frameworks */,
+				EFAA19EA218D54CE003C7508 /* AmalanYaumiyah.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,10 +93,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EFAA18E3218D1FDC003C7508 /* MicroserviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroserviceManager.swift; sourceTree = "<group>"; };
+		EFAA18E6218D2293003C7508 /* LauncherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherCell.swift; sourceTree = "<group>"; };
+		EFAA18E7218D2293003C7508 /* LauncherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LauncherCell.xib; sourceTree = "<group>"; };
+		EFAA1919218D29DA003C7508 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA191C218D2A75003C7508 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		EFAA191F218D2C82003C7508 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1922218D2C82003C7508 /* Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LowonganKerjaMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AgendaMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA192B218D2D92003C7508 /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		EFAA192D218D3A23003C7508 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		EFAA19DF218D54B6003C7508 /* KakakAsuh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KakakAsuh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatatanMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JadwalShalat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AmalanYaumiyah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB90B0E218C7CAE00CAEC2E /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB90B13218C7CAE00CAEC2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EFB90B16218C7CAE00CAEC2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFB90B1B218C7CAE00CAEC2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFB90B1D218C7CAE00CAEC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +121,8 @@
 		EFB90BD4218C7F4000CAEC2E /* SubApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplicationTests.swift; sourceTree = "<group>"; };
 		EFB90BD6218C7F4000CAEC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFB90BE3218C7F8B00CAEC2E /* SubApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplication.swift; sourceTree = "<group>"; };
+		EFB90C5D218C883800CAEC2E /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		EFB90C5F218C899500CAEC2E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +131,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB90BDA218C7F4000CAEC2E /* SubApplication.framework in Frameworks */,
+				EFAA191A218D29DA003C7508 /* Common.framework in Frameworks */,
+				EFAA19E0218D54B6003C7508 /* KakakAsuh.framework in Frameworks */,
+				EFAA19E6218D54CE003C7508 /* JadwalShalat.framework in Frameworks */,
+				EFAA1920218D2C82003C7508 /* Networking.framework in Frameworks */,
+				EFAA1926218D2C82003C7508 /* LowonganKerjaMuslim.framework in Frameworks */,
+				EFAA1923218D2C82003C7508 /* Database.framework in Frameworks */,
+				EFAA19E3218D54BD003C7508 /* CatatanMuslim.framework in Frameworks */,
+				EFAA1929218D2C82003C7508 /* AgendaMuslim.framework in Frameworks */,
+				EFAA19E9218D54CE003C7508 /* AmalanYaumiyah.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,9 +161,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF1B88B0218D0D9F00A71AFE /* HomeLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA18E5218D2256003C7508 /* Components */,
+				EFB90C5F218C899500CAEC2E /* HomeController.swift */,
+				EFAA192B218D2D92003C7508 /* HomeController.xib */,
+			);
+			path = HomeLauncher;
+			sourceTree = "<group>";
+		};
+		EF1B88B5218D0DAE00A71AFE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B88B6218D0DDC00A71AFE /* Authentication */,
+				EF1B88B0218D0D9F00A71AFE /* HomeLauncher */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EF1B88B6218D0DDC00A71AFE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EF1B88B9218D0E2100A71AFE /* Login */,
+				EF1B88B7218D0DE800A71AFE /* Registration */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		EF1B88B7218D0DE800A71AFE /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		EF1B88B9218D0E2100A71AFE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EFAA18E5218D2256003C7508 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA18E6218D2293003C7508 /* LauncherCell.swift */,
+				EFAA18E7218D2293003C7508 /* LauncherCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EFAA191E218D2A7C003C7508 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA191C218D2A75003C7508 /* Configuration.swift */,
+				EFAA192D218D3A23003C7508 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EFB90B05218C7CAE00CAEC2E = {
 			isa = PBXGroup;
 			children = (
+				EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */,
+				EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */,
+				EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */,
+				EFAA19DF218D54B6003C7508 /* KakakAsuh.framework */,
+				EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */,
+				EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */,
+				EFAA1922218D2C82003C7508 /* Database.framework */,
+				EFAA191F218D2C82003C7508 /* Networking.framework */,
+				EFAA1919218D29DA003C7508 /* Common.framework */,
 				EFB90B10218C7CAE00CAEC2E /* MuslimApp */,
 				EFB90BC6218C7F4000CAEC2E /* SubApplication */,
 				EFB90BD3218C7F4000CAEC2E /* SubApplicationTests */,
@@ -127,10 +255,13 @@
 			children = (
 				EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */,
 				EFB90B13218C7CAE00CAEC2E /* ViewController.swift */,
-				EFB90B15218C7CAE00CAEC2E /* Main.storyboard */,
 				EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */,
 				EFB90B1A218C7CAE00CAEC2E /* LaunchScreen.storyboard */,
 				EFB90B1D218C7CAE00CAEC2E /* Info.plist */,
+				EFB90C5D218C883800CAEC2E /* Application.swift */,
+				EFAA18E3218D1FDC003C7508 /* MicroserviceManager.swift */,
+				EF1B88B5218D0DAE00A71AFE /* Scenes */,
+				EFAA191E218D2A7C003C7508 /* Extensions */,
 			);
 			path = MuslimApp;
 			sourceTree = "<group>";
@@ -283,9 +414,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA192C218D2D92003C7508 /* HomeController.xib in Resources */,
 				EFB90B1C218C7CAE00CAEC2E /* LaunchScreen.storyboard in Resources */,
+				EFAA18E9218D2293003C7508 /* LauncherCell.xib in Resources */,
 				EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */,
-				EFB90B17218C7CAE00CAEC2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,8 +442,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB90C60218C899500CAEC2E /* HomeController.swift in Sources */,
+				EFAA191D218D2A75003C7508 /* Configuration.swift in Sources */,
+				EFAA192E218D3A23003C7508 /* UIView+Extension.swift in Sources */,
+				EFAA18E8218D2293003C7508 /* LauncherCell.swift in Sources */,
+				EFB90C5E218C883800CAEC2E /* Application.swift in Sources */,
 				EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */,
 				EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */,
+				EFAA18E4218D1FDC003C7508 /* MicroserviceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,14 +490,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EFB90B15218C7CAE00CAEC2E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EFB90B16218C7CAE00CAEC2E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EFB90B1A218C7CAE00CAEC2E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
