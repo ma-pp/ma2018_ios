@@ -14,6 +14,10 @@
 		EFAA1914218D2343003C7508 /* IReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1913218D2343003C7508 /* IReusableCell.swift */; };
 		EFAA1916218D27AB003C7508 /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1915218D27AB003C7508 /* TableView+Extension.swift */; };
 		EFAA193A218D4C95003C7508 /* BundleSpecificInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */; };
+		EFAA1A20218D7E35003C7508 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A1F218D7E35003C7508 /* NavigationItem+Extension.swift */; };
+		EFAA1A22218D8134003C7508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1A21218D8134003C7508 /* Assets.xcassets */; };
+		EFAA1A24218D8153003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A23218D8153003C7508 /* Configuration.swift */; };
+		EFAA1A28218DCBBA003C7508 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A27218DCBBA003C7508 /* Logging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,10 @@
 		EFAA1913218D2343003C7508 /* IReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IReusableCell.swift; sourceTree = "<group>"; };
 		EFAA1915218D27AB003C7508 /* TableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
 		EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleSpecificInstance.swift; sourceTree = "<group>"; };
+		EFAA1A1F218D7E35003C7508 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
+		EFAA1A21218D8134003C7508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFAA1A23218D8153003C7508 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		EFAA1A27218DCBBA003C7508 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +87,12 @@
 		EFAA18F6218D22D9003C7508 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EFAA1A1E218D7E1B003C7508 /* Protocols */,
 				EFAA190F218D22E8003C7508 /* Extensions */,
 				EFAA190E218D22DF003C7508 /* Classes */,
 				EFAA18F7218D22D9003C7508 /* Common.h */,
 				EFAA18F8218D22D9003C7508 /* Info.plist */,
+				EFAA1A21218D8134003C7508 /* Assets.xcassets */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -99,6 +109,7 @@
 		EFAA190E218D22DF003C7508 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EFAA1A27218DCBBA003C7508 /* Logging.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -106,12 +117,29 @@
 		EFAA190F218D22E8003C7508 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				EFAA1910218D2300003C7508 /* CollectionView+Extension.swift */,
-				EFAA1913218D2343003C7508 /* IReusableCell.swift */,
-				EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */,
-				EFAA1915218D27AB003C7508 /* TableView+Extension.swift */,
+				EFAA1A1D218D7E11003C7508 /* UIKit */,
+				EFAA1A23218D8153003C7508 /* Configuration.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EFAA1A1D218D7E11003C7508 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1910218D2300003C7508 /* CollectionView+Extension.swift */,
+				EFAA1915218D27AB003C7508 /* TableView+Extension.swift */,
+				EFAA1A1F218D7E35003C7508 /* NavigationItem+Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		EFAA1A1E218D7E1B003C7508 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1913218D2343003C7508 /* IReusableCell.swift */,
+				EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA1A22218D8134003C7508 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA1A24218D8153003C7508 /* Configuration.swift in Sources */,
+				EFAA1A20218D7E35003C7508 /* NavigationItem+Extension.swift in Sources */,
 				EFAA193A218D4C95003C7508 /* BundleSpecificInstance.swift in Sources */,
+				EFAA1A28218DCBBA003C7508 /* Logging.swift in Sources */,
 				EFAA1911218D2300003C7508 /* CollectionView+Extension.swift in Sources */,
 				EFAA1916218D27AB003C7508 /* TableView+Extension.swift in Sources */,
 				EFAA1914218D2343003C7508 /* IReusableCell.swift in Sources */,

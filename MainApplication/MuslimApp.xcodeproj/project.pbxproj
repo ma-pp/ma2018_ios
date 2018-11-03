@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFAA18E4218D1FDC003C7508 /* MicroserviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E3218D1FDC003C7508 /* MicroserviceManager.swift */; };
+		EFAA18E4218D1FDC003C7508 /* SubApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E3218D1FDC003C7508 /* SubApplicationManager.swift */; };
 		EFAA18E8218D2293003C7508 /* LauncherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E6218D2293003C7508 /* LauncherCell.swift */; };
 		EFAA18E9218D2293003C7508 /* LauncherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA18E7218D2293003C7508 /* LauncherCell.xib */; };
 		EFAA191A218D29DA003C7508 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; };
@@ -31,6 +31,16 @@
 		EFAA19E7218D54CE003C7508 /* JadwalShalat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFAA19E9218D54CE003C7508 /* AmalanYaumiyah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */; };
 		EFAA19EA218D54CE003C7508 /* AmalanYaumiyah.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA1A0A218D76E9003C7508 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A09218D76E9003C7508 /* ProfileController.swift */; };
+		EFAA1A0C218D7722003C7508 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A0B218D7722003C7508 /* NotificationController.swift */; };
+		EFAA1A0E218D77D8003C7508 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A0D218D77D8003C7508 /* Coordinator.swift */; };
+		EFAA1A11218D7823003C7508 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A10218D7823003C7508 /* Navigator.swift */; };
+		EFAA1A13218D78ED003C7508 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A12218D78ED003C7508 /* HomeCoordinator.swift */; };
+		EFAA1A16218D7B03003C7508 /* SubApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A15218D7B03003C7508 /* SubApplicationCoordinator.swift */; };
+		EFAA1A18218D7BD7003C7508 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A17218D7BD7003C7508 /* ProfileCoordinator.swift */; };
+		EFAA1A1A218D7C9B003C7508 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A19218D7C9B003C7508 /* HomePresenter.swift */; };
+		EFAA1A1C218D7D50003C7508 /* NotificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A1B218D7D50003C7508 /* NotificationCoordinator.swift */; };
+		EFAA1A26218DAE5C003C7508 /* AssetsFileNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A25218DAE5C003C7508 /* AssetsFileNames.swift */; };
 		EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */; };
 		EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B13218C7CAE00CAEC2E /* ViewController.swift */; };
 		EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */; };
@@ -93,7 +103,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EFAA18E3218D1FDC003C7508 /* MicroserviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroserviceManager.swift; sourceTree = "<group>"; };
+		EFAA18E3218D1FDC003C7508 /* SubApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplicationManager.swift; sourceTree = "<group>"; };
 		EFAA18E6218D2293003C7508 /* LauncherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherCell.swift; sourceTree = "<group>"; };
 		EFAA18E7218D2293003C7508 /* LauncherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LauncherCell.xib; sourceTree = "<group>"; };
 		EFAA1919218D29DA003C7508 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +118,16 @@
 		EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatatanMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JadwalShalat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AmalanYaumiyah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1A09218D76E9003C7508 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		EFAA1A0B218D7722003C7508 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EFAA1A0D218D77D8003C7508 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EFAA1A10218D7823003C7508 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		EFAA1A12218D78ED003C7508 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		EFAA1A15218D7B03003C7508 /* SubApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplicationCoordinator.swift; sourceTree = "<group>"; };
+		EFAA1A17218D7BD7003C7508 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		EFAA1A19218D7C9B003C7508 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		EFAA1A1B218D7D50003C7508 /* NotificationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCoordinator.swift; sourceTree = "<group>"; };
+		EFAA1A25218DAE5C003C7508 /* AssetsFileNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsFileNames.swift; sourceTree = "<group>"; };
 		EFB90B0E218C7CAE00CAEC2E /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB90B13218C7CAE00CAEC2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +187,8 @@
 				EFAA18E5218D2256003C7508 /* Components */,
 				EFB90C5F218C899500CAEC2E /* HomeController.swift */,
 				EFAA192B218D2D92003C7508 /* HomeController.xib */,
+				EFAA1A12218D78ED003C7508 /* HomeCoordinator.swift */,
+				EFAA1A19218D7C9B003C7508 /* HomePresenter.swift */,
 			);
 			path = HomeLauncher;
 			sourceTree = "<group>";
@@ -174,6 +196,9 @@
 		EF1B88B5218D0DAE00A71AFE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EFAA1A14218D7AF5003C7508 /* SubApplication */,
+				EFAA1A08218D769D003C7508 /* Notification */,
+				EFAA1A07218D7693003C7508 /* Profile */,
 				EF1B88B6218D0DDC00A71AFE /* Authentication */,
 				EF1B88B0218D0D9F00A71AFE /* HomeLauncher */,
 			);
@@ -217,8 +242,44 @@
 			children = (
 				EFAA191C218D2A75003C7508 /* Configuration.swift */,
 				EFAA192D218D3A23003C7508 /* UIView+Extension.swift */,
+				EFAA1A25218DAE5C003C7508 /* AssetsFileNames.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EFAA1A07218D7693003C7508 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1A09218D76E9003C7508 /* ProfileController.swift */,
+				EFAA1A17218D7BD7003C7508 /* ProfileCoordinator.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EFAA1A08218D769D003C7508 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1A0B218D7722003C7508 /* NotificationController.swift */,
+				EFAA1A1B218D7D50003C7508 /* NotificationCoordinator.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		EFAA1A0F218D77F3003C7508 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1A0D218D77D8003C7508 /* Coordinator.swift */,
+				EFAA1A10218D7823003C7508 /* Navigator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EFAA1A14218D7AF5003C7508 /* SubApplication */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1A15218D7B03003C7508 /* SubApplicationCoordinator.swift */,
+			);
+			path = SubApplication;
 			sourceTree = "<group>";
 		};
 		EFB90B05218C7CAE00CAEC2E = {
@@ -259,9 +320,10 @@
 				EFB90B1A218C7CAE00CAEC2E /* LaunchScreen.storyboard */,
 				EFB90B1D218C7CAE00CAEC2E /* Info.plist */,
 				EFB90C5D218C883800CAEC2E /* Application.swift */,
-				EFAA18E3218D1FDC003C7508 /* MicroserviceManager.swift */,
+				EFAA18E3218D1FDC003C7508 /* SubApplicationManager.swift */,
 				EF1B88B5218D0DAE00A71AFE /* Scenes */,
 				EFAA191E218D2A7C003C7508 /* Extensions */,
+				EFAA1A0F218D77F3003C7508 /* Utilities */,
 			);
 			path = MuslimApp;
 			sourceTree = "<group>";
@@ -442,14 +504,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA1A1C218D7D50003C7508 /* NotificationCoordinator.swift in Sources */,
+				EFAA1A0C218D7722003C7508 /* NotificationController.swift in Sources */,
 				EFB90C60218C899500CAEC2E /* HomeController.swift in Sources */,
+				EFAA1A18218D7BD7003C7508 /* ProfileCoordinator.swift in Sources */,
 				EFAA191D218D2A75003C7508 /* Configuration.swift in Sources */,
 				EFAA192E218D3A23003C7508 /* UIView+Extension.swift in Sources */,
 				EFAA18E8218D2293003C7508 /* LauncherCell.swift in Sources */,
+				EFAA1A26218DAE5C003C7508 /* AssetsFileNames.swift in Sources */,
+				EFAA1A11218D7823003C7508 /* Navigator.swift in Sources */,
 				EFB90C5E218C883800CAEC2E /* Application.swift in Sources */,
+				EFAA1A0E218D77D8003C7508 /* Coordinator.swift in Sources */,
+				EFAA1A16218D7B03003C7508 /* SubApplicationCoordinator.swift in Sources */,
+				EFAA1A13218D78ED003C7508 /* HomeCoordinator.swift in Sources */,
+				EFAA1A0A218D76E9003C7508 /* ProfileController.swift in Sources */,
 				EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */,
 				EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */,
-				EFAA18E4218D1FDC003C7508 /* MicroserviceManager.swift in Sources */,
+				EFAA18E4218D1FDC003C7508 /* SubApplicationManager.swift in Sources */,
+				EFAA1A1A218D7C9B003C7508 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

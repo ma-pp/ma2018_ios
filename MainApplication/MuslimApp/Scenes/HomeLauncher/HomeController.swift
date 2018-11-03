@@ -13,13 +13,57 @@ import Common
 class HomeController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var navigator: HomeNavigator!
+    var presenter: HomePresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationItem()
         setupCollectionView()
     }
     
+    private func setupNavigationItem() {
+        let notificationImage = UIImage(
+            named: AssetFileNames.notif_button,
+            in: Constant.bundle,
+            compatibleWith: nil
+        )
+        
+        let notificationBarButton = UIBarButtonItem(
+            image: notificationImage,
+            style: .plain,
+            target: self,
+            action: #selector(launchNotification)
+        )
+        
+        let profileImage = UIImage(
+            named: AssetFileNames.profile_button,
+            in: Constant.bundle,
+            compatibleWith: nil
+        )
+        
+        let profileBarButton = UIBarButtonItem(
+            image: profileImage,
+            style: .plain,
+            target: self,
+            action: #selector(launchProfile)
+        )
+        
+        navigationItem.leftBarButtonItem = notificationBarButton
+        navigationItem.rightBarButtonItem = profileBarButton
+    }
+    
+    @objc func launchNotification() {
+        navigator.launchNotification()
+    }
+    
+    @objc func launchProfile() {
+        navigator.launchProfile()
+    }
+    
     private func setupCollectionView() {
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -28,8 +72,9 @@ class HomeController: UIViewController {
 }
 
 extension HomeController: UICollectionViewDataSource {
+    
     private var items: [SubApplication] {
-        return MicroserviceManager.shared.applications
+        return presenter.subApplications
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -53,9 +98,8 @@ extension HomeController: UICollectionViewDataSource {
 
 extension HomeController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectedItem = items[indexPath.row]
-        let viewController = selectedItem.prepareController()
-        navigationController?.pushViewController(viewController, animated: true)
+        let subApplication = items[indexPath.row]
+        navigator.launchSubApplication(subApplication)
     }
 }
 

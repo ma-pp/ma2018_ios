@@ -20,9 +20,12 @@ final class Application {
     func start(window: UIWindow) throws {
         basicAssertionCheck()
         
-        let home = HomeController()
-        window.rootViewController = home
+        let nav = UINavigationController()
+        window.rootViewController = nav
         window.makeKeyAndVisible()
+        
+        let homeCoordinator = HomeCoordinator(navigationController: nav)
+        homeCoordinator.start()
     }
     
     private func basicAssertionCheck() {

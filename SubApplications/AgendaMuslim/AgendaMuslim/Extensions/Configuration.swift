@@ -10,3 +10,7 @@ import Foundation
 
 let BUNDLE_IDENTIFIER = "com.pondokios.AgendaMuslim"
 let MODULE_BUNDLE = Bundle(identifier: BUNDLE_IDENTIFIER)!
+
+enum Constant {
+    static let bundle = MODULE_BUNDLE
+}

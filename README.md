@@ -20,3 +20,7 @@ Gitflow:
 3. Bugfix -> Bug
 4. Feature -> Full feature branch
 
+
+Add credit:
+[COMMON]
+[BACK_BUTTON](https://www.flaticon.com/packs/simple-icon-set)

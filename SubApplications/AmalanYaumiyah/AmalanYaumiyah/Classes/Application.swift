@@ -12,7 +12,7 @@ import SubApplication
 public final class Application: SubApplication {
     public var thumbnail: UIImage? = UIImage(
         named: "thumbnail_home",
-        in: Bundle.bundle,
+        in: Constant.bundle,
         compatibleWith: nil
     )
     
@@ -22,11 +22,4 @@ public final class Application: SubApplication {
     
     public let title = "Amalan Yaumiyah"
     public init() {}
-}
-
-extension Application {
-    struct Bundle {
-        private init() {}
-        static let bundle = MODULE_BUNDLE
-    }
 }

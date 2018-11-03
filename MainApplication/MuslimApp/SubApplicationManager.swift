@@ -17,8 +17,8 @@ import KakakAsuh
 import CatatanMuslim
 import JadwalShalat
 
-final class MicroserviceManager {
-    static let shared = MicroserviceManager()
+final class SubApplicationManager {
+    static let shared = SubApplicationManager()
     private init() {}
     
     lazy var applications: [SubApplication] = [
