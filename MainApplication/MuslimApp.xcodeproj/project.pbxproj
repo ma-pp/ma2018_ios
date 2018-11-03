@@ -81,8 +81,6 @@
 		EFB90BD4218C7F4000CAEC2E /* SubApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplicationTests.swift; sourceTree = "<group>"; };
 		EFB90BD6218C7F4000CAEC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFB90BE3218C7F8B00CAEC2E /* SubApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplication.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		EFB90C27218C82DB00CAEC2E /* Database.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Database.xcodeproj; path = ../Modules/Database/Database.xcodeproj; sourceTree = "<group>"; };
 		EFB90C30218C82E700CAEC2E /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = ../Modules/Networking/Networking.xcodeproj; sourceTree = "<group>"; };
 		EFB90C39218C82ED00CAEC2E /* AgendaMuslim.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AgendaMuslim.xcodeproj; path = ../SubApplication/AgendaMuslim/AgendaMuslim.xcodeproj; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 		EFB90C5C218C84EA00CAEC2E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EFB90C5D218C883800CAEC2E /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		EFB90C5F218C899500CAEC2E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
->>>>>>> feature/HomeLauncher
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

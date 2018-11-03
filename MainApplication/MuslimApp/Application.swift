@@ -12,7 +12,7 @@ fileprivate enum ApplicationError: Error {
     case windowNotSet
 }
 
-class Application {
+final class Application {
     static let shared = Application()
     private init() {}
     
