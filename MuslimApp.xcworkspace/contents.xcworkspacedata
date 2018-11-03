@@ -11,6 +11,9 @@
       location = "container:"
       name = "Modules">
       <FileRef
+         location = "group:Modules/Common/Common.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Modules/Networking/Networking.xcodeproj">
       </FileRef>
       <FileRef

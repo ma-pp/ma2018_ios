@@ -6,8 +6,10 @@
 //  Copyright © 2018 PondokiOS. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public protocol SubApplication {
     var title: String { get }
+    var thumbnail: UIImage? { get }
+    func prepareController() -> UIViewController
 }

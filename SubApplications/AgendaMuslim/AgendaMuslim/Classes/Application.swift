@@ -10,6 +10,12 @@ import UIKit
 import SubApplication
 
 public class Application: SubApplication {
+    public var thumbnail: UIImage? = nil
+    
+    public func prepareController() -> UIViewController {
+        fatalError()
+    }
+    
     public let title = "Agenda Muslim"
     public init() {}
 }

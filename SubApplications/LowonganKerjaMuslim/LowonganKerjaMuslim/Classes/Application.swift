@@ -10,6 +10,12 @@ import Foundation
 import SubApplication
 
 public class Application: SubApplication {
+    public var thumbnail: UIImage? = nil
+    
+    public func prepareController() -> UIViewController {
+        fatalError()
+    }
+    
     public let title = "Loker Muslim"
     
     public init() {}

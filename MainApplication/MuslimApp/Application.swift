@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Common
 
 fileprivate enum ApplicationError: Error {
     case windowNotSet
@@ -17,9 +18,15 @@ final class Application {
     private init() {}
     
     func start(window: UIWindow) throws {
+        basicAssertionCheck()
+        
         let home = HomeController()
         window.rootViewController = home
         window.makeKeyAndVisible()
     }
+    
+    private func basicAssertionCheck() {
+        class __AnyView__: UIView {}
+        assert( __AnyView__.bundle?.bundleIdentifier == BUNDLE_IDENTIFIER)
+    }
 }
-

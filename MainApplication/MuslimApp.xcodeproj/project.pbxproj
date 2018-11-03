@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFAA18E4218D1FDC003C7508 /* SubApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E3218D1FDC003C7508 /* SubApplication.swift */; };
+		EFAA18E8218D2293003C7508 /* LauncherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E6218D2293003C7508 /* LauncherCell.swift */; };
+		EFAA18E9218D2293003C7508 /* LauncherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA18E7218D2293003C7508 /* LauncherCell.xib */; };
+		EFAA191A218D29DA003C7508 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; };
+		EFAA191B218D29DA003C7508 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA191D218D2A75003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA191C218D2A75003C7508 /* Configuration.swift */; };
+		EFAA1920218D2C82003C7508 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA191F218D2C82003C7508 /* Networking.framework */; };
+		EFAA1921218D2C82003C7508 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA191F218D2C82003C7508 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA1923218D2C82003C7508 /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1922218D2C82003C7508 /* Database.framework */; };
+		EFAA1924218D2C82003C7508 /* Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1922218D2C82003C7508 /* Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA1926218D2C82003C7508 /* LowonganKerjaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */; };
+		EFAA1927218D2C82003C7508 /* LowonganKerjaMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA1929218D2C82003C7508 /* AgendaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */; };
+		EFAA192A218D2C82003C7508 /* AgendaMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA192C218D2D92003C7508 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA192B218D2D92003C7508 /* HomeController.xib */; };
+		EFAA192E218D3A23003C7508 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA192D218D3A23003C7508 /* UIView+Extension.swift */; };
 		EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */; };
 		EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B13218C7CAE00CAEC2E /* ViewController.swift */; };
 		EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */; };
@@ -17,14 +33,6 @@
 		EFB90BDA218C7F4000CAEC2E /* SubApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; };
 		EFB90BDB218C7F4000CAEC2E /* SubApplication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFB90BE4218C7F8B00CAEC2E /* SubApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90BE3218C7F8B00CAEC2E /* SubApplication.swift */; };
-		EFB90C4C218C835F00CAEC2E /* LowonganKerjaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C48218C82F200CAEC2E /* LowonganKerjaMuslim.framework */; };
-		EFB90C4D218C835F00CAEC2E /* LowonganKerjaMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C48218C82F200CAEC2E /* LowonganKerjaMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFB90C50218C835F00CAEC2E /* AgendaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C3F218C82ED00CAEC2E /* AgendaMuslim.framework */; };
-		EFB90C51218C835F00CAEC2E /* AgendaMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C3F218C82ED00CAEC2E /* AgendaMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFB90C54218C835F00CAEC2E /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C36218C82E700CAEC2E /* Networking.framework */; };
-		EFB90C55218C835F00CAEC2E /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C36218C82E700CAEC2E /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFB90C58218C835F00CAEC2E /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C2D218C82DB00CAEC2E /* Database.framework */; };
-		EFB90C59218C835F00CAEC2E /* Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90C2D218C82DB00CAEC2E /* Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFB90C5E218C883800CAEC2E /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90C5D218C883800CAEC2E /* Application.swift */; };
 		EFB90C60218C899500CAEC2E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90C5F218C899500CAEC2E /* HomeController.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +69,11 @@
 			dstSubfolderSpec = 10;
 			files = (
 				EFB90BDB218C7F4000CAEC2E /* SubApplication.framework in Embed Frameworks */,
+				EFAA191B218D29DA003C7508 /* Common.framework in Embed Frameworks */,
+				EFAA1921218D2C82003C7508 /* Networking.framework in Embed Frameworks */,
+				EFAA1927218D2C82003C7508 /* LowonganKerjaMuslim.framework in Embed Frameworks */,
+				EFAA1924218D2C82003C7508 /* Database.framework in Embed Frameworks */,
+				EFAA192A218D2C82003C7508 /* AgendaMuslim.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +81,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EFAA18E3218D1FDC003C7508 /* SubApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplication.swift; sourceTree = "<group>"; };
+		EFAA18E6218D2293003C7508 /* LauncherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherCell.swift; sourceTree = "<group>"; };
+		EFAA18E7218D2293003C7508 /* LauncherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LauncherCell.xib; sourceTree = "<group>"; };
+		EFAA1919218D29DA003C7508 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA191C218D2A75003C7508 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		EFAA191F218D2C82003C7508 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1922218D2C82003C7508 /* Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LowonganKerjaMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AgendaMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA192B218D2D92003C7508 /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		EFAA192D218D3A23003C7508 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		EFB90B0E218C7CAE00CAEC2E /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB90B13218C7CAE00CAEC2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,11 +105,6 @@
 		EFB90BD4218C7F4000CAEC2E /* SubApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplicationTests.swift; sourceTree = "<group>"; };
 		EFB90BD6218C7F4000CAEC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFB90BE3218C7F8B00CAEC2E /* SubApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplication.swift; sourceTree = "<group>"; };
-		EFB90C27218C82DB00CAEC2E /* Database.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Database.xcodeproj; path = ../Modules/Database/Database.xcodeproj; sourceTree = "<group>"; };
-		EFB90C30218C82E700CAEC2E /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = ../Modules/Networking/Networking.xcodeproj; sourceTree = "<group>"; };
-		EFB90C39218C82ED00CAEC2E /* AgendaMuslim.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AgendaMuslim.xcodeproj; path = ../SubApplication/AgendaMuslim/AgendaMuslim.xcodeproj; sourceTree = "<group>"; };
-		EFB90C42218C82F200CAEC2E /* LowonganKerjaMuslim.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LowonganKerjaMuslim.xcodeproj; path = ../SubApplication/LowonganKerjaMuslim/LowonganKerjaMuslim.xcodeproj; sourceTree = "<group>"; };
-		EFB90C5C218C84EA00CAEC2E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EFB90C5D218C883800CAEC2E /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		EFB90C5F218C899500CAEC2E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +115,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB90BDA218C7F4000CAEC2E /* SubApplication.framework in Frameworks */,
+				EFAA191A218D29DA003C7508 /* Common.framework in Frameworks */,
+				EFAA1920218D2C82003C7508 /* Networking.framework in Frameworks */,
+				EFAA1926218D2C82003C7508 /* LowonganKerjaMuslim.framework in Frameworks */,
+				EFAA1923218D2C82003C7508 /* Database.framework in Frameworks */,
+				EFAA1929218D2C82003C7508 /* AgendaMuslim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +144,9 @@
 		EF1B88B0218D0D9F00A71AFE /* HomeLauncher */ = {
 			isa = PBXGroup;
 			children = (
+				EFAA18E5218D2256003C7508 /* Components */,
 				EFB90C5F218C899500CAEC2E /* HomeController.swift */,
+				EFAA192B218D2D92003C7508 /* HomeController.xib */,
 			);
 			path = HomeLauncher;
 			sourceTree = "<group>";
@@ -157,9 +183,32 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		EFAA18E5218D2256003C7508 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA18E6218D2293003C7508 /* LauncherCell.swift */,
+				EFAA18E7218D2293003C7508 /* LauncherCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EFAA191E218D2A7C003C7508 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA191C218D2A75003C7508 /* Configuration.swift */,
+				EFAA192D218D3A23003C7508 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EFB90B05218C7CAE00CAEC2E = {
 			isa = PBXGroup;
 			children = (
+				EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */,
+				EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */,
+				EFAA1922218D2C82003C7508 /* Database.framework */,
+				EFAA191F218D2C82003C7508 /* Networking.framework */,
+				EFAA1919218D29DA003C7508 /* Common.framework */,
 				EFB90B10218C7CAE00CAEC2E /* MuslimApp */,
 				EFB90BC6218C7F4000CAEC2E /* SubApplication */,
 				EFB90BD3218C7F4000CAEC2E /* SubApplicationTests */,
@@ -186,7 +235,9 @@
 				EFB90B1A218C7CAE00CAEC2E /* LaunchScreen.storyboard */,
 				EFB90B1D218C7CAE00CAEC2E /* Info.plist */,
 				EFB90C5D218C883800CAEC2E /* Application.swift */,
+				EFAA18E3218D1FDC003C7508 /* SubApplication.swift */,
 				EF1B88B5218D0DAE00A71AFE /* Scenes */,
+				EFAA191E218D2A7C003C7508 /* Extensions */,
 			);
 			path = MuslimApp;
 			sourceTree = "<group>";
@@ -339,7 +390,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA192C218D2D92003C7508 /* HomeController.xib in Resources */,
 				EFB90B1C218C7CAE00CAEC2E /* LaunchScreen.storyboard in Resources */,
+				EFAA18E9218D2293003C7508 /* LauncherCell.xib in Resources */,
 				EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,9 +419,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB90C60218C899500CAEC2E /* HomeController.swift in Sources */,
+				EFAA191D218D2A75003C7508 /* Configuration.swift in Sources */,
+				EFAA192E218D3A23003C7508 /* UIView+Extension.swift in Sources */,
+				EFAA18E8218D2293003C7508 /* LauncherCell.swift in Sources */,
 				EFB90C5E218C883800CAEC2E /* Application.swift in Sources */,
 				EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */,
 				EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */,
+				EFAA18E4218D1FDC003C7508 /* SubApplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
