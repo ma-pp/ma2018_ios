@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Common
 
 protocol ProfileNavigator: Navigator {
     
@@ -27,10 +26,6 @@ class ProfileCoordinator: Coordinator {
         navigationController
             .topViewController?
             .present(nav, animated: true, completion: nil)
-    }
-    
-    deinit {
-        Logging.deallocate(self)
     }
 }
 

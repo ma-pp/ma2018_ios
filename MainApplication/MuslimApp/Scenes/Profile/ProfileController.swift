@@ -28,8 +28,4 @@ class ProfileController: UIViewController {
     @objc private func navigatorBack() {
         navigator.back()
     }
-    
-    deinit {
-        Logging.deallocate(self)
-    }
 }

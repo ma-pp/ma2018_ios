@@ -41,6 +41,12 @@
 		EFAA1A1A218D7C9B003C7508 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A19218D7C9B003C7508 /* HomePresenter.swift */; };
 		EFAA1A1C218D7D50003C7508 /* NotificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A1B218D7D50003C7508 /* NotificationCoordinator.swift */; };
 		EFAA1A26218DAE5C003C7508 /* AssetsFileNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A25218DAE5C003C7508 /* AssetsFileNames.swift */; };
+		EFAA1A35218DE136003C7508 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A33218DE135003C7508 /* CocoaLumberjack.framework */; };
+		EFAA1A36218DE136003C7508 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A33218DE135003C7508 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA1A37218DE136003C7508 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A34218DE135003C7508 /* CocoaLumberjackSwift.framework */; };
+		EFAA1A38218DE136003C7508 /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A34218DE135003C7508 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA1A75218DEA2A003C7508 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A65218DE315003C7508 /* Logging.framework */; };
+		EFAA1A76218DEA2A003C7508 /* Logging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A65218DE315003C7508 /* Logging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */; };
 		EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B13218C7CAE00CAEC2E /* ViewController.swift */; };
 		EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */; };
@@ -91,8 +97,11 @@
 				EFAA19E1218D54B6003C7508 /* KakakAsuh.framework in Embed Frameworks */,
 				EFAA19E7218D54CE003C7508 /* JadwalShalat.framework in Embed Frameworks */,
 				EFAA1921218D2C82003C7508 /* Networking.framework in Embed Frameworks */,
+				EFAA1A36218DE136003C7508 /* CocoaLumberjack.framework in Embed Frameworks */,
+				EFAA1A76218DEA2A003C7508 /* Logging.framework in Embed Frameworks */,
 				EFAA1927218D2C82003C7508 /* LowonganKerjaMuslim.framework in Embed Frameworks */,
 				EFAA1924218D2C82003C7508 /* Database.framework in Embed Frameworks */,
+				EFAA1A38218DE136003C7508 /* CocoaLumberjackSwift.framework in Embed Frameworks */,
 				EFAA19E4218D54BD003C7508 /* CatatanMuslim.framework in Embed Frameworks */,
 				EFAA192A218D2C82003C7508 /* AgendaMuslim.framework in Embed Frameworks */,
 				EFAA19EA218D54CE003C7508 /* AmalanYaumiyah.framework in Embed Frameworks */,
@@ -128,6 +137,12 @@
 		EFAA1A19218D7C9B003C7508 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		EFAA1A1B218D7D50003C7508 /* NotificationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCoordinator.swift; sourceTree = "<group>"; };
 		EFAA1A25218DAE5C003C7508 /* AssetsFileNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsFileNames.swift; sourceTree = "<group>"; };
+		EFAA1A33218DE135003C7508 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = ../Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		EFAA1A34218DE135003C7508 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = ../Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		EFAA1A65218DE315003C7508 /* Logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1A69218DE37B003C7508 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		EFAA1A6A218DE405003C7508 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
 		EFB90B0E218C7CAE00CAEC2E /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB90B13218C7CAE00CAEC2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,8 +170,11 @@
 				EFAA19E0218D54B6003C7508 /* KakakAsuh.framework in Frameworks */,
 				EFAA19E6218D54CE003C7508 /* JadwalShalat.framework in Frameworks */,
 				EFAA1920218D2C82003C7508 /* Networking.framework in Frameworks */,
+				EFAA1A35218DE136003C7508 /* CocoaLumberjack.framework in Frameworks */,
+				EFAA1A75218DEA2A003C7508 /* Logging.framework in Frameworks */,
 				EFAA1926218D2C82003C7508 /* LowonganKerjaMuslim.framework in Frameworks */,
 				EFAA1923218D2C82003C7508 /* Database.framework in Frameworks */,
+				EFAA1A37218DE136003C7508 /* CocoaLumberjackSwift.framework in Frameworks */,
 				EFAA19E3218D54BD003C7508 /* CatatanMuslim.framework in Frameworks */,
 				EFAA1929218D2C82003C7508 /* AgendaMuslim.framework in Frameworks */,
 				EFAA19E9218D54CE003C7508 /* AmalanYaumiyah.framework in Frameworks */,
@@ -282,9 +300,22 @@
 			path = SubApplication;
 			sourceTree = "<group>";
 		};
+		EFAA1A68218DE35D003C7508 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1A69218DE37B003C7508 /* Production.xcconfig */,
+				EFAA1A6A218DE405003C7508 /* Development.xcconfig */,
+				EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		EFB90B05218C7CAE00CAEC2E = {
 			isa = PBXGroup;
 			children = (
+				EFAA1A65218DE315003C7508 /* Logging.framework */,
+				EFAA1A33218DE135003C7508 /* CocoaLumberjack.framework */,
+				EFAA1A34218DE135003C7508 /* CocoaLumberjackSwift.framework */,
 				EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */,
 				EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */,
 				EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */,
@@ -314,6 +345,7 @@
 		EFB90B10218C7CAE00CAEC2E /* MuslimApp */ = {
 			isa = PBXGroup;
 			children = (
+				EFAA1A68218DE35D003C7508 /* Config */,
 				EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */,
 				EFB90B13218C7CAE00CAEC2E /* ViewController.swift */,
 				EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */,
@@ -377,6 +409,7 @@
 				EFB90B0B218C7CAE00CAEC2E /* Frameworks */,
 				EFB90B0C218C7CAE00CAEC2E /* Resources */,
 				EFB90BB7218C7EFB00CAEC2E /* Embed Frameworks */,
+				EFAA1A2C218DD773003C7508 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -499,6 +532,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EFAA1A2C218DD773003C7508 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EFB90B0A218C7CAE00CAEC2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -575,6 +626,7 @@
 /* Begin XCBuildConfiguration section */
 		EFB90B1E218C7CAE00CAEC2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -607,6 +659,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -632,6 +685,7 @@
 		};
 		EFB90B1F218C7CAE00CAEC2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -664,6 +718,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -682,6 +737,7 @@
 		};
 		EFB90B21218C7CAE00CAEC2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -698,6 +754,7 @@
 		};
 		EFB90B22218C7CAE00CAEC2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

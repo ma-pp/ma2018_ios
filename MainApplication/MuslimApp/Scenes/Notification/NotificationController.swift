@@ -28,9 +28,4 @@ class NotificationController: UIViewController {
     @objc func navigatorBack() {
         navigator.back()
     }
-    
-    
-    deinit {
-        Logging.deallocate(self)
-    }
 }

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Common
 
 protocol NotificationNavigator: Navigator {
     
@@ -27,10 +26,6 @@ class NotificationCoordinator: Coordinator {
         navigationController
             .topViewController?
             .present(nav, animated: true, completion: nil)
-    }
-    
-    deinit {
-        Logging.deallocate(self)
     }
 }
 

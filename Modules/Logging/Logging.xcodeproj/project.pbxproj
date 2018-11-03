@@ -7,237 +7,223 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFAA18FE218D22D9003C7508 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA18F4218D22D9003C7508 /* Common.framework */; };
-		EFAA1903218D22D9003C7508 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1902218D22D9003C7508 /* CommonTests.swift */; };
-		EFAA1905218D22D9003C7508 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = EFAA18F7218D22D9003C7508 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFAA1911218D2300003C7508 /* CollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1910218D2300003C7508 /* CollectionView+Extension.swift */; };
-		EFAA1914218D2343003C7508 /* IReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1913218D2343003C7508 /* IReusableCell.swift */; };
-		EFAA1916218D27AB003C7508 /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1915218D27AB003C7508 /* TableView+Extension.swift */; };
-		EFAA193A218D4C95003C7508 /* BundleSpecificInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */; };
-		EFAA1A20218D7E35003C7508 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A1F218D7E35003C7508 /* NavigationItem+Extension.swift */; };
-		EFAA1A22218D8134003C7508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1A21218D8134003C7508 /* Assets.xcassets */; };
-		EFAA1A24218D8153003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A23218D8153003C7508 /* Configuration.swift */; };
+		EFAA1A4D218DE20D003C7508 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A43218DE20D003C7508 /* Logging.framework */; };
+		EFAA1A52218DE20D003C7508 /* LoggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A51218DE20D003C7508 /* LoggingTests.swift */; };
+		EFAA1A54218DE20D003C7508 /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = EFAA1A46218DE20D003C7508 /* Logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFAA1A5F218DE22E003C7508 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A5E218DE22E003C7508 /* Logging.swift */; };
+		EFAA1A63218DE2CE003C7508 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A61218DE2CE003C7508 /* CocoaLumberjack.framework */; };
+		EFAA1A64218DE2CE003C7508 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A62218DE2CE003C7508 /* CocoaLumberjackSwift.framework */; };
+		EFAA1A74218DE75E003C7508 /* CustomLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A73218DE75E003C7508 /* CustomLogging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EFAA18FF218D22D9003C7508 /* PBXContainerItemProxy */ = {
+		EFAA1A4E218DE20D003C7508 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EFAA18EB218D22D9003C7508 /* Project object */;
+			containerPortal = EFAA1A3A218DE20D003C7508 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EFAA18F3218D22D9003C7508;
-			remoteInfo = Common;
+			remoteGlobalIDString = EFAA1A42218DE20D003C7508;
+			remoteInfo = Logging;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EFAA18F4218D22D9003C7508 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFAA18F7218D22D9003C7508 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		EFAA18F8218D22D9003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFAA18FD218D22D9003C7508 /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFAA1902218D22D9003C7508 /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
-		EFAA1904218D22D9003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFAA1910218D2300003C7508 /* CollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Extension.swift"; sourceTree = "<group>"; };
-		EFAA1913218D2343003C7508 /* IReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IReusableCell.swift; sourceTree = "<group>"; };
-		EFAA1915218D27AB003C7508 /* TableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
-		EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleSpecificInstance.swift; sourceTree = "<group>"; };
-		EFAA1A1F218D7E35003C7508 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
-		EFAA1A21218D8134003C7508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EFAA1A23218D8153003C7508 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		EFAA1A43218DE20D003C7508 /* Logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1A46218DE20D003C7508 /* Logging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+		EFAA1A47218DE20D003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAA1A4C218DE20D003C7508 /* LoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1A51218DE20D003C7508 /* LoggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingTests.swift; sourceTree = "<group>"; };
+		EFAA1A53218DE20D003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAA1A5E218DE22E003C7508 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		EFAA1A61218DE2CE003C7508 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = ../../Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		EFAA1A62218DE2CE003C7508 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = ../../Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		EFAA1A71218DE621003C7508 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
+		EFAA1A73218DE75E003C7508 /* CustomLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLogging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EFAA18F0218D22D9003C7508 /* Frameworks */ = {
+		EFAA1A3F218DE20D003C7508 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA1A63218DE2CE003C7508 /* CocoaLumberjack.framework in Frameworks */,
+				EFAA1A64218DE2CE003C7508 /* CocoaLumberjackSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFAA18FA218D22D9003C7508 /* Frameworks */ = {
+		EFAA1A49218DE20D003C7508 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFAA18FE218D22D9003C7508 /* Common.framework in Frameworks */,
+				EFAA1A4D218DE20D003C7508 /* Logging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EFAA18EA218D22D9003C7508 = {
+		EFAA1A39218DE20D003C7508 = {
 			isa = PBXGroup;
 			children = (
-				EFAA18F6218D22D9003C7508 /* Common */,
-				EFAA1901218D22D9003C7508 /* CommonTests */,
-				EFAA18F5218D22D9003C7508 /* Products */,
+				EFAA1A45218DE20D003C7508 /* Logging */,
+				EFAA1A50218DE20D003C7508 /* LoggingTests */,
+				EFAA1A44218DE20D003C7508 /* Products */,
+				EFAA1A60218DE2CE003C7508 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		EFAA18F5218D22D9003C7508 /* Products */ = {
+		EFAA1A44218DE20D003C7508 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFAA18F4218D22D9003C7508 /* Common.framework */,
-				EFAA18FD218D22D9003C7508 /* CommonTests.xctest */,
+				EFAA1A43218DE20D003C7508 /* Logging.framework */,
+				EFAA1A4C218DE20D003C7508 /* LoggingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EFAA18F6218D22D9003C7508 /* Common */ = {
+		EFAA1A45218DE20D003C7508 /* Logging */ = {
 			isa = PBXGroup;
 			children = (
-				EFAA1A1E218D7E1B003C7508 /* Protocols */,
-				EFAA190F218D22E8003C7508 /* Extensions */,
-				EFAA190E218D22DF003C7508 /* Classes */,
-				EFAA18F7218D22D9003C7508 /* Common.h */,
-				EFAA18F8218D22D9003C7508 /* Info.plist */,
-				EFAA1A21218D8134003C7508 /* Assets.xcassets */,
+				EFAA1A70218DE5F3003C7508 /* Config */,
+				EFAA1A5D218DE222003C7508 /* Classes */,
+				EFAA1A46218DE20D003C7508 /* Logging.h */,
+				EFAA1A47218DE20D003C7508 /* Info.plist */,
 			);
-			path = Common;
+			path = Logging;
 			sourceTree = "<group>";
 		};
-		EFAA1901218D22D9003C7508 /* CommonTests */ = {
+		EFAA1A50218DE20D003C7508 /* LoggingTests */ = {
 			isa = PBXGroup;
 			children = (
-				EFAA1902218D22D9003C7508 /* CommonTests.swift */,
-				EFAA1904218D22D9003C7508 /* Info.plist */,
+				EFAA1A51218DE20D003C7508 /* LoggingTests.swift */,
+				EFAA1A53218DE20D003C7508 /* Info.plist */,
 			);
-			path = CommonTests;
+			path = LoggingTests;
 			sourceTree = "<group>";
 		};
-		EFAA190E218D22DF003C7508 /* Classes */ = {
+		EFAA1A5D218DE222003C7508 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EFAA1A5E218DE22E003C7508 /* Logging.swift */,
+				EFAA1A73218DE75E003C7508 /* CustomLogging.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		EFAA190F218D22E8003C7508 /* Extensions */ = {
+		EFAA1A60218DE2CE003C7508 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EFAA1A1D218D7E11003C7508 /* UIKit */,
-				EFAA1A23218D8153003C7508 /* Configuration.swift */,
+				EFAA1A61218DE2CE003C7508 /* CocoaLumberjack.framework */,
+				EFAA1A62218DE2CE003C7508 /* CocoaLumberjackSwift.framework */,
 			);
-			path = Extensions;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EFAA1A1D218D7E11003C7508 /* UIKit */ = {
+		EFAA1A70218DE5F3003C7508 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				EFAA1910218D2300003C7508 /* CollectionView+Extension.swift */,
-				EFAA1915218D27AB003C7508 /* TableView+Extension.swift */,
-				EFAA1A1F218D7E35003C7508 /* NavigationItem+Extension.swift */,
+				EFAA1A71218DE621003C7508 /* Configuration.xcconfig */,
 			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		EFAA1A1E218D7E1B003C7508 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				EFAA1913218D2343003C7508 /* IReusableCell.swift */,
-				EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */,
-			);
-			path = Protocols;
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		EFAA18F1218D22D9003C7508 /* Headers */ = {
+		EFAA1A40218DE20D003C7508 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFAA1905218D22D9003C7508 /* Common.h in Headers */,
+				EFAA1A54218DE20D003C7508 /* Logging.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EFAA18F3218D22D9003C7508 /* Common */ = {
+		EFAA1A42218DE20D003C7508 /* Logging */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFAA1908218D22D9003C7508 /* Build configuration list for PBXNativeTarget "Common" */;
+			buildConfigurationList = EFAA1A57218DE20D003C7508 /* Build configuration list for PBXNativeTarget "Logging" */;
 			buildPhases = (
-				EFAA18EF218D22D9003C7508 /* Sources */,
-				EFAA18F0218D22D9003C7508 /* Frameworks */,
-				EFAA18F1218D22D9003C7508 /* Headers */,
-				EFAA18F2218D22D9003C7508 /* Resources */,
+				EFAA1A3E218DE20D003C7508 /* Sources */,
+				EFAA1A3F218DE20D003C7508 /* Frameworks */,
+				EFAA1A40218DE20D003C7508 /* Headers */,
+				EFAA1A41218DE20D003C7508 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Common;
-			productName = Common;
-			productReference = EFAA18F4218D22D9003C7508 /* Common.framework */;
+			name = Logging;
+			productName = Logging;
+			productReference = EFAA1A43218DE20D003C7508 /* Logging.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EFAA18FC218D22D9003C7508 /* CommonTests */ = {
+		EFAA1A4B218DE20D003C7508 /* LoggingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFAA190B218D22D9003C7508 /* Build configuration list for PBXNativeTarget "CommonTests" */;
+			buildConfigurationList = EFAA1A5A218DE20D003C7508 /* Build configuration list for PBXNativeTarget "LoggingTests" */;
 			buildPhases = (
-				EFAA18F9218D22D9003C7508 /* Sources */,
-				EFAA18FA218D22D9003C7508 /* Frameworks */,
-				EFAA18FB218D22D9003C7508 /* Resources */,
+				EFAA1A48218DE20D003C7508 /* Sources */,
+				EFAA1A49218DE20D003C7508 /* Frameworks */,
+				EFAA1A4A218DE20D003C7508 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EFAA1900218D22D9003C7508 /* PBXTargetDependency */,
+				EFAA1A4F218DE20D003C7508 /* PBXTargetDependency */,
 			);
-			name = CommonTests;
-			productName = CommonTests;
-			productReference = EFAA18FD218D22D9003C7508 /* CommonTests.xctest */;
+			name = LoggingTests;
+			productName = LoggingTests;
+			productReference = EFAA1A4C218DE20D003C7508 /* LoggingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EFAA18EB218D22D9003C7508 /* Project object */ = {
+		EFAA1A3A218DE20D003C7508 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = PondokiOS;
 				TargetAttributes = {
-					EFAA18F3218D22D9003C7508 = {
+					EFAA1A42218DE20D003C7508 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
-					EFAA18FC218D22D9003C7508 = {
+					EFAA1A4B218DE20D003C7508 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = EFAA18EE218D22D9003C7508 /* Build configuration list for PBXProject "Common" */;
+			buildConfigurationList = EFAA1A3D218DE20D003C7508 /* Build configuration list for PBXProject "Logging" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = EFAA18EA218D22D9003C7508;
-			productRefGroup = EFAA18F5218D22D9003C7508 /* Products */;
+			mainGroup = EFAA1A39218DE20D003C7508;
+			productRefGroup = EFAA1A44218DE20D003C7508 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EFAA18F3218D22D9003C7508 /* Common */,
-				EFAA18FC218D22D9003C7508 /* CommonTests */,
+				EFAA1A42218DE20D003C7508 /* Logging */,
+				EFAA1A4B218DE20D003C7508 /* LoggingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EFAA18F2218D22D9003C7508 /* Resources */ = {
+		EFAA1A41218DE20D003C7508 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFAA1A22218D8134003C7508 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFAA18FB218D22D9003C7508 /* Resources */ = {
+		EFAA1A4A218DE20D003C7508 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,40 +233,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EFAA18EF218D22D9003C7508 /* Sources */ = {
+		EFAA1A3E218DE20D003C7508 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFAA1A24218D8153003C7508 /* Configuration.swift in Sources */,
-				EFAA1A20218D7E35003C7508 /* NavigationItem+Extension.swift in Sources */,
-				EFAA193A218D4C95003C7508 /* BundleSpecificInstance.swift in Sources */,
-				EFAA1911218D2300003C7508 /* CollectionView+Extension.swift in Sources */,
-				EFAA1916218D27AB003C7508 /* TableView+Extension.swift in Sources */,
-				EFAA1914218D2343003C7508 /* IReusableCell.swift in Sources */,
+				EFAA1A74218DE75E003C7508 /* CustomLogging.swift in Sources */,
+				EFAA1A5F218DE22E003C7508 /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFAA18F9218D22D9003C7508 /* Sources */ = {
+		EFAA1A48218DE20D003C7508 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFAA1903218D22D9003C7508 /* CommonTests.swift in Sources */,
+				EFAA1A52218DE20D003C7508 /* LoggingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EFAA1900218D22D9003C7508 /* PBXTargetDependency */ = {
+		EFAA1A4F218DE20D003C7508 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EFAA18F3218D22D9003C7508 /* Common */;
-			targetProxy = EFAA18FF218D22D9003C7508 /* PBXContainerItemProxy */;
+			target = EFAA1A42218DE20D003C7508 /* Logging */;
+			targetProxy = EFAA1A4E218DE20D003C7508 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		EFAA1906218D22D9003C7508 /* Debug */ = {
+		EFAA1A55218DE20D003C7508 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAA1A71218DE621003C7508 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -339,7 +322,7 @@
 			};
 			name = Debug;
 		};
-		EFAA1907218D22D9003C7508 /* Release */ = {
+		EFAA1A56218DE20D003C7508 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,8 +375,9 @@
 			};
 			name = Release;
 		};
-		EFAA1909218D22D9003C7508 /* Debug */ = {
+		EFAA1A58218DE20D003C7508 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAA1A71218DE621003C7508 /* Configuration.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -403,10 +387,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Common/Info.plist;
+				INFOPLIST_FILE = Logging/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.Common;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.Logging;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -415,7 +399,7 @@
 			};
 			name = Debug;
 		};
-		EFAA190A218D22D9003C7508 /* Release */ = {
+		EFAA1A59218DE20D003C7508 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -426,10 +410,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Common/Info.plist;
+				INFOPLIST_FILE = Logging/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.Common;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.Logging;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -437,30 +421,30 @@
 			};
 			name = Release;
 		};
-		EFAA190C218D22D9003C7508 /* Debug */ = {
+		EFAA1A5B218DE20D003C7508 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDSLU2QT5X;
-				INFOPLIST_FILE = CommonTests/Info.plist;
+				INFOPLIST_FILE = LoggingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.CommonTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.LoggingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		EFAA190D218D22D9003C7508 /* Release */ = {
+		EFAA1A5C218DE20D003C7508 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDSLU2QT5X;
-				INFOPLIST_FILE = CommonTests/Info.plist;
+				INFOPLIST_FILE = LoggingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.CommonTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.LoggingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,34 +454,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EFAA18EE218D22D9003C7508 /* Build configuration list for PBXProject "Common" */ = {
+		EFAA1A3D218DE20D003C7508 /* Build configuration list for PBXProject "Logging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFAA1906218D22D9003C7508 /* Debug */,
-				EFAA1907218D22D9003C7508 /* Release */,
+				EFAA1A55218DE20D003C7508 /* Debug */,
+				EFAA1A56218DE20D003C7508 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFAA1908218D22D9003C7508 /* Build configuration list for PBXNativeTarget "Common" */ = {
+		EFAA1A57218DE20D003C7508 /* Build configuration list for PBXNativeTarget "Logging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFAA1909218D22D9003C7508 /* Debug */,
-				EFAA190A218D22D9003C7508 /* Release */,
+				EFAA1A58218DE20D003C7508 /* Debug */,
+				EFAA1A59218DE20D003C7508 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFAA190B218D22D9003C7508 /* Build configuration list for PBXNativeTarget "CommonTests" */ = {
+		EFAA1A5A218DE20D003C7508 /* Build configuration list for PBXNativeTarget "LoggingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFAA190C218D22D9003C7508 /* Debug */,
-				EFAA190D218D22D9003C7508 /* Release */,
+				EFAA1A5B218DE20D003C7508 /* Debug */,
+				EFAA1A5C218DE20D003C7508 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EFAA18EB218D22D9003C7508 /* Project object */;
+	rootObject = EFAA1A3A218DE20D003C7508 /* Project object */;
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Logging
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,14 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        let application = Application.shared
+        Logging.setupLogging()
+        Logging.log(.info("Success Setup Logging!"))
+        
         do {
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            let application = Application.shared
             try application.start(window: window)
+            self.window = window
         } catch _ {
-            print("Failed to start!")
+            Logging.log(.error("Failed to start app!"))
         }
-        self.window = window
+        
         return true
     }
 }
