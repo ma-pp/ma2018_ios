@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFAA1930218D41AE003C7508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAA192F218D41AE003C7508 /* Assets.xcassets */; };
+		EFAA1934218D4570003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1933218D4570003C7508 /* Configuration.swift */; };
 		EFB90BFE218C80ED00CAEC2E /* LowonganKerjaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BF4218C80ED00CAEC2E /* LowonganKerjaMuslim.framework */; };
 		EFB90C03218C80ED00CAEC2E /* LowonganKerjaMuslimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90C02218C80ED00CAEC2E /* LowonganKerjaMuslimTests.swift */; };
 		EFB90C05218C80ED00CAEC2E /* LowonganKerjaMuslim.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB90BF7218C80ED00CAEC2E /* LowonganKerjaMuslim.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EFAA192F218D41AE003C7508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFAA1933218D4570003C7508 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		EFB90BF4218C80ED00CAEC2E /* LowonganKerjaMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LowonganKerjaMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB90BF7218C80ED00CAEC2E /* LowonganKerjaMuslim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LowonganKerjaMuslim.h; sourceTree = "<group>"; };
 		EFB90BF8218C80ED00CAEC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EFAA1935218D45A5003C7508 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1933218D4570003C7508 /* Configuration.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		EFB90BEA218C80ED00CAEC2E = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				EFB90C0E218C80FA00CAEC2E /* Classes */,
+				EFAA1935218D45A5003C7508 /* Extension */,
 				EFB90BF7218C80ED00CAEC2E /* LowonganKerjaMuslim.h */,
 				EFB90BF8218C80ED00CAEC2E /* Info.plist */,
+				EFAA192F218D41AE003C7508 /* Assets.xcassets */,
 			);
 			path = LowonganKerjaMuslim;
 			sourceTree = "<group>";
@@ -206,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA1930218D41AE003C7508 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA1934218D4570003C7508 /* Configuration.swift in Sources */,
 				EFB90C12218C815000CAEC2E /* Application.swift in Sources */,
 				EFB90C10218C810A00CAEC2E /* LowonganKerjaMuslimError.swift in Sources */,
 			);

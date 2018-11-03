@@ -8,10 +8,6 @@
 
 import Foundation
 
-public protocol BundleSpecificInstance {
-    static var bundle: Bundle? { get }
-}
-
 public protocol IReusableCell {
     associatedtype Data
     static var reuseIdentifier: String { get }

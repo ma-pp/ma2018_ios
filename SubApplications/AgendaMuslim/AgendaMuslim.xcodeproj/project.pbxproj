@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFAA1932218D4232003C7508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1931218D4232003C7508 /* Assets.xcassets */; };
+		EFAA1938218D4B50003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1937218D4B50003C7508 /* Configuration.swift */; };
 		EFB90B37218C7D0D00CAEC2E /* AgendaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90B2D218C7D0D00CAEC2E /* AgendaMuslim.framework */; };
 		EFB90B3C218C7D0D00CAEC2E /* AgendaMuslimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B3B218C7D0D00CAEC2E /* AgendaMuslimTests.swift */; };
 		EFB90B3E218C7D0D00CAEC2E /* AgendaMuslim.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB90B30218C7D0D00CAEC2E /* AgendaMuslim.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EFAA1931218D4232003C7508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFAA1937218D4B50003C7508 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		EFB90B2D218C7D0D00CAEC2E /* AgendaMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AgendaMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB90B30218C7D0D00CAEC2E /* AgendaMuslim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgendaMuslim.h; sourceTree = "<group>"; };
 		EFB90B31218C7D0D00CAEC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EFAA1936218D4B44003C7508 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1937218D4B50003C7508 /* Configuration.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EFB90B23218C7D0D00CAEC2E = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +91,11 @@
 		EFB90B2F218C7D0D00CAEC2E /* AgendaMuslim */ = {
 			isa = PBXGroup;
 			children = (
+				EFAA1936218D4B44003C7508 /* Extensions */,
 				EFB90BAC218C7E2B00CAEC2E /* Classes */,
 				EFB90B30218C7D0D00CAEC2E /* AgendaMuslim.h */,
 				EFB90B31218C7D0D00CAEC2E /* Info.plist */,
+				EFAA1931218D4232003C7508 /* Assets.xcassets */,
 			);
 			path = AgendaMuslim;
 			sourceTree = "<group>";
@@ -206,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA1932218D4232003C7508 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA1938218D4B50003C7508 /* Configuration.swift in Sources */,
 				EFB90BE9218C7FCA00CAEC2E /* Application.swift in Sources */,
 				EFB90BB2218C7ECB00CAEC2E /* AgendaMuslimError.swift in Sources */,
 			);

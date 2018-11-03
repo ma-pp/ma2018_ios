@@ -13,6 +13,7 @@
 		EFAA1911218D2300003C7508 /* CollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1910218D2300003C7508 /* CollectionView+Extension.swift */; };
 		EFAA1914218D2343003C7508 /* IReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1913218D2343003C7508 /* IReusableCell.swift */; };
 		EFAA1916218D27AB003C7508 /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1915218D27AB003C7508 /* TableView+Extension.swift */; };
+		EFAA193A218D4C95003C7508 /* BundleSpecificInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		EFAA1910218D2300003C7508 /* CollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Extension.swift"; sourceTree = "<group>"; };
 		EFAA1913218D2343003C7508 /* IReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IReusableCell.swift; sourceTree = "<group>"; };
 		EFAA1915218D27AB003C7508 /* TableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
+		EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleSpecificInstance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				EFAA1910218D2300003C7508 /* CollectionView+Extension.swift */,
 				EFAA1913218D2343003C7508 /* IReusableCell.swift */,
+				EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */,
 				EFAA1915218D27AB003C7508 /* TableView+Extension.swift */,
 			);
 			path = Extensions;
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA193A218D4C95003C7508 /* BundleSpecificInstance.swift in Sources */,
 				EFAA1911218D2300003C7508 /* CollectionView+Extension.swift in Sources */,
 				EFAA1916218D27AB003C7508 /* TableView+Extension.swift in Sources */,
 				EFAA1914218D2343003C7508 /* IReusableCell.swift in Sources */,

@@ -11,6 +11,6 @@ import Common
 
 extension UIView: BundleSpecificInstance {
     public static var bundle: Bundle? {
-        return Bundle(identifier: BUNDLE_IDENTIFIER)
+        return MODULE_BUNDLE
     }
 }
