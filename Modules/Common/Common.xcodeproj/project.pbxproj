@@ -18,6 +18,14 @@
 		EFAA1A22218D8134003C7508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1A21218D8134003C7508 /* Assets.xcassets */; };
 		EFAA1A24218D8153003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A23218D8153003C7508 /* Configuration.swift */; };
 		EFAA1A85218EBF02003C7508 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A84218EBF02003C7508 /* GradientView.swift */; };
+		EFAA1AA9218F0B88003C7508 /* PagedScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1AA8218F0B88003C7508 /* PagedScroller.swift */; };
+		EFAA1AC7218F0C29003C7508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1AC6218F0C29003C7508 /* AppDelegate.swift */; };
+		EFAA1AC9218F0C29003C7508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1AC8218F0C29003C7508 /* ViewController.swift */; };
+		EFAA1ACC218F0C29003C7508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1ACA218F0C29003C7508 /* Main.storyboard */; };
+		EFAA1ACE218F0C29003C7508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1ACD218F0C29003C7508 /* Assets.xcassets */; };
+		EFAA1AD1218F0C29003C7508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1ACF218F0C29003C7508 /* LaunchScreen.storyboard */; };
+		EFAA1AD8218F2230003C7508 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA18F4218D22D9003C7508 /* Common.framework */; };
+		EFAA1AD9218F2230003C7508 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA18F4218D22D9003C7508 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +36,28 @@
 			remoteGlobalIDString = EFAA18F3218D22D9003C7508;
 			remoteInfo = Common;
 		};
+		EFAA1ADA218F2230003C7508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFAA18EB218D22D9003C7508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFAA18F3218D22D9003C7508;
+			remoteInfo = Common;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EFAA1ADC218F2231003C7508 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EFAA1AD9218F2230003C7508 /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EFAA18F4218D22D9003C7508 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +74,15 @@
 		EFAA1A21218D8134003C7508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFAA1A23218D8153003C7508 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		EFAA1A84218EBF02003C7508 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		EFAA1AA8218F0B88003C7508 /* PagedScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedScroller.swift; sourceTree = "<group>"; };
+		EFAA1AC4218F0C29003C7508 /* CommonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAA1AC6218F0C29003C7508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFAA1AC8218F0C29003C7508 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFAA1ACB218F0C29003C7508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFAA1ACD218F0C29003C7508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFAA1AD0218F0C29003C7508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFAA1AD2218F0C29003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAA1AD7218F0C64003C7508 /* CommonApp.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonApp.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +101,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFAA1AC1218F0C29003C7508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFAA1AD8218F2230003C7508 /* Common.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +117,7 @@
 			children = (
 				EFAA18F6218D22D9003C7508 /* Common */,
 				EFAA1901218D22D9003C7508 /* CommonTests */,
+				EFAA1AC5218F0C29003C7508 /* CommonApp */,
 				EFAA18F5218D22D9003C7508 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +127,7 @@
 			children = (
 				EFAA18F4218D22D9003C7508 /* Common.framework */,
 				EFAA18FD218D22D9003C7508 /* CommonTests.xctest */,
+				EFAA1AC4218F0C29003C7508 /* CommonApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				EFAA1A84218EBF02003C7508 /* GradientView.swift */,
+				EFAA1AA8218F0B88003C7508 /* PagedScroller.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -140,6 +189,28 @@
 				EFAA1939218D4C95003C7508 /* BundleSpecificInstance.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EFAA1AC5218F0C29003C7508 /* CommonApp */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1AD6218F0C42003C7508 /* Config */,
+				EFAA1AC6218F0C29003C7508 /* AppDelegate.swift */,
+				EFAA1AC8218F0C29003C7508 /* ViewController.swift */,
+				EFAA1ACA218F0C29003C7508 /* Main.storyboard */,
+				EFAA1ACD218F0C29003C7508 /* Assets.xcassets */,
+				EFAA1ACF218F0C29003C7508 /* LaunchScreen.storyboard */,
+				EFAA1AD2218F0C29003C7508 /* Info.plist */,
+			);
+			path = CommonApp;
+			sourceTree = "<group>";
+		};
+		EFAA1AD6218F0C42003C7508 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1AD7218F0C64003C7508 /* CommonApp.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +263,25 @@
 			productReference = EFAA18FD218D22D9003C7508 /* CommonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EFAA1AC3218F0C29003C7508 /* CommonApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFAA1AD3218F0C29003C7508 /* Build configuration list for PBXNativeTarget "CommonApp" */;
+			buildPhases = (
+				EFAA1AC0218F0C29003C7508 /* Sources */,
+				EFAA1AC1218F0C29003C7508 /* Frameworks */,
+				EFAA1AC2218F0C29003C7508 /* Resources */,
+				EFAA1ADC218F2231003C7508 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFAA1ADB218F2230003C7508 /* PBXTargetDependency */,
+			);
+			name = CommonApp;
+			productName = CommonApp;
+			productReference = EFAA1AC4218F0C29003C7508 /* CommonApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +301,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					EFAA1AC3218F0C29003C7508 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = EFAA18EE218D22D9003C7508 /* Build configuration list for PBXProject "Common" */;
@@ -219,6 +313,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = EFAA18EA218D22D9003C7508;
 			productRefGroup = EFAA18F5218D22D9003C7508 /* Products */;
@@ -227,6 +322,7 @@
 			targets = (
 				EFAA18F3218D22D9003C7508 /* Common */,
 				EFAA18FC218D22D9003C7508 /* CommonTests */,
+				EFAA1AC3218F0C29003C7508 /* CommonApp */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +343,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFAA1AC2218F0C29003C7508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFAA1AD1218F0C29003C7508 /* LaunchScreen.storyboard in Resources */,
+				EFAA1ACE218F0C29003C7508 /* Assets.xcassets in Resources */,
+				EFAA1ACC218F0C29003C7508 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,6 +365,7 @@
 				EFAA193A218D4C95003C7508 /* BundleSpecificInstance.swift in Sources */,
 				EFAA1911218D2300003C7508 /* CollectionView+Extension.swift in Sources */,
 				EFAA1A85218EBF02003C7508 /* GradientView.swift in Sources */,
+				EFAA1AA9218F0B88003C7508 /* PagedScroller.swift in Sources */,
 				EFAA1916218D27AB003C7508 /* TableView+Extension.swift in Sources */,
 				EFAA1914218D2343003C7508 /* IReusableCell.swift in Sources */,
 			);
@@ -272,6 +379,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFAA1AC0218F0C29003C7508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFAA1AC9218F0C29003C7508 /* ViewController.swift in Sources */,
+				EFAA1AC7218F0C29003C7508 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -280,7 +396,31 @@
 			target = EFAA18F3218D22D9003C7508 /* Common */;
 			targetProxy = EFAA18FF218D22D9003C7508 /* PBXContainerItemProxy */;
 		};
+		EFAA1ADB218F2230003C7508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFAA18F3218D22D9003C7508 /* Common */;
+			targetProxy = EFAA1ADA218F2230003C7508 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFAA1ACA218F0C29003C7508 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFAA1ACB218F0C29003C7508 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFAA1ACF218F0C29003C7508 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFAA1AD0218F0C29003C7508 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EFAA1906218D22D9003C7508 /* Debug */ = {
@@ -471,6 +611,39 @@
 			};
 			name = Release;
 		};
+		EFAA1AD4218F0C29003C7508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAA1AD7218F0C64003C7508 /* CommonApp.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				INFOPLIST_FILE = CommonApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFAA1AD5218F0C29003C7508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				INFOPLIST_FILE = CommonApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -497,6 +670,15 @@
 			buildConfigurations = (
 				EFAA190C218D22D9003C7508 /* Debug */,
 				EFAA190D218D22D9003C7508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFAA1AD3218F0C29003C7508 /* Build configuration list for PBXNativeTarget "CommonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFAA1AD4218F0C29003C7508 /* Debug */,
+				EFAA1AD5218F0C29003C7508 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
