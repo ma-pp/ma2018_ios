@@ -23,6 +23,6 @@ public class GradientView: UIView {
         gradientLayer.colors = [startColor.cgColor, endColor.cgColor]
         gradientLayer.zPosition = -1
         layer.addSublayer(gradientLayer)
-        
+
     }
 }

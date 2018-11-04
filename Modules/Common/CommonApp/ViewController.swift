@@ -28,8 +28,13 @@ class ViewController: UIViewController {
     
     private lazy var pagedScroll = PagedScroller(scrollView: tableView)
     private func setupPagedScroll() {
-        pagedScroll.preparePage { [unowned self] in
-            self.pagedScroll.pagePrepared()
+        pagedScroll.preparePage { [unowned self](pagePrepared) in
+            self.dataSource.paginate {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                    pagePrepared()
+                }
+            }
         }
     }
 
@@ -52,6 +57,19 @@ extension ViewController: UITableViewDataSource {
 }
 
 class DataSource {
-    var items: [String] = (1...100).map({ "Cell \($0)" })
+    private var page = 1
+    let dataCount = 20
+    
+    var displayedDataCount: Int { return page * dataCount }
+    
+    var items: [String] { return (1...displayedDataCount).map({ "Cell \($0)" }) }
+    
+    func paginate(completion: @escaping () -> Void) {
+        // Simulate Network Async Operation
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.page += 1
+            completion()
+        }
+    }
 }
 
