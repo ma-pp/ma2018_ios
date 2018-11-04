@@ -1,0 +1,13 @@
+//
+//  CommonApp.xcconfig
+//  Common
+//
+//  Created by PondokiOS on 11/4/18.
+//  Copyright © 2018 PondokiOS. All rights reserved.
+//
+
+// Using com.pondokios.MuslimApp since doesn't want to mess with
+// device installation limitation
+PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.MuslimApp
+//PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.CommonApp
+
