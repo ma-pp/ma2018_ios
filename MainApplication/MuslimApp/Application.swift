@@ -24,12 +24,24 @@ final class Application {
         window.rootViewController = nav
         window.makeKeyAndVisible()
         
-        let homeCoordinator = HomeCoordinator(navigationController: nav)
-        homeCoordinator.start()
+        let firstCoordinator = instantiateFirstCoordinator(with: nav)
+        firstCoordinator.start()
     }
     
     private func basicAssertionCheck() {
         class __AnyView__: UIView {}
         assert( __AnyView__.bundle?.bundleIdentifier == BUNDLE_IDENTIFIER)
+    }
+    
+    
+    lazy var currentUser: Bool? = {
+        return nil
+    }()
+    
+    private func instantiateFirstCoordinator(with nav: UINavigationController) -> Coordinator {
+        guard currentUser != nil else {
+            return LoginCoordinator(navigationController: nav)
+        }
+        return HomeCoordinator(navigationController: nav)
     }
 }
