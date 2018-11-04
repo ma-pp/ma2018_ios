@@ -47,6 +47,12 @@
 		EFAA1A38218DE136003C7508 /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A34218DE135003C7508 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFAA1A75218DEA2A003C7508 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A65218DE315003C7508 /* Logging.framework */; };
 		EFAA1A76218DEA2A003C7508 /* Logging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A65218DE315003C7508 /* Logging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFAA1A78218DF4BA003C7508 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A77218DF4BA003C7508 /* LoginController.swift */; };
+		EFAA1A7A218DF568003C7508 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A79218DF568003C7508 /* LoginCoordinator.swift */; };
+		EFAA1A7C218E6F7B003C7508 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1A7B218E6F7B003C7508 /* LoginController.xib */; };
+		EFAA1A7F218E711E003C7508 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A7D218E711E003C7508 /* RegistrationController.swift */; };
+		EFAA1A80218E711E003C7508 /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1A7E218E711E003C7508 /* RegistrationController.xib */; };
+		EFAA1A82218E72A5003C7508 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A81218E72A5003C7508 /* RegistrationCoordinator.swift */; };
 		EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */; };
 		EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B13218C7CAE00CAEC2E /* ViewController.swift */; };
 		EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */; };
@@ -143,6 +149,12 @@
 		EFAA1A69218DE37B003C7508 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		EFAA1A6A218DE405003C7508 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
+		EFAA1A77218DF4BA003C7508 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		EFAA1A79218DF568003C7508 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		EFAA1A7B218E6F7B003C7508 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		EFAA1A7D218E711E003C7508 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		EFAA1A7E218E711E003C7508 /* RegistrationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationController.xib; sourceTree = "<group>"; };
+		EFAA1A81218E72A5003C7508 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
 		EFB90B0E218C7CAE00CAEC2E /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB90B13218C7CAE00CAEC2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +247,9 @@
 		EF1B88B7218D0DE800A71AFE /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				EFAA1A7D218E711E003C7508 /* RegistrationController.swift */,
+				EFAA1A81218E72A5003C7508 /* RegistrationCoordinator.swift */,
+				EFAA1A7E218E711E003C7508 /* RegistrationController.xib */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -242,6 +257,9 @@
 		EF1B88B9218D0E2100A71AFE /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				EFAA1A77218DF4BA003C7508 /* LoginController.swift */,
+				EFAA1A79218DF568003C7508 /* LoginCoordinator.swift */,
+				EFAA1A7B218E6F7B003C7508 /* LoginController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -511,7 +529,9 @@
 			files = (
 				EFAA192C218D2D92003C7508 /* HomeController.xib in Resources */,
 				EFB90B1C218C7CAE00CAEC2E /* LaunchScreen.storyboard in Resources */,
+				EFAA1A80218E711E003C7508 /* RegistrationController.xib in Resources */,
 				EFAA18E9218D2293003C7508 /* LauncherCell.xib in Resources */,
+				EFAA1A7C218E6F7B003C7508 /* LoginController.xib in Resources */,
 				EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,11 +575,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAA1A78218DF4BA003C7508 /* LoginController.swift in Sources */,
 				EFAA1A1C218D7D50003C7508 /* NotificationCoordinator.swift in Sources */,
+				EFAA1A7A218DF568003C7508 /* LoginCoordinator.swift in Sources */,
 				EFAA1A0C218D7722003C7508 /* NotificationController.swift in Sources */,
+				EFAA1A82218E72A5003C7508 /* RegistrationCoordinator.swift in Sources */,
 				EFB90C60218C899500CAEC2E /* HomeController.swift in Sources */,
 				EFAA1A18218D7BD7003C7508 /* ProfileCoordinator.swift in Sources */,
 				EFAA191D218D2A75003C7508 /* Configuration.swift in Sources */,
+				EFAA1A7F218E711E003C7508 /* RegistrationController.swift in Sources */,
 				EFAA192E218D3A23003C7508 /* UIView+Extension.swift in Sources */,
 				EFAA18E8218D2293003C7508 /* LauncherCell.swift in Sources */,
 				EFAA1A26218DAE5C003C7508 /* AssetsFileNames.swift in Sources */,

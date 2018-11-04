@@ -6,4 +6,4 @@
 //  Copyright © 2018 PondokiOS. All rights reserved.
 //
 
-FRAMEWORK_SEARCH_PATHS = $(SRCROOT)/../Carthage/Build/iOS/
+#include "Configuration.xcconfig"
