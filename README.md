@@ -13,14 +13,13 @@ UI/UX :
 1. [Adobe XD Wireframe](https://xd.adobe.com/view/41786d17-3231-4796-46cf-7ad33aa8c097-3749/)
 2. [Zeplin UX]()
 
-Gitflow:
+Gitflow :
 
-1. Master -> Publish
-2. Develop -> Development merge request
+1. Master -> Publish (Only Maintainer)
+2. Develop -> Development merge request (Only Mantainer)
 3. Bugfix -> Bug
 4. Feature -> Full feature branch
 
+Sprint
 
-Add credit:
-[COMMON]
-[BACK_BUTTON](https://www.flaticon.com/packs/simple-icon-set)
+[Trello](https://trello.com/b/X50CJI6Z)

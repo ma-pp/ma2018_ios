@@ -26,9 +26,46 @@
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G58-2l-JAw" userLabel="JumboView">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                            <color key="backgroundColor" red="1" green="0.26674998559612717" blue="0.35346074331687138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jumbo_image" translatesAutoresizingMaskIntoConstraints="NO" id="u0Z-Ww-tWU">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cow-xx-Of4" userLabel="GradientView" customClass="GradientView" customModule="Common">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                    <subviews>
+                                        <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4PU-SC-IFu">
+                                            <rect key="frame" x="141" y="163" width="39" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </pageControl>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="point" keyPath="origin">
+                                            <point key="value" x="9" y="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="size">
+                                            <size key="value" width="20" height="30"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
+                                <constraint firstAttribute="bottom" secondItem="u0Z-Ww-tWU" secondAttribute="bottom" id="6Qk-LZ-Err"/>
+                                <constraint firstAttribute="trailing" secondItem="cow-xx-Of4" secondAttribute="trailing" id="9qY-AR-UH5"/>
+                                <constraint firstItem="u0Z-Ww-tWU" firstAttribute="top" secondItem="G58-2l-JAw" secondAttribute="top" id="OeH-e9-OC1"/>
                                 <constraint firstAttribute="height" constant="200" id="V6H-ma-Rxx"/>
+                                <constraint firstItem="u0Z-Ww-tWU" firstAttribute="leading" secondItem="G58-2l-JAw" secondAttribute="leading" id="YLx-pZ-LAZ"/>
+                                <constraint firstAttribute="bottom" secondItem="cow-xx-Of4" secondAttribute="bottom" id="eD7-rw-uOl"/>
+                                <constraint firstItem="cow-xx-Of4" firstAttribute="leading" secondItem="G58-2l-JAw" secondAttribute="leading" id="lb1-Ca-GcR"/>
+                                <constraint firstItem="cow-xx-Of4" firstAttribute="top" secondItem="G58-2l-JAw" secondAttribute="top" id="q4U-uk-dES"/>
+                                <constraint firstAttribute="trailing" secondItem="u0Z-Ww-tWU" secondAttribute="trailing" id="wKW-lY-sFA"/>
                             </constraints>
                         </view>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BMj-Pu-oXo">
@@ -64,4 +101,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
     </objects>
+    <resources>
+        <image name="jumbo_image" width="787" height="591"/>
+    </resources>
 </document>

@@ -1,1 +1,3 @@
 github "CocoaLumberjack/CocoaLumberjack"
+github "parse-community/Parse-SDK-iOS-OSX"
+

@@ -17,6 +17,7 @@
 		EFAA1A20218D7E35003C7508 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A1F218D7E35003C7508 /* NavigationItem+Extension.swift */; };
 		EFAA1A22218D8134003C7508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1A21218D8134003C7508 /* Assets.xcassets */; };
 		EFAA1A24218D8153003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A23218D8153003C7508 /* Configuration.swift */; };
+		EFAA1A85218EBF02003C7508 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A84218EBF02003C7508 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		EFAA1A1F218D7E35003C7508 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
 		EFAA1A21218D8134003C7508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFAA1A23218D8153003C7508 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		EFAA1A84218EBF02003C7508 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		EFAA190E218D22DF003C7508 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EFAA1A84218EBF02003C7508 /* GradientView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				EFAA1A20218D7E35003C7508 /* NavigationItem+Extension.swift in Sources */,
 				EFAA193A218D4C95003C7508 /* BundleSpecificInstance.swift in Sources */,
 				EFAA1911218D2300003C7508 /* CollectionView+Extension.swift in Sources */,
+				EFAA1A85218EBF02003C7508 /* GradientView.swift in Sources */,
 				EFAA1916218D27AB003C7508 /* TableView+Extension.swift in Sources */,
 				EFAA1914218D2343003C7508 /* IReusableCell.swift in Sources */,
 			);
