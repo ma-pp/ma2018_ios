@@ -650,7 +650,7 @@
 /* Begin XCBuildConfiguration section */
 		EFB90B1E218C7CAE00CAEC2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */;
+			baseConfigurationReference = EFAA1A6A218DE405003C7508 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -709,7 +709,7 @@
 		};
 		EFB90B1F218C7CAE00CAEC2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */;
+			baseConfigurationReference = EFAA1A69218DE37B003C7508 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -761,7 +761,7 @@
 		};
 		EFB90B21218C7CAE00CAEC2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */;
+			baseConfigurationReference = EFAA1A6A218DE405003C7508 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -778,7 +778,7 @@
 		};
 		EFB90B22218C7CAE00CAEC2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */;
+			baseConfigurationReference = EFAA1A69218DE37B003C7508 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
