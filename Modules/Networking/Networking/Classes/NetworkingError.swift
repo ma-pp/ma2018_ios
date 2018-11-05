@@ -7,7 +7,11 @@
 //
 
 import Foundation
+import Parse
 
 public enum NetworkingError: Error {
     case unknown
+    func foo() {
+        
+    }
 }

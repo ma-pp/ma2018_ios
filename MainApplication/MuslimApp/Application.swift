@@ -20,12 +20,20 @@ final class Application {
     func start(window: UIWindow) throws {
         basicAssertionCheck()
         
-        let nav = UINavigationController()
-        window.rootViewController = nav
-        window.makeKeyAndVisible()
+//        let nav = UINavigationController()
+//        window.rootViewController = nav
+//        window.makeKeyAndVisible()
+//
+//        let firstCoordinator = instantiateFirstCoordinator(with: nav)
+//        firstCoordinator.start()
         
-        let firstCoordinator = instantiateFirstCoordinator(with: nav)
-        firstCoordinator.start()
+        useViewController(window: window)
+    }
+    
+    func useViewController(window: UIWindow) {
+        let vc = ViewController()
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
     }
     
     private func basicAssertionCheck() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BF1C5B3185E1F01216A57A2 /* Pods_MuslimApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C99B32DA67A7D75D7911B /* Pods_MuslimApp.framework */; };
 		EFAA18E4218D1FDC003C7508 /* SubApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E3218D1FDC003C7508 /* SubApplicationManager.swift */; };
 		EFAA18E8218D2293003C7508 /* LauncherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E6218D2293003C7508 /* LauncherCell.swift */; };
 		EFAA18E9218D2293003C7508 /* LauncherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA18E7218D2293003C7508 /* LauncherCell.xib */; };
@@ -118,6 +119,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		286C99B32DA67A7D75D7911B /* Pods_MuslimApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuslimApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B7340E1A67DB4B86AB33BE /* Pods-MuslimApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuslimApp.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MuslimApp/Pods-MuslimApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5855922C0DAD094414868549 /* Pods-MuslimApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuslimApp.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MuslimApp/Pods-MuslimApp.release.xcconfig"; sourceTree = "<group>"; };
 		EFAA18E3218D1FDC003C7508 /* SubApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplicationManager.swift; sourceTree = "<group>"; };
 		EFAA18E6218D2293003C7508 /* LauncherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherCell.swift; sourceTree = "<group>"; };
 		EFAA18E7218D2293003C7508 /* LauncherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LauncherCell.xib; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 				EFAA19E3218D54BD003C7508 /* CatatanMuslim.framework in Frameworks */,
 				EFAA1929218D2C82003C7508 /* AgendaMuslim.framework in Frameworks */,
 				EFAA19E9218D54CE003C7508 /* AmalanYaumiyah.framework in Frameworks */,
+				6BF1C5B3185E1F01216A57A2 /* Pods_MuslimApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +216,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69DEF822370B9BA4A48C3220 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40B7340E1A67DB4B86AB33BE /* Pods-MuslimApp.debug.xcconfig */,
+				5855922C0DAD094414868549 /* Pods-MuslimApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84581D269BB909E0D4109960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				286C99B32DA67A7D75D7911B /* Pods_MuslimApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF1B88B0218D0D9F00A71AFE /* HomeLauncher */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +369,8 @@
 				EFB90BC6218C7F4000CAEC2E /* SubApplication */,
 				EFB90BD3218C7F4000CAEC2E /* SubApplicationTests */,
 				EFB90B0F218C7CAE00CAEC2E /* Products */,
+				69DEF822370B9BA4A48C3220 /* Pods */,
+				84581D269BB909E0D4109960 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -423,11 +447,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFB90B20218C7CAE00CAEC2E /* Build configuration list for PBXNativeTarget "MuslimApp" */;
 			buildPhases = (
+				2E57189C50F3C7DE9EB72086 /* [CP] Check Pods Manifest.lock */,
 				EFB90B0A218C7CAE00CAEC2E /* Sources */,
 				EFB90B0B218C7CAE00CAEC2E /* Frameworks */,
 				EFB90B0C218C7CAE00CAEC2E /* Resources */,
 				EFB90BB7218C7EFB00CAEC2E /* Embed Frameworks */,
 				EFAA1A2C218DD773003C7508 /* ShellScript */,
+				EE2D028646565192C713C331 /* [CP] Embed Pods Frameworks */,
+				D15A9ACE4D12F28DFECDF531 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -553,6 +580,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2E57189C50F3C7DE9EB72086 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuslimApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D15A9ACE4D12F28DFECDF531 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MuslimApp/Pods-MuslimApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE2D028646565192C713C331 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-MuslimApp/Pods-MuslimApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MuslimApp/Pods-MuslimApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EFAA1A2C218DD773003C7508 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -650,7 +730,7 @@
 /* Begin XCBuildConfiguration section */
 		EFB90B1E218C7CAE00CAEC2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A6A218DE405003C7508 /* Development.xcconfig */;
+			baseConfigurationReference = EFAA1A72218DE6B1003C7508 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -683,7 +763,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Carthage/Build/iOS/\"";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -742,7 +822,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Carthage/Build/iOS/\"";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -761,7 +841,7 @@
 		};
 		EFB90B21218C7CAE00CAEC2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A6A218DE405003C7508 /* Development.xcconfig */;
+			baseConfigurationReference = 40B7340E1A67DB4B86AB33BE /* Pods-MuslimApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -778,7 +858,7 @@
 		};
 		EFB90B22218C7CAE00CAEC2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A69218DE37B003C7508 /* Production.xcconfig */;
+			baseConfigurationReference = 5855922C0DAD094414868549 /* Pods-MuslimApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
