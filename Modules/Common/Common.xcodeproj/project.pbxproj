@@ -425,7 +425,6 @@
 /* Begin XCBuildConfiguration section */
 		EFAA1906218D22D9003C7508 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1AD7218F0C64003C7508 /* CommonApp.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -614,6 +613,7 @@
 		};
 		EFAA1AD4218F0C29003C7508 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAA1AD7218F0C64003C7508 /* CommonApp.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
