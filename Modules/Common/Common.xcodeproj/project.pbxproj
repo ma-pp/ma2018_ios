@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF08E1CB21919649004A897D /* UIViewConstraint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08E1CA21919649004A897D /* UIViewConstraint+Extension.swift */; };
 		EFAA18FE218D22D9003C7508 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA18F4218D22D9003C7508 /* Common.framework */; };
 		EFAA1903218D22D9003C7508 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1902218D22D9003C7508 /* CommonTests.swift */; };
 		EFAA1905218D22D9003C7508 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = EFAA18F7218D22D9003C7508 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF08E1CA21919649004A897D /* UIViewConstraint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewConstraint+Extension.swift"; sourceTree = "<group>"; };
 		EFAA18F4218D22D9003C7508 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA18F7218D22D9003C7508 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		EFAA18F8218D22D9003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				EFAA1910218D2300003C7508 /* CollectionView+Extension.swift */,
 				EFAA1915218D27AB003C7508 /* TableView+Extension.swift */,
 				EFAA1A1F218D7E35003C7508 /* NavigationItem+Extension.swift */,
+				EF08E1CA21919649004A897D /* UIViewConstraint+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			files = (
 				EFAA1A24218D8153003C7508 /* Configuration.swift in Sources */,
 				EFAA1A20218D7E35003C7508 /* NavigationItem+Extension.swift in Sources */,
+				EF08E1CB21919649004A897D /* UIViewConstraint+Extension.swift in Sources */,
 				EFAA193A218D4C95003C7508 /* BundleSpecificInstance.swift in Sources */,
 				EFAA1911218D2300003C7508 /* CollectionView+Extension.swift in Sources */,
 				EFAA1A85218EBF02003C7508 /* GradientView.swift in Sources */,
