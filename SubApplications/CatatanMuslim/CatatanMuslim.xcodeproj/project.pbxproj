@@ -92,6 +92,8 @@
 		EFAA19F2218D55EB003C7508 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		EFAA19FB218D563F003C7508 /* SubApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SubApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA1A03218D5895003C7508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFB25D7B219BFC5900B644B3 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		EFB25D7C219BFC9200B644B3 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		EFD987982191A411009A7F12 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = ../../Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		EFD9879B2191A68A009A7F12 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = ../../Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,7 +156,7 @@
 		EF08E1B421919218004A897D /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				EF08E1B521919231004A897D /* Configuration.xcconfig */,
+				EFB25DA7219C1C7500B644B3 /* App */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -245,6 +247,16 @@
 				EFAA19FB218D563F003C7508 /* SubApplication.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFB25DA7219C1C7500B644B3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EF08E1B521919231004A897D /* Configuration.xcconfig */,
+				EFB25D7B219BFC5900B644B3 /* Production.xcconfig */,
+				EFB25D7C219BFC9200B644B3 /* Development.xcconfig */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,7 +506,7 @@
 		};
 		EFAA197B218D5266003C7508 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF08E1B521919231004A897D /* Configuration.xcconfig */;
+			baseConfigurationReference = EFB25D7C219BFC9200B644B3 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -555,6 +567,7 @@
 		};
 		EFAA197C218D5266003C7508 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB25D7B219BFC5900B644B3 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
