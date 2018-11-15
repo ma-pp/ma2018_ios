@@ -23,7 +23,7 @@ public class ListItemController: UIViewController {
     }
     
     private func setupNavigationItem() {
-        navigationItem.title = "Hello"
+        navigationItem.title = presenter.title
         if #available(iOS 11.0, *) {
             self.navigationController?.navigationBar.prefersLargeTitles = true
         } else {

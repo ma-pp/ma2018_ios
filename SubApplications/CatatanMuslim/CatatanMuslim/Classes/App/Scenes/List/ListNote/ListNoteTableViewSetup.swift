@@ -8,10 +8,23 @@
 
 import Foundation
 
+import Foundation
+import Common
+
 class ListNoteTableViewSetup: ListItemTableViewSetup {
+    private let dataSource: UITableViewDataSource
+    
+    init(provider: ConfiguratorProvider) {
+        dataSource = ListNoteDataSource(
+            provider: provider
+        )
+    }
+    
     func setupTableView(_ tableView: UITableView) {
-        
+        tableView.registerReusableCell(NoteCell.self)
+        tableView.dataSource = dataSource
     }
 }
 
-class ListNotesDataSource: ListItemDataSource {}
+class ListNoteDataSource: ListItemDataSource {}
+

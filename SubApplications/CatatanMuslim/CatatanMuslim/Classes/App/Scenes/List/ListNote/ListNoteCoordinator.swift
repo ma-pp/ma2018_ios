@@ -1,18 +1,18 @@
 //
-//  ListFolderCoordinator.swift
+//  ListNoteCoordinator.swift
 //  CatatanMuslim
 //
 //  Created by PondokiOS on 11/15/18.
 //  Copyright © 2018 PondokiOS. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class ListFolderCoordinator: ListItemCoordinator {
+class ListNoteCoordinator: ListItemCoordinator {
     init(navigationController: UINavigationController) {
         super.init(
             navigationController: navigationController,
-            context: ListFolderContext()
+            context: ListNoteContext()
         )
     }
     

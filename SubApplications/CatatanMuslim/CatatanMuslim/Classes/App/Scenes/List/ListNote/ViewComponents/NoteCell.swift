@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Common
+
+typealias NoteCellConfigured = CellConfigurator<NoteCell, NoteCell.Data>
 
 class NoteCell: UITableViewCell {
 
@@ -21,4 +24,14 @@ class NoteCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+}
+
+extension NoteCell: IReusableCell {
+    struct Data {
+        let title: String
+    }
+    
+    func configureCell(with item: Data) {
+        textLabel?.text = item.title
+    }
 }
