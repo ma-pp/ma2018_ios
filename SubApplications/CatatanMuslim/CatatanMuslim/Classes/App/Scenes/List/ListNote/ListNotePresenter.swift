@@ -17,7 +17,12 @@ class ListNotePresenter: ListItemPresenter {
         items = (1...10).map { (value) -> ICellConfigurator in
             return NoteCellConfigured(
                 data: NoteCell.Data(
-                    title: "Note \(value)"
+                    title: "Note \(value)",
+                    author: "Writer \(value)",
+                    privacy: .onlyMe,
+                    dateUpdated: Date(),
+                    isUnread: value % 2 == 0,
+                    content: "WKWKW"
                 )
             )
         }
