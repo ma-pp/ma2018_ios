@@ -11,22 +11,43 @@ import Common
 
 class ListFolderPresenter: ListItemPresenter {
     let title: String = "Folder"
-    init() {    }
+    private(set) var folders: [Folder] = []
+    init() {
+        folders = [
+            Folder(
+                id: "wkwkw",
+                title: "Travel",
+                author: "Muiz",
+                notesCount: 2,
+                unreadCount: 1,
+                privacy: .private,
+                dateUpdated: Date()
+            ),
+            Folder(
+                id: "wkwkw2",
+                title: "Computer",
+                author: "Comunity",
+                notesCount: 20,
+                unreadCount: 10,
+                privacy: .public,
+                dateUpdated: Date()
+            )
+        ]
+        
+    }
 }
 
 extension ListFolderPresenter: ConfiguratorProvider {
     var items: [ICellConfigurator] {
-        return (1...10).map { (value) -> ICellConfigurator in
+        return folders.map { (folder) -> ICellConfigurator in
             return FolderCellConfigured(
                 data: FolderCell.Data(
-                    title: "TITLE \(value)",
-                    author: "AUTHOR \(value)",
-                    totalNotes: value,
-                    totalUnread: value,
+                    title: "TITLE \(folder.title)",
+                    author: "AUTHOR \(folder.author)",
+                    totalNotes: folder.notesCount,
+                    totalUnread: folder.unreadCount,
                     privacy: .public,
-                    dateUpdated: Date().addingTimeInterval(
-                        Double(60 * 60 * 24 * value)
-                    )
+                    dateUpdated: folder.dateUpdated
                 )
             )
         }

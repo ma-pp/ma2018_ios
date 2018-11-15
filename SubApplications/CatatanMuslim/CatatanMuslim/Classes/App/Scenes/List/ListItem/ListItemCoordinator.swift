@@ -7,21 +7,26 @@
 //
 
 import UIKit
+import Logging
 
 protocol ListItemNavigator: Navigator {
-    
+    func selectItem<T>(_ item: T) where T: ListItemSelected
+    func editItem<T>(_ item: T) where T: ListItemSelected
+    func newItem<T>(_ type: T.Type) where T: ListItemSelected
 }
 
-class ListItemCoordinator: Coordinator {
+class ListItemCoordinator: Coordinator, ListItemNavigator {
     private let navigationController: UINavigationController
-    private let context: ListItemContext
+    private let context: ListItemContext?
     init(navigationController: UINavigationController,
-         context: ListItemContext ) {
+         context: ListItemContext? ) {
         self.navigationController = navigationController
         self.context = context
     }
     
     func start() {
+        guard let context = context else { return }
+        
         let vc = ListItemController()
         vc.presenter = context.presenter
         vc.navigator = self
@@ -31,10 +36,27 @@ class ListItemCoordinator: Coordinator {
             animated: true
         )
     }
-}
-
-extension ListItemCoordinator: ListItemNavigator {
+    
+    // MARK: Navigator
+    // Couldn't override declaration from extension
+    
     func back() {
         navigationController.popViewController(animated: true)
+    }
+    
+    func selectItem<T>(_ item: T) where T : ListItemSelected {
+        fatalError("Not yet implemented!")
+    }
+    
+    func editItem<T>(_ item: T) where T : ListItemSelected {
+        fatalError("Not yet implemented!")
+    }
+    
+    func newItem<T>(_ type: T.Type) where T : ListItemSelected {
+        fatalError("Not yet implemented!")
+    }
+    
+    deinit {
+        CustomLogging.deallocate(self)
     }
 }

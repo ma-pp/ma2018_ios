@@ -1,5 +1,5 @@
 //
-//  ListItemSelection.swift
+//  EditorSession.swift
 //  CatatanMuslim
 //
 //  Created by PondokiOS on 11/15/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ListItemSelection {
-    associatedtype Item
-    var item: Item { get set }
+enum EditorSession<T> {
+    case new
+    case edit(T)
 }

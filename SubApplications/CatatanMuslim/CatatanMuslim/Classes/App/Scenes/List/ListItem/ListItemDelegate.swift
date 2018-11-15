@@ -9,19 +9,6 @@
 import UIKit
 import Common
 
-class ListItemDelegate: NSObject, UITableViewDelegate {
-    let provider: ConfiguratorProvider
-    
-    init(provider: ConfiguratorProvider) {
-        self.provider = provider
-    }
-    
-    var items: [ICellConfigurator] {
-        return provider.items
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    }
-}
+class ListItemDelegate: NSObject, UITableViewDelegate {}
 
 

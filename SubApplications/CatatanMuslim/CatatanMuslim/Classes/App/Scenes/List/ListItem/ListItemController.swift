@@ -17,13 +17,14 @@ public class ListItemController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavigationItem()
+        setupNavigationBar()
         setupTableView()
         setupTabBar()
     }
     
-    private func setupNavigationItem() {
+    private func setupNavigationBar() {
         navigationItem.title = presenter.title
+        
         if #available(iOS 11.0, *) {
             self.navigationController?.navigationBar.prefersLargeTitles = true
         } else {

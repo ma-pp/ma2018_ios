@@ -11,10 +11,21 @@ import Foundation
 class ListFolderContext: ListItemContext {
     let presenter: ListItemPresenter
     let tableViewSetup: ListItemTableViewSetup
-    init() {
+    init(navigator: ListItemNavigator) {
         let presenter = ListFolderPresenter()
+        
+        let dataSource = ListFolderDataSource(provider: presenter)
+        
+        let delegate = ListFolderDelegate()
+        delegate.navigator = navigator
+        
+        delegate.itemSelector = { (indexPath: IndexPath) -> Folder in
+            return presenter.folders[indexPath.row]
+        }
+        
         self.tableViewSetup = ListFolderTableViewSetup(
-            provider: presenter
+            dataSource: dataSource,
+            delegate: delegate
         )
         self.presenter = presenter
     }

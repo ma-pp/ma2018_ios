@@ -37,6 +37,8 @@ class ListItemDataSource: NSObject, UITableViewDataSource {
         
         item.configure(view: cell)
         
+        cell.selectionStyle = .none
+        
         return cell
     }
 }

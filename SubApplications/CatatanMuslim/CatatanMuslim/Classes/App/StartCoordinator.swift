@@ -15,7 +15,9 @@ public class StartCoordinator: Coordinator {
     }
     
     public func start() {
-        let coordinator = ListNoteCoordinator(navigationController: navigationController)
+        let coordinator = ListFolderCoordinator(
+            navigationController: navigationController
+        )
         coordinator.start()
     }
 }

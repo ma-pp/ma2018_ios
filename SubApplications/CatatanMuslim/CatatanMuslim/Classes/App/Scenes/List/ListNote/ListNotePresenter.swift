@@ -10,22 +10,48 @@ import Foundation
 import Common
 
 class ListNotePresenter: ListItemPresenter {
-    let title: String = "Note"
-    init() {
+    let folder: Folder
+    let title: String
+    
+    private(set) var notes: [Note] = []
+    init(folder: Folder) {
+        self.folder = folder
+        self.title = folder.title
+        
+        notes = [
+            Note(
+                id: "wkwkw",
+                title: "Belajar Bahasa Arab",
+                author: "Muiz",
+                privacy: .private,
+                dateUpdated: Date(),
+                isRead: true,
+                content: "hahahaha"
+            ),
+            Note(
+                id: "wkwkw2",
+                title: "Belajar Bahasa Jepang",
+                author: "Muiz",
+                privacy: .public,
+                dateUpdated: Date(),
+                isRead: false,
+                content: "ahahaha"
+            )
+        ]
     }
 }
 
 extension ListNotePresenter: ConfiguratorProvider {
     var items: [ICellConfigurator] {
-        return (1...10).map { (value) -> ICellConfigurator in
+        return notes.map { (note) -> ICellConfigurator in
             return NoteCellConfigured(
                 data: NoteCell.Data(
-                    title: "Note \(value)",
-                    author: "Writer \(value)",
-                    privacy: .onlyMe,
-                    dateUpdated: Date(),
-                    isUnread: value % 2 == 0,
-                    content: "WKWKW"
+                    title: "Note \(note.title)",
+                    author: "Writer \(note.author)",
+                    privacy: note.privacy,
+                    dateUpdated: note.dateUpdated,
+                    isUnread: !note.isRead,
+                    content: note.content
                 )
             )
         }
