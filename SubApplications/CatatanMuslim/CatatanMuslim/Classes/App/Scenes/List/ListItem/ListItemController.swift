@@ -19,7 +19,6 @@ public class ListItemController: UIViewController {
         
         setupNavigationBar()
         setupTableView()
-        setupTabBar()
     }
     
     private func setupNavigationBar() {
@@ -31,7 +30,17 @@ public class ListItemController: UIViewController {
             // Fallback on earlier versions
         }
         
+        editButtonItem.target = self
+        editButtonItem.action = #selector(toggleEditing)
+        navigationItem.rightBarButtonItem = editButtonItem
+        
         setupSearchBar()
+    }
+    
+    @objc
+    private func toggleEditing() {
+        isEditing = !isEditing
+        tableView.isEditing = isEditing
     }
     
     private let searchController = UISearchController(searchResultsController: nil)
@@ -49,70 +58,19 @@ public class ListItemController: UIViewController {
     
     private func setupTableView() {
         tableView.embed(in: view)
+        tableView.allowsSelectionDuringEditing = false
     }
     
     func setupTableView(with setup: ListItemTableViewSetup) {
         setup.setupTableView(tableView)
     }
     
-    private lazy var tabBar: SimpleTabBar = {
-        return UIView.load(type: SimpleTabBar.self)!
-    }()
-    
-    private let badgeSetting = (
-        size: CGFloat(7.5),
-        padding: (
-            top: CGFloat(3),
-            right: CGFloat(3)
-        )
-    )
-    
-    private let toggleUnreadButton = BadgedButton()
-    private func setupToggleUnreadButton() {
-        toggleUnreadButton.setTitle("Unread", for: .normal)
-        toggleUnreadButton.setTitleColor(.black, for: .normal)
-        let btn = toggleUnreadButton
-        btn.badge.size = badgeSetting.size
-        btn.badge.topPadding = badgeSetting.padding.top
-        btn.badge.rightPadding = badgeSetting.padding.right
+    private var tabBar: SimpleTabBar {
+        guard let nav = navigationController as? ListNavigationController else {
+            fatalError()
+        }
+        return nav.tabBar
     }
     
-    private let toggleGridButton = UIButton()
-    private func setupToggleGridButton() {
-        toggleGridButton.setTitle("Grid", for: .normal)
-        toggleGridButton.setTitleColor(.black, for: .normal)
-    }
-    
-    private let showDiscussionButton = BadgedButton()
-    private func setupShowDiscussionButton() {
-        showDiscussionButton.setTitle("Discuss", for: .normal)
-        showDiscussionButton.setTitleColor(.black, for: .normal)
-        let btn = showDiscussionButton
-        btn.badge.size = badgeSetting.size
-        btn.badge.topPadding = badgeSetting.padding.top
-        btn.badge.rightPadding = badgeSetting.padding.right
-        
-    }
-    
-    private func setupTabBar() {
-        tabBar.addButton(toggleUnreadButton)
-        tabBar.addButton(toggleGridButton)
-        tabBar.addButton(showDiscussionButton)
-        
-        // See XIB!
-        let tabBarViewHeight: CGFloat = 70
-        
-        tabBar.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(tabBar)
-        view.bringSubview(toFront: tabBar)
-        tabBar.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        tabBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        tabBar.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        tabBar.heightAnchor.constraint(equalToConstant: tabBarViewHeight).isActive = true
-        
-        setupToggleUnreadButton()
-        setupToggleGridButton()
-        setupShowDiscussionButton()
-    }
     
 }

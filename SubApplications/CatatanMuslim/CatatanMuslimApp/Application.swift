@@ -14,7 +14,7 @@ final class Application {
     private init() {}
     
     func start(window: UIWindow) throws {
-        let nav = UINavigationController()
+        let nav = ListNavigationController()
         window.rootViewController = nav
         window.makeKeyAndVisible()
         
