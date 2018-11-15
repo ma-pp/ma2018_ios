@@ -11,6 +11,9 @@ import Common
 
 public class ListItemController: UIViewController {
     
+    var presenter: ListItemPresenter!
+    var navigator: ListItemNavigator!
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +48,10 @@ public class ListItemController: UIViewController {
     
     private func setupTableView() {
         tableView.embed(in: view)
+    }
+    
+    func setupTableView(with setup: ListItemTableViewSetup) {
+        setup.setupTableView(tableView)
     }
     
     private lazy var tabBar: SimpleTabBar = {

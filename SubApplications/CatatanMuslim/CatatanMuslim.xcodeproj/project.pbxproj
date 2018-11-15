@@ -32,6 +32,24 @@
 		EFB25DBA219C324200B644B3 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DB9219C324200B644B3 /* BadgeView.swift */; };
 		EFB25DBC219CEA1200B644B3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DBB219CEA1200B644B3 /* UIView+Extension.swift */; };
 		EFB25DC1219D063A00B644B3 /* BadgedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DC0219D063A00B644B3 /* BadgedButton.swift */; };
+		EFB25DC3219D0BEF00B644B3 /* ListItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DC2219D0BEF00B644B3 /* ListItemPresenter.swift */; };
+		EFB25DC7219D0D2700B644B3 /* ListItemCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DC6219D0D2700B644B3 /* ListItemCoordinator.swift */; };
+		EFB25DCA219D0D7200B644B3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DC9219D0D7200B644B3 /* Coordinator.swift */; };
+		EFB25DCC219D0D7900B644B3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DCB219D0D7900B644B3 /* Navigator.swift */; };
+		EFB25DD9219D0F4800B644B3 /* ListNoteTableViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DD8219D0F4800B644B3 /* ListNoteTableViewSetup.swift */; };
+		EFB25DDB219D0F5500B644B3 /* ListFolderTableViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DDA219D0F5500B644B3 /* ListFolderTableViewSetup.swift */; };
+		EFB25DDD219D0F6700B644B3 /* ListItemTableViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DDC219D0F6700B644B3 /* ListItemTableViewSetup.swift */; };
+		EFB25DE2219D120A00B644B3 /* FolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DE0219D120A00B644B3 /* FolderCell.swift */; };
+		EFB25DE3219D120A00B644B3 /* FolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB25DE1219D120A00B644B3 /* FolderCell.xib */; };
+		EFB25DE6219D122400B644B3 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DE4219D122400B644B3 /* NoteCell.swift */; };
+		EFB25DE7219D122400B644B3 /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB25DE5219D122400B644B3 /* NoteCell.xib */; };
+		EFB25DE9219D180B00B644B3 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DE8219D180B00B644B3 /* Privacy.swift */; };
+		EFB25DED219D1DC900B644B3 /* ListItemContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DEC219D1DC900B644B3 /* ListItemContext.swift */; };
+		EFB25DEF219D1E6C00B644B3 /* ListItemDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DEE219D1E6C00B644B3 /* ListItemDataSource.swift */; };
+		EFB25DF1219D20A000B644B3 /* ListFolderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DF0219D20A000B644B3 /* ListFolderCoordinator.swift */; };
+		EFB25DF3219D2CEF00B644B3 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DF2219D2CEF00B644B3 /* StartCoordinator.swift */; };
+		EFB25DF5219D378C00B644B3 /* ListFolderContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DF4219D378C00B644B3 /* ListFolderContext.swift */; };
+		EFB25DF7219D37F100B644B3 /* ListFolderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DF6219D37F100B644B3 /* ListFolderPresenter.swift */; };
 		EFD987992191A412009A7F12 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD987982191A411009A7F12 /* CocoaLumberjack.framework */; };
 		EFD9879A2191A412009A7F12 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD987982191A411009A7F12 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFD9879C2191A68A009A7F12 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD9879B2191A68A009A7F12 /* CocoaLumberjackSwift.framework */; };
@@ -104,6 +122,24 @@
 		EFB25DB9219C324200B644B3 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		EFB25DBB219CEA1200B644B3 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		EFB25DC0219D063A00B644B3 /* BadgedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgedButton.swift; sourceTree = "<group>"; };
+		EFB25DC2219D0BEF00B644B3 /* ListItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemPresenter.swift; sourceTree = "<group>"; };
+		EFB25DC6219D0D2700B644B3 /* ListItemCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCoordinator.swift; sourceTree = "<group>"; };
+		EFB25DC9219D0D7200B644B3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EFB25DCB219D0D7900B644B3 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		EFB25DD8219D0F4800B644B3 /* ListNoteTableViewSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNoteTableViewSetup.swift; sourceTree = "<group>"; };
+		EFB25DDA219D0F5500B644B3 /* ListFolderTableViewSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFolderTableViewSetup.swift; sourceTree = "<group>"; };
+		EFB25DDC219D0F6700B644B3 /* ListItemTableViewSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewSetup.swift; sourceTree = "<group>"; };
+		EFB25DE0219D120A00B644B3 /* FolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCell.swift; sourceTree = "<group>"; };
+		EFB25DE1219D120A00B644B3 /* FolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderCell.xib; sourceTree = "<group>"; };
+		EFB25DE4219D122400B644B3 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		EFB25DE5219D122400B644B3 /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
+		EFB25DE8219D180B00B644B3 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
+		EFB25DEC219D1DC900B644B3 /* ListItemContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemContext.swift; sourceTree = "<group>"; };
+		EFB25DEE219D1E6C00B644B3 /* ListItemDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemDataSource.swift; sourceTree = "<group>"; };
+		EFB25DF0219D20A000B644B3 /* ListFolderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFolderCoordinator.swift; sourceTree = "<group>"; };
+		EFB25DF2219D2CEF00B644B3 /* StartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCoordinator.swift; sourceTree = "<group>"; };
+		EFB25DF4219D378C00B644B3 /* ListFolderContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFolderContext.swift; sourceTree = "<group>"; };
+		EFB25DF6219D37F100B644B3 /* ListFolderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFolderPresenter.swift; sourceTree = "<group>"; };
 		EFD987982191A411009A7F12 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = ../../Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		EFD9879B2191A68A009A7F12 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = ../../Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				EF08E1B821919420004A897D /* Scenes */,
+				EFB25DF2219D2CEF00B644B3 /* StartCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -174,7 +211,7 @@
 		EF08E1B821919420004A897D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				EF08E1BB21919458004A897D /* ListItem */,
+				EFB25DCF219D0E8200B644B3 /* List */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -183,6 +220,11 @@
 			isa = PBXGroup;
 			children = (
 				EF08E1B921919446004A897D /* ListItemController.swift */,
+				EFB25DC6219D0D2700B644B3 /* ListItemCoordinator.swift */,
+				EFB25DEC219D1DC900B644B3 /* ListItemContext.swift */,
+				EFB25DC2219D0BEF00B644B3 /* ListItemPresenter.swift */,
+				EFB25DDC219D0F6700B644B3 /* ListItemTableViewSetup.swift */,
+				EFB25DEE219D1E6C00B644B3 /* ListItemDataSource.swift */,
 			);
 			path = ListItem;
 			sourceTree = "<group>";
@@ -215,6 +257,7 @@
 		EFAA196B218D5266003C7508 /* CatatanMuslim */ = {
 			isa = PBXGroup;
 			children = (
+				EFB25DC8219D0D6900B644B3 /* Utilities */,
 				EF08E1B421919218004A897D /* Config */,
 				EFAA19D7218D5392003C7508 /* Classes */,
 				EFAA19D6218D538C003C7508 /* Extension */,
@@ -304,6 +347,65 @@
 				EFB25DC0219D063A00B644B3 /* BadgedButton.swift */,
 			);
 			path = BadgedButton;
+			sourceTree = "<group>";
+		};
+		EFB25DC8219D0D6900B644B3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EFB25DC9219D0D7200B644B3 /* Coordinator.swift */,
+				EFB25DCB219D0D7900B644B3 /* Navigator.swift */,
+				EFB25DE8219D180B00B644B3 /* Privacy.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EFB25DCD219D0E5A00B644B3 /* ListFolder */ = {
+			isa = PBXGroup;
+			children = (
+				EFB25DDE219D11D800B644B3 /* ViewComponents */,
+				EFB25DDA219D0F5500B644B3 /* ListFolderTableViewSetup.swift */,
+				EFB25DF0219D20A000B644B3 /* ListFolderCoordinator.swift */,
+				EFB25DF4219D378C00B644B3 /* ListFolderContext.swift */,
+				EFB25DF6219D37F100B644B3 /* ListFolderPresenter.swift */,
+			);
+			path = ListFolder;
+			sourceTree = "<group>";
+		};
+		EFB25DCE219D0E6E00B644B3 /* ListNote */ = {
+			isa = PBXGroup;
+			children = (
+				EFB25DDF219D11E400B644B3 /* ViewComponents */,
+				EFB25DD8219D0F4800B644B3 /* ListNoteTableViewSetup.swift */,
+			);
+			path = ListNote;
+			sourceTree = "<group>";
+		};
+		EFB25DCF219D0E8200B644B3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				EFB25DCE219D0E6E00B644B3 /* ListNote */,
+				EFB25DCD219D0E5A00B644B3 /* ListFolder */,
+				EF08E1BB21919458004A897D /* ListItem */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		EFB25DDE219D11D800B644B3 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EFB25DE0219D120A00B644B3 /* FolderCell.swift */,
+				EFB25DE1219D120A00B644B3 /* FolderCell.xib */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		EFB25DDF219D11E400B644B3 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EFB25DE4219D122400B644B3 /* NoteCell.swift */,
+				EFB25DE5219D122400B644B3 /* NoteCell.xib */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +538,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFAA1A04218D5895003C7508 /* Assets.xcassets in Resources */,
+				EFB25DE3219D120A00B644B3 /* FolderCell.xib in Resources */,
 				EFB25DAE219C2A3A00B644B3 /* SimpleTabBar.xib in Resources */,
+				EFB25DE7219D122400B644B3 /* NoteCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,12 +586,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB25DBC219CEA1200B644B3 /* UIView+Extension.swift in Sources */,
+				EFB25DF5219D378C00B644B3 /* ListFolderContext.swift in Sources */,
+				EFB25DE9219D180B00B644B3 /* Privacy.swift in Sources */,
+				EFB25DF1219D20A000B644B3 /* ListFolderCoordinator.swift in Sources */,
+				EFB25DEF219D1E6C00B644B3 /* ListItemDataSource.swift in Sources */,
+				EFB25DC7219D0D2700B644B3 /* ListItemCoordinator.swift in Sources */,
+				EFB25DCA219D0D7200B644B3 /* Coordinator.swift in Sources */,
+				EFB25DE6219D122400B644B3 /* NoteCell.swift in Sources */,
 				EFB25DC1219D063A00B644B3 /* BadgedButton.swift in Sources */,
+				EFB25DDB219D0F5500B644B3 /* ListFolderTableViewSetup.swift in Sources */,
+				EFB25DF7219D37F100B644B3 /* ListFolderPresenter.swift in Sources */,
 				EFAA19F3218D55EB003C7508 /* Application.swift in Sources */,
+				EFB25DCC219D0D7900B644B3 /* Navigator.swift in Sources */,
 				EFB25DBA219C324200B644B3 /* BadgeView.swift in Sources */,
 				EFAA19DB218D5430003C7508 /* Configuration.swift in Sources */,
+				EFB25DC3219D0BEF00B644B3 /* ListItemPresenter.swift in Sources */,
+				EFB25DDD219D0F6700B644B3 /* ListItemTableViewSetup.swift in Sources */,
+				EFB25DD9219D0F4800B644B3 /* ListNoteTableViewSetup.swift in Sources */,
+				EFB25DED219D1DC900B644B3 /* ListItemContext.swift in Sources */,
 				EF08E1C921919583004A897D /* ListItemController.swift in Sources */,
 				EFB25DAC219C28E600B644B3 /* SimpleTabBar.swift in Sources */,
+				EFB25DF3219D2CEF00B644B3 /* StartCoordinator.swift in Sources */,
+				EFB25DE2219D120A00B644B3 /* FolderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

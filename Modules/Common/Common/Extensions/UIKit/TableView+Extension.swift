@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
     func registerReusableCell<T: UITableViewCell>(_: T.Type) where T: IReusableCell & BundleSpecificInstance {
         if let nib = T.nib(from: T.bundle) {
             self.register(nib, forCellReuseIdentifier: T.reuseIdentifier)

@@ -14,9 +14,19 @@ final class Application {
     private init() {}
     
     func start(window: UIWindow) throws {
-        let vc = ListItemController()
-        let nav = UINavigationController(rootViewController: vc)
+        let nav = UINavigationController()
         window.rootViewController = nav
         window.makeKeyAndVisible()
+        
+        let firstCoordinator = instantiateFirstCoordinator(with: nav)
+        firstCoordinator.start()
+    }
+    
+    private func instantiateFirstCoordinator(
+        with navigationController: UINavigationController
+        ) -> Coordinator {
+        return StartCoordinator(
+            navigationController: navigationController
+        )
     }
 }
