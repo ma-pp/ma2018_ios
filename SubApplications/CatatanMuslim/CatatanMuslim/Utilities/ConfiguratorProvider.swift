@@ -1,5 +1,5 @@
 //
-//  ListItemPresenter.swift
+//  ConfiguratorProvider.swift
 //  CatatanMuslim
 //
 //  Created by PondokiOS on 11/15/18.
@@ -9,6 +9,6 @@
 import Foundation
 import Common
 
-protocol ListItemPresenter {
-    var title: String { get }
+protocol ConfiguratorProvider: class {
+    var items: [ICellConfigurator] { get }
 }

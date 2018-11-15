@@ -1,5 +1,5 @@
 //
-//  ListItemPresenter.swift
+//  ListItemSelection.swift
 //  CatatanMuslim
 //
 //  Created by PondokiOS on 11/15/18.
@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import Common
 
-protocol ListItemPresenter {
-    var title: String { get }
+protocol ListItemSelection {
+    associatedtype Item
+    var item: Item { get set }
 }

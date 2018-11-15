@@ -11,10 +11,13 @@ import Common
 
 class ListNotePresenter: ListItemPresenter {
     let title: String = "Note"
-    var items: [ICellConfigurator] = []
-    
     init() {
-        items = (1...10).map { (value) -> ICellConfigurator in
+    }
+}
+
+extension ListNotePresenter: ConfiguratorProvider {
+    var items: [ICellConfigurator] {
+        return (1...10).map { (value) -> ICellConfigurator in
             return NoteCellConfigured(
                 data: NoteCell.Data(
                     title: "Note \(value)",

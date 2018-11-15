@@ -11,10 +11,12 @@ import Common
 
 class ListFolderPresenter: ListItemPresenter {
     let title: String = "Folder"
-    var items: [ICellConfigurator] = []
-    
-    init() {
-        items = (1...10).map { (value) -> ICellConfigurator in
+    init() {    }
+}
+
+extension ListFolderPresenter: ConfiguratorProvider {
+    var items: [ICellConfigurator] {
+        return (1...10).map { (value) -> ICellConfigurator in
             return FolderCellConfigured(
                 data: FolderCell.Data(
                     title: "TITLE \(value)",

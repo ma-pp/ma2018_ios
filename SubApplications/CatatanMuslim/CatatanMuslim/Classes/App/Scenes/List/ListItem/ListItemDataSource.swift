@@ -40,7 +40,3 @@ class ListItemDataSource: NSObject, UITableViewDataSource {
         return cell
     }
 }
-
-protocol ConfiguratorProvider: class {
-    var items: [ICellConfigurator] { get }
-}
