@@ -27,6 +27,7 @@
 		EFAA1AD1218F0C29003C7508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1ACF218F0C29003C7508 /* LaunchScreen.storyboard */; };
 		EFAA1AD8218F2230003C7508 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA18F4218D22D9003C7508 /* Common.framework */; };
 		EFAA1AD9218F2230003C7508 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA18F4218D22D9003C7508 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFB25DB6219C2C9000B644B3 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DB5219C2C9000B644B3 /* RoundedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		EFAA1AD0218F0C29003C7508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFAA1AD2218F0C29003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFAA1AD7218F0C64003C7508 /* CommonApp.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonApp.xcconfig; sourceTree = "<group>"; };
+		EFB25DB5219C2C9000B644B3 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				EFAA1A84218EBF02003C7508 /* GradientView.swift */,
 				EFAA1AA8218F0B88003C7508 /* PagedScroller.swift */,
+				EFB25DB5219C2C9000B644B3 /* RoundedView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				EFAA1A24218D8153003C7508 /* Configuration.swift in Sources */,
 				EFAA1A20218D7E35003C7508 /* NavigationItem+Extension.swift in Sources */,
 				EF08E1CB21919649004A897D /* UIViewConstraint+Extension.swift in Sources */,
+				EFB25DB6219C2C9000B644B3 /* RoundedView.swift in Sources */,
 				EFAA193A218D4C95003C7508 /* BundleSpecificInstance.swift in Sources */,
 				EFAA1911218D2300003C7508 /* CollectionView+Extension.swift in Sources */,
 				EFAA1A85218EBF02003C7508 /* GradientView.swift in Sources */,
