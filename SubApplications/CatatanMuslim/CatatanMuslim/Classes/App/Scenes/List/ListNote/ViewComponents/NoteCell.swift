@@ -46,8 +46,13 @@ extension NoteCell: IReusableCell {
     func configureCell(with item: Data) {
         title.text = item.title
         author.text = item.author
-        dateUpdated.text = "\(item.dateUpdated)"
         unreadState.text = item.isUnread ? "Unread" : ""
         content.text = item.content
+        
+        let dateString = item.dateUpdated
+            .toString(
+                format: Constant.StringDateFormat.dayMonth.string()
+        )
+        dateUpdated.text = "\(dateString ?? "")"
     }
 }

@@ -48,7 +48,11 @@ extension FolderCell: IReusableCell {
         author.text = item.author
         notesCount.text = "\(item.totalNotes) Notes"
         unreadCount.text = "\(item.totalUnread) Unread"
-        dateUpdated.text = "\(item.dateUpdated)"
+        let dateString = item.dateUpdated
+            .toString(
+                format: Constant.StringDateFormat.dayMonth.string()
+        )
+        dateUpdated.text = "\(dateString ?? "")"
         
         switch item.privacy {
         case .public:
