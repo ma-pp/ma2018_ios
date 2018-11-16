@@ -34,6 +34,10 @@ public class ListItemController: UIViewController {
         editButtonItem.action = #selector(toggleEditing)
         navigationItem.rightBarButtonItem = editButtonItem
         
+        navigationController?
+            .navigationBar
+            .configure(with: .solid(.white))
+        
         setupSearchBar()
     }
     

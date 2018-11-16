@@ -29,6 +29,7 @@
 		EFAA1AD9218F2230003C7508 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA18F4218D22D9003C7508 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFB25DB6219C2C9000B644B3 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DB5219C2C9000B644B3 /* RoundedView.swift */; };
 		EFB25DEB219D1A4900B644B3 /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25DEA219D1A4900B644B3 /* CellConfigurator.swift */; };
+		EFB25E1C219E3C9D00B644B3 /* NavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25E1B219E3C9D00B644B3 /* NavigationBar+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		EFAA1AD7218F0C64003C7508 /* CommonApp.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonApp.xcconfig; sourceTree = "<group>"; };
 		EFB25DB5219C2C9000B644B3 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		EFB25DEA219D1A4900B644B3 /* CellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
+		EFB25E1B219E3C9D00B644B3 /* NavigationBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationBar+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				EFAA1915218D27AB003C7508 /* TableView+Extension.swift */,
 				EFAA1A1F218D7E35003C7508 /* NavigationItem+Extension.swift */,
 				EF08E1CA21919649004A897D /* UIViewConstraint+Extension.swift */,
+				EFB25E1B219E3C9D00B644B3 /* NavigationBar+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				EFAA1911218D2300003C7508 /* CollectionView+Extension.swift in Sources */,
 				EFAA1A85218EBF02003C7508 /* GradientView.swift in Sources */,
 				EFAA1AA9218F0B88003C7508 /* PagedScroller.swift in Sources */,
+				EFB25E1C219E3C9D00B644B3 /* NavigationBar+Extension.swift in Sources */,
 				EFAA1916218D27AB003C7508 /* TableView+Extension.swift in Sources */,
 				EFAA1914218D2343003C7508 /* IReusableCell.swift in Sources */,
 			);
