@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Common
 
 protocol ProfileNavigator: Navigator {
     
@@ -20,7 +21,9 @@ class ProfileCoordinator: Coordinator {
     }
     
     func start() {
-        let presentedViewController = ProfileController()
+        guard let presentedViewController: ProfileController = .loadInstance() else {
+            fatalError("Instance not found!")
+        }
         presentedViewController.navigator = self
         let nav = UINavigationController(rootViewController: presentedViewController)
         navigationController

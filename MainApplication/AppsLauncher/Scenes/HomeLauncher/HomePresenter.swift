@@ -8,6 +8,7 @@
 
 import Foundation
 import SubApplication
+import SubApplicationManager
 
 class HomePresenter {
     var subApplications: [SubApplication] {

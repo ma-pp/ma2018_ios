@@ -7,18 +7,21 @@
 //
 
 import UIKit
+import Common
 
 protocol RegistrationNavigator: Navigator {
 }
 
-class RegistrationCoordinator: Coordinator {
+public class RegistrationCoordinator: Coordinator {
     private let navigationController: UINavigationController
-    init(navigationController: UINavigationController) {
+    public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    func start() {
-        let viewController = RegistrationController()
+    public func start() {
+        guard let viewController: RegistrationController = .loadInstance() else {
+            fatalError("Instance not found!")
+        }
         viewController.navigator = self
         navigationController.pushViewController(viewController, animated: true)
     }

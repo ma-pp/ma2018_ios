@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AppsLauncher
 import Common
 
 fileprivate enum ApplicationError: Error {
@@ -24,24 +25,15 @@ final class Application {
         window.rootViewController = nav
         window.makeKeyAndVisible()
         
-        let firstCoordinator = instantiateFirstCoordinator(with: nav)
+        let firstCoordinator = AppsLauncher.instantiateFirstCoordinator(with: nav)
         firstCoordinator.start()
     }
     
     private func basicAssertionCheck() {
-        class __AnyView__: UIView {}
-        assert( __AnyView__.bundle?.bundleIdentifier == BUNDLE_IDENTIFIER)
     }
     
     
     lazy var currentUser: Bool? = {
         return nil
     }()
-    
-    private func instantiateFirstCoordinator(with nav: UINavigationController) -> Coordinator {
-        guard currentUser != nil else {
-            return LoginCoordinator(navigationController: nav)
-        }
-        return HomeCoordinator(navigationController: nav)
-    }
 }

@@ -8,7 +8,6 @@
 
 import Foundation
 import SubApplication
-
 // SubApplications
 import AgendaMuslim
 import LowonganKerjaMuslim
@@ -17,11 +16,11 @@ import KakakAsuh
 import CatatanMuslim
 import JadwalShalat
 
-final class SubApplicationManager {
-    static let shared = SubApplicationManager()
+public final class SubApplicationManager {
+    public static let shared = SubApplicationManager()
     private init() {}
     
-    lazy var applications: [SubApplication] = [
+    public lazy var applications: [SubApplication] = [
         AgendaMuslim.Application(),
         LowonganKerjaMuslim.Application(),
         AmalanYaumiyah.Application(),
