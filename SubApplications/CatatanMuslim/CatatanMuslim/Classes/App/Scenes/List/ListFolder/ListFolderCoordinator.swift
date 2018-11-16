@@ -8,20 +8,21 @@
 
 import UIKit
 
-class ListFolderCoordinator: ListItemCoordinator {
+protocol ListFolderNavigator {
+    func launchFolderEditor(session: EditorSession<Folder>)
+    func launchListNote(folder: Folder)
+}
+
+class ListFolderCoordinator: Coordinator {
     private let navigationController: UINavigationController
-    private lazy var context = ListFolderContext(navigator: self)
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        super.init(
-            navigationController: navigationController,
-            context: context
-        )
     }
     
-    override func start() {
+    private lazy var context = ListFolderContext(navigator: self)
+    
+    func start() {
         let vc = ListItemController()
-        
         vc.presenter = context.presenter
         vc.navigator = self
         vc.setupTableView(with: context.tableViewSetup)
@@ -30,20 +31,26 @@ class ListFolderCoordinator: ListItemCoordinator {
             animated: true
         )
     }
+}
+
+extension ListFolderCoordinator: ListItemNavigator {
+    func back() {
+        fatalError("There is no back button for current design!")
+    }
     
     // MARK: See ListItemCoordinator.swift
     
-    override func selectItem<T>(_ item: T) where T : ListItemSelected {
+    func selectItem<T>(_ item: T) where T : ListItemSelected {
         guard let folder = item.item as? Folder else { return }
         launchListNote(folder: folder)
     }
     
-    override func editItem<T>(_ item: T) where T : ListItemSelected {
+    func editItem<T>(_ item: T) where T : ListItemSelected {
         guard let folder = item.item as? Folder else { return }
         launchFolderEditor(session: .edit(folder))
     }
     
-    override func newItem<T>(_ type: T.Type) where T : ListItemSelected {
+    func newItem<T>(_ type: T.Type) where T : ListItemSelected {
         guard type == Folder.self else { return }
         launchFolderEditor(session: .new)
     }
