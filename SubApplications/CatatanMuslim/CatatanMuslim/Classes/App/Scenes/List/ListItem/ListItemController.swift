@@ -17,46 +17,9 @@ public class ListItemController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavigationBar()
         setupTableView()
     }
     
-    private func setupNavigationBar() {
-        navigationItem.title = presenter.title
-        
-        if #available(iOS 11.0, *) {
-            self.navigationController?.navigationBar.prefersLargeTitles = true
-        } else {
-            // Fallback on earlier versions
-        }
-        
-        editButtonItem.target = self
-        editButtonItem.action = #selector(toggleEditing)
-        navigationItem.rightBarButtonItem = editButtonItem
-        
-        navigationController?
-            .navigationBar
-            .configure(with: .solid(.white))
-        
-        setupSearchBar()
-    }
-    
-    @objc
-    private func toggleEditing() {
-        isEditing = !isEditing
-        tableView.isEditing = isEditing
-    }
-    
-    private let searchController = UISearchController(searchResultsController: nil)
-    
-    private func setupSearchBar() {
-        if #available(iOS 11.0, *) {
-            navigationItem.searchController = searchController
-            navigationItem.hidesSearchBarWhenScrolling = false
-        } else {
-            navigationItem.titleView = searchController.searchBar
-        }
-    }
     
     let tableView = UITableView()
     
@@ -68,13 +31,4 @@ public class ListItemController: UIViewController {
     func setupTableView(with setup: ListItemTableViewSetup) {
         setup.setupTableView(tableView)
     }
-    
-    private var tabBar: SimpleTabBar {
-        guard let nav = navigationController as? ListNavigationController else {
-            fatalError()
-        }
-        return nav.tabBar
-    }
-    
-    
 }

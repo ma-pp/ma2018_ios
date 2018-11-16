@@ -31,8 +31,11 @@ class ListNoteCoordinator {
         vc.presenter = context.presenter
         vc.navigator = self
         vc.setupTableView(with: context.tableViewSetup)
+        let viewController = ListItemContainerController(
+            listItemController: vc
+        )
         navigationController.pushViewController(
-            vc,
+            viewController,
             animated: true
         )
         
