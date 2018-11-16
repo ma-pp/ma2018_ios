@@ -21,7 +21,7 @@ class LoginCoordinator: Coordinator {
     }
     
     func start() {
-        guard let viewController: LoginController = .loadInstance() else {
+        guard let viewController: LoginController = NibLoader.loadController() else {
             fatalError("Instance not found!")
         }
         viewController.navigator = self

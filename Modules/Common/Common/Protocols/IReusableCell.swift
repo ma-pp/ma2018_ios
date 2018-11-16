@@ -11,7 +11,7 @@ import Foundation
 public protocol IReusableCell {
     associatedtype Data
     static var reuseIdentifier: String { get }
-    static func nib(from bundle: Bundle?) -> UINib?
+    static func nib<T>(for type: T.Type) -> UINib?
     
     func configureCell(with item: Data)
 }
@@ -21,14 +21,11 @@ public extension IReusableCell {
         return String(describing: self)
     }
     
-    public static func nib(from bundle: Bundle?) -> UINib? {
-        guard bundle?
-            .path(forResource: reuseIdentifier,
-                  ofType: "nib") != nil else {
-               fatalError("Resource not found")
+    static func nib<T>(for type: T.Type) -> UINib? {
+        guard let anyClass = type as? AnyClass else {
+            fatalError("Type must be class!")
         }
-        
-        return UINib(nibName: String(describing: self), bundle: bundle)
+        return NibLoader.load(for: anyClass)
     }
 }
 

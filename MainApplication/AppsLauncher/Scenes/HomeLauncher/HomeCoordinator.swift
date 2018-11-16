@@ -24,7 +24,7 @@ class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        guard let vc: HomeController = .loadInstance() else {
+        guard let vc : HomeController = NibLoader.loadController() else {
             fatalError("Instance not found!")
         }
         vc.navigator = self

@@ -19,7 +19,7 @@ public class RegistrationCoordinator: Coordinator {
     }
     
     public func start() {
-        guard let viewController: RegistrationController = .loadInstance() else {
+        guard let viewController: RegistrationController = NibLoader.loadController() else {
             fatalError("Instance not found!")
         }
         viewController.navigator = self

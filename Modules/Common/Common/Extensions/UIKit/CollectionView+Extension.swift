@@ -9,8 +9,8 @@
 import UIKit
 
 public extension UICollectionView {
-    public func registerReusableCell<T: UICollectionViewCell>(_: T.Type) where T: IReusableCell & BundleSpecificInstance {
-        if let nib = T.nib(from: T.bundle) {
+    public func registerReusableCell<T: UICollectionViewCell>(_: T.Type) where T: IReusableCell {
+        if let nib = T.nib(for: T.self) {
             self.register(nib, forCellWithReuseIdentifier: T.reuseIdentifier)
         } else {
             self.register(T.self, forCellWithReuseIdentifier: T.reuseIdentifier)

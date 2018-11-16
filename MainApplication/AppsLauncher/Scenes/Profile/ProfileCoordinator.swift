@@ -21,9 +21,7 @@ class ProfileCoordinator: Coordinator {
     }
     
     func start() {
-        guard let presentedViewController: ProfileController = .loadInstance() else {
-            fatalError("Instance not found!")
-        }
+        let presentedViewController = ProfileController()
         presentedViewController.navigator = self
         let nav = UINavigationController(rootViewController: presentedViewController)
         navigationController

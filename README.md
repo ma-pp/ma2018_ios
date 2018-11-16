@@ -16,9 +16,20 @@ UI/UX :
 Gitflow :
 
 1. Master -> Publish (Only Maintainer)
-2. Develop -> Development merge request (Only Mantainer)
+2. Develop -> Development
 3. Bugfix -> Bug
-4. Feature -> Full feature branch
+4. SubApp -> SubApp main development line
+5. Feature -> Full feature
+
+Example
+1. You make feature Image for CatatanMuslimApp
+  * new branch from subApp/CatatanMuslimApp -> subApp/CatatanMuslimApp/feature/ImageNote
+  * all Merge Request to subApp/CatatanMuslimApp
+  
+2. Once subApp/CatatanMuslimApp has no conflict then make MR to development
+
+Others apply!
+
 
 Sprint
 

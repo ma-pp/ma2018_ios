@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Common
 
 protocol NotificationNavigator: Navigator {
     
@@ -20,9 +21,7 @@ class NotificationCoordinator: Coordinator {
     }
     
     func start() {
-        guard let presentedViewController: NotificationController = .loadInstance() else {
-            fatalError("Instance not found!")
-        }
+        let presentedViewController = NotificationController()
         presentedViewController.navigator = self
         let nav = UINavigationController(rootViewController: presentedViewController)
         navigationController

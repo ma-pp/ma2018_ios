@@ -1,3 +1,9 @@
+# BEGIN PROJECT IGNORE
+Config/
+
+# END PROJECT IGNORE
+
+# ---------------------------------------------------------- #
 
 # Created by https://www.gitignore.io/api/ruby,swift,xcode,macos,carthage,cocoapods
 # Edit at https://www.gitignore.io/?templates=ruby,swift,xcode,macos,carthage,cocoapods
