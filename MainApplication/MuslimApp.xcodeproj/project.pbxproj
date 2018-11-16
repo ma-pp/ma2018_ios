@@ -72,6 +72,7 @@
 		EFB25E7C219E651D00B644B3 /* KakakAsuh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19DF218D54B6003C7508 /* KakakAsuh.framework */; };
 		EFB25E7D219E652900B644B3 /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */; };
 		EFB25E7E219E652F00B644B3 /* JadwalShalat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */; };
+		EFB25E7F219E66CA00B644B3 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; };
 		EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */; };
 		EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B13218C7CAE00CAEC2E /* ViewController.swift */; };
 		EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */; };
@@ -220,6 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB25E7F219E66CA00B644B3 /* Common.framework in Frameworks */,
 				EFB25E71219E590600B644B3 /* SubApplication.framework in Frameworks */,
 				EFB25E70219E58E200B644B3 /* SubApplicationManager.framework in Frameworks */,
 			);
