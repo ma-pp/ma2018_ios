@@ -8,6 +8,7 @@
 
 import UIKit
 import SubApplication
+import Common
 
 protocol HomeNavigator: Navigator {
     func launchProfile()
@@ -23,7 +24,9 @@ class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = HomeController()
+        guard let vc: HomeController = .loadInstance() else {
+            fatalError("Instance not found!")
+        }
         vc.navigator = self
         vc.presenter = HomePresenter()
         navigationController.pushViewController(vc, animated: true)

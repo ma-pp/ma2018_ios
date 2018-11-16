@@ -20,7 +20,9 @@ class NotificationCoordinator: Coordinator {
     }
     
     func start() {
-        let presentedViewController = NotificationController()
+        guard let presentedViewController: NotificationController = .loadInstance() else {
+            fatalError("Instance not found!")
+        }
         presentedViewController.navigator = self
         let nav = UINavigationController(rootViewController: presentedViewController)
         navigationController

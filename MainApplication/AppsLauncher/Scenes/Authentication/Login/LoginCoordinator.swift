@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Common
 
 protocol LoginNavigator: Navigator {
     func launchRegistration()
@@ -20,7 +21,9 @@ class LoginCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = LoginController()
+        guard let viewController: LoginController = .loadInstance() else {
+            fatalError("Instance not found!")
+        }
         viewController.navigator = self
         navigationController.pushViewController(viewController, animated: true)
     }
