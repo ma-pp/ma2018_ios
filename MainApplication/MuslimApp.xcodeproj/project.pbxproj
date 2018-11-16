@@ -66,6 +66,12 @@
 		EFB25E72219E590C00B644B3 /* SubApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; };
 		EFB25E76219E5A8500B644B3 /* AppsLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25E75219E5A8500B644B3 /* AppsLauncher.swift */; };
 		EFB25E78219E5C4100B644B3 /* BundleSpecificInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25E77219E5C4100B644B3 /* BundleSpecificInstances.swift */; };
+		EFB25E79219E64F800B644B3 /* AgendaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */; };
+		EFB25E7A219E650E00B644B3 /* LowonganKerjaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */; };
+		EFB25E7B219E651600B644B3 /* AmalanYaumiyah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */; };
+		EFB25E7C219E651D00B644B3 /* KakakAsuh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19DF218D54B6003C7508 /* KakakAsuh.framework */; };
+		EFB25E7D219E652900B644B3 /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */; };
+		EFB25E7E219E652F00B644B3 /* JadwalShalat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */; };
 		EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */; };
 		EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B13218C7CAE00CAEC2E /* ViewController.swift */; };
 		EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */; };
@@ -223,6 +229,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB25E7E219E652F00B644B3 /* JadwalShalat.framework in Frameworks */,
+				EFB25E7D219E652900B644B3 /* CatatanMuslim.framework in Frameworks */,
+				EFB25E7C219E651D00B644B3 /* KakakAsuh.framework in Frameworks */,
+				EFB25E7B219E651600B644B3 /* AmalanYaumiyah.framework in Frameworks */,
+				EFB25E7A219E650E00B644B3 /* LowonganKerjaMuslim.framework in Frameworks */,
+				EFB25E79219E64F800B644B3 /* AgendaMuslim.framework in Frameworks */,
 				EFB25E72219E590C00B644B3 /* SubApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
