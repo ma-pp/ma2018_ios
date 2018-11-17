@@ -20,6 +20,8 @@
 		EF08E1C521919578004A897D /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1969218D5266003C7508 /* CatatanMuslim.framework */; };
 		EF08E1C621919578004A897D /* CatatanMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1969218D5266003C7508 /* CatatanMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF08E1C921919583004A897D /* ListItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08E1B921919446004A897D /* ListItemController.swift */; };
+		EF310C3321A0055300C35E36 /* Folder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310C3221A0055300C35E36 /* Folder+Extension.swift */; };
+		EF310C3521A008DB00C35E36 /* Note+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310C3421A008DB00C35E36 /* Note+Extension.swift */; };
 		EFAA1973218D5266003C7508 /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1969218D5266003C7508 /* CatatanMuslim.framework */; };
 		EFAA1978218D5266003C7508 /* CatatanMuslimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1977218D5266003C7508 /* CatatanMuslimTests.swift */; };
 		EFAA197A218D5266003C7508 /* CatatanMuslim.h in Headers */ = {isa = PBXBuildFile; fileRef = EFAA196C218D5266003C7508 /* CatatanMuslim.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,6 +67,8 @@
 		EFB25E98219EB3BD00B644B3 /* FolderEditorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB25E97219EB3BD00B644B3 /* FolderEditorController.xib */; };
 		EFB25E9A219ED5C100B644B3 /* ListItemContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25E99219ED5C100B644B3 /* ListItemContainerController.swift */; };
 		EFB25EA0219FB38400B644B3 /* ListItemContainerNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25E9F219FB38400B644B3 /* ListItemContainerNavigator.swift */; };
+		EFB25EA4219FDFA300B644B3 /* FolderEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25EA3219FDFA300B644B3 /* FolderEditorPresenter.swift */; };
+		EFB25EA6219FE44C00B644B3 /* EditableField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25EA5219FE44C00B644B3 /* EditableField.swift */; };
 		EFD987992191A412009A7F12 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD987982191A411009A7F12 /* CocoaLumberjack.framework */; };
 		EFD9879A2191A412009A7F12 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFD987982191A411009A7F12 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFD9879C2191A68A009A7F12 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD9879B2191A68A009A7F12 /* CocoaLumberjackSwift.framework */; };
@@ -120,6 +124,8 @@
 		EF08E1B921919446004A897D /* ListItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemController.swift; sourceTree = "<group>"; };
 		EF08E1BC219194E4004A897D /* Logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF08E1C02191952F004A897D /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF310C3221A0055300C35E36 /* Folder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+Extension.swift"; sourceTree = "<group>"; };
+		EF310C3421A008DB00C35E36 /* Note+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extension.swift"; sourceTree = "<group>"; };
 		EFAA1969218D5266003C7508 /* CatatanMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatatanMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA196C218D5266003C7508 /* CatatanMuslim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatatanMuslim.h; sourceTree = "<group>"; };
 		EFAA196D218D5266003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +176,8 @@
 		EFB25E97219EB3BD00B644B3 /* FolderEditorController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderEditorController.xib; sourceTree = "<group>"; };
 		EFB25E99219ED5C100B644B3 /* ListItemContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemContainerController.swift; sourceTree = "<group>"; };
 		EFB25E9F219FB38400B644B3 /* ListItemContainerNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemContainerNavigator.swift; sourceTree = "<group>"; };
+		EFB25EA3219FDFA300B644B3 /* FolderEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderEditorPresenter.swift; sourceTree = "<group>"; };
+		EFB25EA5219FE44C00B644B3 /* EditableField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableField.swift; sourceTree = "<group>"; };
 		EFD987982191A411009A7F12 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = ../../Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		EFD9879B2191A68A009A7F12 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = ../../Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,6 +262,15 @@
 				EFB25E9E219FB36900B644B3 /* ListItemContainer */,
 			);
 			path = ListItem;
+			sourceTree = "<group>";
+		};
+		EF310C3121A0053700C35E36 /* ModelExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF310C3221A0055300C35E36 /* Folder+Extension.swift */,
+				EF310C3421A008DB00C35E36 /* Note+Extension.swift */,
+			);
+			path = ModelExtensions;
 			sourceTree = "<group>";
 		};
 		EFAA195F218D5266003C7508 = {
@@ -384,7 +401,7 @@
 				EFB25DCB219D0D7900B644B3 /* Navigator.swift */,
 				EFB25DE8219D180B00B644B3 /* Privacy.swift */,
 				EFB25E02219D44CD00B644B3 /* ConfiguratorProvider.swift */,
-				EFB25E0B219D624000B644B3 /* EditorSession.swift */,
+				EFB25EA7219FE45100B644B3 /* Editing */,
 				EFB25E24219E448000B644B3 /* Constant+StringDateFormat.swift */,
 			);
 			path = Utilities;
@@ -445,6 +462,7 @@
 		EFB25E06219D526700B644B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EF310C3121A0053700C35E36 /* ModelExtensions */,
 				EFB25E07219D527A00B644B3 /* Note.swift */,
 				EFB25E09219D528400B644B3 /* Folder.swift */,
 			);
@@ -465,6 +483,7 @@
 				EFB25E93219EAC6700B644B3 /* FolderEditorController.swift */,
 				EFB25E95219EAC7700B644B3 /* FolderEditorCoordinator.swift */,
 				EFB25E97219EB3BD00B644B3 /* FolderEditorController.xib */,
+				EFB25EA3219FDFA300B644B3 /* FolderEditorPresenter.swift */,
 			);
 			path = FolderEditor;
 			sourceTree = "<group>";
@@ -491,6 +510,15 @@
 				EFB25E9F219FB38400B644B3 /* ListItemContainerNavigator.swift */,
 			);
 			path = ListItemContainer;
+			sourceTree = "<group>";
+		};
+		EFB25EA7219FE45100B644B3 /* Editing */ = {
+			isa = PBXGroup;
+			children = (
+				EFB25E0B219D624000B644B3 /* EditorSession.swift */,
+				EFB25EA5219FE44C00B644B3 /* EditableField.swift */,
+			);
+			path = Editing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -681,8 +709,11 @@
 				EFB25E0E219D6DEE00B644B3 /* ListItemSelected.swift in Sources */,
 				EFB25E08219D527A00B644B3 /* Note.swift in Sources */,
 				EFB25DF1219D20A000B644B3 /* ListFolderCoordinator.swift in Sources */,
+				EFB25EA6219FE44C00B644B3 /* EditableField.swift in Sources */,
 				EFB25DFF219D3E9C00B644B3 /* ListNoteCoordinator.swift in Sources */,
 				EFB25DEF219D1E6C00B644B3 /* ListItemDataSource.swift in Sources */,
+				EF310C3321A0055300C35E36 /* Folder+Extension.swift in Sources */,
+				EFB25EA4219FDFA300B644B3 /* FolderEditorPresenter.swift in Sources */,
 				EFB25DC7219D0D2700B644B3 /* ListItemNavigator.swift in Sources */,
 				EFB25DCA219D0D7200B644B3 /* Coordinator.swift in Sources */,
 				EFB25DE6219D122400B644B3 /* NoteCell.swift in Sources */,
@@ -706,6 +737,7 @@
 				EFB25DFB219D3E8900B644B3 /* ListNotePresenter.swift in Sources */,
 				EFB25DAC219C28E600B644B3 /* SimpleTabBar.swift in Sources */,
 				EFB25DF3219D2CEF00B644B3 /* StartCoordinator.swift in Sources */,
+				EF310C3521A008DB00C35E36 /* Note+Extension.swift in Sources */,
 				EFB25E19219E367400B644B3 /* ListNavigationController.swift in Sources */,
 				EFB25DE2219D120A00B644B3 /* FolderCell.swift in Sources */,
 			);

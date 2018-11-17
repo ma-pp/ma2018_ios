@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FolderEditorController" customModule="CatatanMuslim" customModuleProvider="target">
             <connections>
-                <outlet property="textView" destination="Wn1-Yj-WuS" id="XlO-L8-bNB"/>
+                <outlet property="descriptionTextView" destination="b4G-bg-1y5" id="A1Z-uJ-cxX"/>
+                <outlet property="privacySelector" destination="RVP-6y-xa5" id="RRu-xp-jaV"/>
+                <outlet property="titleTextView" destination="Wn1-Yj-WuS" id="XlO-L8-bNB"/>
                 <outlet property="view" destination="iN0-l3-epB" id="W2O-sa-BHW"/>
             </connections>
         </placeholder>
@@ -30,12 +32,32 @@
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Hello" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b4G-bg-1y5">
+                            <rect key="frame" x="10" y="121.5" width="355" height="40"/>
+                            <color key="backgroundColor" red="0.27084810100000001" green="1" blue="0.45484278919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RVP-6y-xa5">
+                            <rect key="frame" x="10" y="171.5" width="355" height="29"/>
+                            <segments>
+                                <segment title="Public"/>
+                                <segment title="Private"/>
+                                <segment title="Only Me"/>
+                            </segments>
+                        </segmentedControl>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="b4G-bg-1y5" secondAttribute="trailing" constant="10" id="7Ok-Oj-sAi"/>
+                        <constraint firstAttribute="trailing" secondItem="RVP-6y-xa5" secondAttribute="trailing" constant="10" id="85Z-2b-ax6"/>
                         <constraint firstItem="Wn1-Yj-WuS" firstAttribute="leading" secondItem="AYM-Bh-mOQ" secondAttribute="leading" constant="10" id="BEP-8d-q8e"/>
+                        <constraint firstItem="RVP-6y-xa5" firstAttribute="top" secondItem="b4G-bg-1y5" secondAttribute="bottom" constant="10" id="IDb-Qj-fEB"/>
                         <constraint firstAttribute="trailing" secondItem="Wn1-Yj-WuS" secondAttribute="trailing" constant="10" id="Sfv-BS-7gs"/>
+                        <constraint firstItem="b4G-bg-1y5" firstAttribute="top" secondItem="Wn1-Yj-WuS" secondAttribute="bottom" constant="10" id="WQR-wa-NKm"/>
+                        <constraint firstItem="RVP-6y-xa5" firstAttribute="leading" secondItem="AYM-Bh-mOQ" secondAttribute="leading" constant="10" id="bUd-SO-rkM"/>
                         <constraint firstItem="Wn1-Yj-WuS" firstAttribute="top" secondItem="AYM-Bh-mOQ" secondAttribute="top" id="f4B-TO-agk"/>
+                        <constraint firstItem="b4G-bg-1y5" firstAttribute="leading" secondItem="AYM-Bh-mOQ" secondAttribute="leading" constant="10" id="m3o-ZM-G3J"/>
                     </constraints>
                 </view>
             </subviews>

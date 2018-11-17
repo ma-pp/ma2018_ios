@@ -10,16 +10,18 @@ import UIKit
 import Common
 
 class FolderEditorController: UIViewController {
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var titleTextView: UITextView!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var privacySelector: UISegmentedControl!
     
-    var session: EditorSession<Folder>!
     var navigator: FolderEditorNavigator!
+    var presenter: FolderEditorPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupNavigationBar()
         setupTextView()
+        setupEditableField()
     }
     
     private func setupNavigationBar() {
@@ -41,6 +43,33 @@ class FolderEditorController: UIViewController {
         )
     }
     
+    private var editableField: EditableField<Folder>!
+    
+    private func setupEditableField() {
+        switch presenter.session {
+        case .new:
+            editableField = EditableField<Folder>(
+                field: Folder.EditableField(
+                    title: "",
+                    privacy: .default,
+                    description: ""
+                )
+            )
+        case let .edit(folder):
+            editableField = EditableField<Folder>(
+                field: Folder.EditableField(
+                    title: folder.title,
+                    privacy: folder.privacy,
+                    description: folder.description
+                )
+            )
+        }
+        
+        titleTextView.text = editableField.field.title
+        descriptionTextView.text = editableField.field.description
+        privacySelector.selectedSegmentIndex = editableField.field.privacy.rawValue
+    }
+    
     @objc
     private func dismissController() {
         navigator.back()
@@ -48,11 +77,18 @@ class FolderEditorController: UIViewController {
     
     @objc
     private func saveEditedFolder() {
+        editableField.field.privacy = Privacy(
+            rawValue: privacySelector.selectedSegmentIndex
+            ) ?? .default
+        
+        presenter.save(editableField: editableField)
         navigator.back()
     }
     
     private func setupTextView() {
-        textView.delegate = self
+        titleTextView.delegate = self
+        descriptionTextView.delegate = self
+        
         let b = UIButton()
         b.setTitle("Done", for: .normal)
         b.addTarget(self, action: #selector(doneEdit), for: .touchUpInside)
@@ -64,26 +100,34 @@ class FolderEditorController: UIViewController {
         textAccesoryView.frame.origin = .zero
         textAccesoryView.frame.size = CGSize(width: view.bounds.width, height: 44)
         textAccesoryView.backgroundColor = .red
-        textView.inputAccessoryView = textAccesoryView
         
-        
-        textView.text = "textAccesoryView.frame.size = CGSize(width: view.bounds.width, height: 44)"
+        titleTextView.inputAccessoryView = textAccesoryView
+        descriptionTextView.inputAccessoryView = textAccesoryView
     }
+    
+    
+    private var currentFirstResponder: UIResponder?
     
     @objc
     private func doneEdit() {
-        textView.resignFirstResponder()
+        currentFirstResponder?.resignFirstResponder()
     }
 }
 
 extension FolderEditorController: UITextViewDelegate {
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        textView.sizeToFit()
-        self.view.layoutIfNeeded()
-        return true
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        currentFirstResponder = textView
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
-        
+        switch textView {
+        case titleTextView:
+            editableField.field.title = textView.text
+        case descriptionTextView:
+            editableField.field.description = textView.text
+        default:
+            break
+        }
     }
 }

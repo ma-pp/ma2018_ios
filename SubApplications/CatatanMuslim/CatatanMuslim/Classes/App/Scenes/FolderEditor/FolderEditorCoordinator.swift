@@ -27,7 +27,7 @@ class FolderEditorCoordinator: Coordinator {
         }
         
         vc.navigator = self
-        
+        vc.presenter = FolderEditorPresenter(session: session)
         let nav = UINavigationController(rootViewController: vc)
         navigationController
             .topViewController?
