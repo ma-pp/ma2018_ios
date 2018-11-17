@@ -29,6 +29,7 @@ class ListFolderCoordinator: Coordinator {
         let viewController = ListItemContainerController(
             listItemController: vc
         )
+        viewController.navigator = self
         navigationController.pushViewController(
             viewController,
             animated: true
@@ -52,16 +53,21 @@ extension ListFolderCoordinator: ListItemNavigator {
         guard let folder = item.item as? Folder else { return }
         launchFolderEditor(session: .edit(folder))
     }
-    
-    func newItem<T>(_ type: T.Type) where T : ListItemSelected {
-        guard type == Folder.self else { return }
+}
+
+extension ListFolderCoordinator: ListItemContainerNavigator {
+    func makeNewItem() {
         launchFolderEditor(session: .new)
     }
 }
 
-extension ListFolderCoordinator {
+extension ListFolderCoordinator: ListFolderNavigator {
     func launchFolderEditor(session: EditorSession<Folder>) {
-        
+        let coordinator = FolderEditorCoordinator(
+            navigationController: navigationController,
+            session: session
+        )
+        coordinator.start()
     }
     
     func launchListNote(folder: Folder) {

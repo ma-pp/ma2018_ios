@@ -10,10 +10,13 @@ import UIKit
 
 class ListItemContainerController: UIViewController {
     private var listItemController: ListItemController!
+    
     convenience init(listItemController: ListItemController) {
         self.init()
         self.listItemController = listItemController
     }
+    
+    var navigator: ListItemContainerNavigator!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,6 +123,6 @@ class ListItemContainerController: UIViewController {
     
     @objc
     private func newItem() {
-        
+        navigator.makeNewItem()
     }
 }

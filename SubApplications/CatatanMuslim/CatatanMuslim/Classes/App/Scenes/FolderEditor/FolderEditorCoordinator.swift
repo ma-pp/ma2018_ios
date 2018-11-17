@@ -13,7 +13,7 @@ protocol FolderEditorNavigator: Navigator {
     
 }
 
-class FolderEditCoordinator: Coordinator {
+class FolderEditorCoordinator: Coordinator {
     private let navigationController: UINavigationController
     private let session: EditorSession<Folder>
     init(navigationController: UINavigationController, session: EditorSession<Folder>) {
@@ -25,13 +25,26 @@ class FolderEditCoordinator: Coordinator {
         guard let vc: FolderEditorController = NibLoader.loadController() else {
             fatalError()
         }
-        navigationController.pushViewController(vc, animated: true)
+        
+        vc.navigator = self
+        
+        let nav = UINavigationController(rootViewController: vc)
+        navigationController
+            .topViewController?
+            .present(
+                nav,
+                animated: true,
+                completion: nil
+        )
     }
 }
 
-extension FolderEditCoordinator: FolderEditorNavigator {
+extension FolderEditorCoordinator: FolderEditorNavigator {
     func back() {
-        navigationController.popViewController(animated: true)
+        navigationController
+            .topViewController?
+            .presentedViewController?
+            .dismiss(animated: true, completion: nil)
     }
 }
 
