@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 import Logging
 
 @UIApplicationMain
@@ -26,6 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         return true
+    }
+    
+    private func setupThirdPartyLibrary() {
+        IQKeyboardManager.shared.enable = true
     }
 
 }
