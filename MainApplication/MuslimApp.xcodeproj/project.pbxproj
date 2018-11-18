@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41036628BD01A71782CA1FED /* Pods_MuslimApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6480684CE3610D569CB9A80 /* Pods_MuslimApp.framework */; };
 		EFAA191A218D29DA003C7508 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; };
 		EFAA191B218D29DA003C7508 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFAA191D218D2A75003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA191C218D2A75003C7508 /* Configuration.swift */; };
@@ -152,6 +153,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D6480684CE3610D569CB9A80 /* Pods_MuslimApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuslimApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA18E3218D1FDC003C7508 /* SubApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubApplicationManager.swift; sourceTree = "<group>"; };
 		EFAA18E6218D2293003C7508 /* LauncherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherCell.swift; sourceTree = "<group>"; };
 		EFAA18E7218D2293003C7508 /* LauncherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LauncherCell.xib; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				EFAA19E3218D54BD003C7508 /* CatatanMuslim.framework in Frameworks */,
 				EFAA1929218D2C82003C7508 /* AgendaMuslim.framework in Frameworks */,
 				EFAA19E9218D54CE003C7508 /* AmalanYaumiyah.framework in Frameworks */,
+				41036628BD01A71782CA1FED /* Pods_MuslimApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +282,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D723E133258B870BD88B325 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF1B88B0218D0D9F00A71AFE /* HomeLauncher */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,6 +430,7 @@
 		EFB25E5C219E585600B644B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6480684CE3610D569CB9A80 /* Pods_MuslimApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -456,6 +467,7 @@
 				EFB25E64219E58BA00B644B3 /* SubApplicationManager */,
 				EFB90B0F218C7CAE00CAEC2E /* Products */,
 				EFB25E5C219E585600B644B3 /* Frameworks */,
+				0D723E133258B870BD88B325 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -583,11 +595,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFB90B20218C7CAE00CAEC2E /* Build configuration list for PBXNativeTarget "MuslimApp" */;
 			buildPhases = (
+				068BEB5B96B1891B83607AB3 /* [CP] Check Pods Manifest.lock */,
 				EFB90B0A218C7CAE00CAEC2E /* Sources */,
 				EFB90B0B218C7CAE00CAEC2E /* Frameworks */,
 				EFB90B0C218C7CAE00CAEC2E /* Resources */,
 				EFB90BB7218C7EFB00CAEC2E /* Embed Frameworks */,
 				EFAA1A2C218DD773003C7508 /* ShellScript */,
+				AA900E5B47D8DD7917451AC5 /* [CP] Embed Pods Frameworks */,
+				474A70B25113A8F1D7AE21C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -740,6 +755,57 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		068BEB5B96B1891B83607AB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuslimApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		474A70B25113A8F1D7AE21C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MuslimApp/Pods-MuslimApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA900E5B47D8DD7917451AC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-MuslimApp/Pods-MuslimApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZSSRichTextEditor/ZSSRichTextEditor.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZSSRichTextEditor.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MuslimApp/Pods-MuslimApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EFAA1A2C218DD773003C7508 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -962,7 +1028,6 @@
 		};
 		EFB90B1E218C7CAE00CAEC2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A6A218DE405003C7508 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -995,7 +1060,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Carthage/Build/iOS/\"";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1021,7 +1086,6 @@
 		};
 		EFB90B1F218C7CAE00CAEC2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A69218DE37B003C7508 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1054,7 +1118,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Carthage/Build/iOS/\"";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

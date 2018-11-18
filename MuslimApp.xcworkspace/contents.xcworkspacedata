@@ -7,9 +7,6 @@
    <FileRef
       location = "group:MainApplication/../README.md">
    </FileRef>
-   <FileRef
-      location = "container:MainApplication/MuslimApp.xcodeproj">
-   </FileRef>
    <Group
       location = "container:"
       name = "Modules">
@@ -48,4 +45,10 @@
          location = "group:SubApplications/AgendaMuslim/AgendaMuslim.xcodeproj">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:MainApplication/MuslimApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>
