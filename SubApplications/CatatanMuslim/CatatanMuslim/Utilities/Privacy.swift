@@ -8,9 +8,10 @@
 
 import Foundation
 
-enum Privacy {
-    case `public`
+enum Privacy: Int {
+    case `public` = 0
     case `private`
     case onlyMe
     
+    static let `default` = Privacy.public
 }

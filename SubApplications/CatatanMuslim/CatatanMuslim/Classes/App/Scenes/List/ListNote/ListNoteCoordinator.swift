@@ -9,7 +9,7 @@
 import Foundation
 import Logging
 
-protocol ListNoteNavigator: ListItemNavigator {
+protocol ListNoteNavigator {
     func launchNoteEditor(session: EditorSession<Note>)
 }
 
@@ -31,8 +31,12 @@ class ListNoteCoordinator {
         vc.presenter = context.presenter
         vc.navigator = self
         vc.setupTableView(with: context.tableViewSetup)
+        let viewController = ListItemContainerController(
+            listItemController: vc
+        )
+        viewController.navigator = self
         navigationController.pushViewController(
-            vc,
+            viewController,
             animated: true
         )
         
@@ -40,7 +44,7 @@ class ListNoteCoordinator {
     }
 }
 
-extension ListNoteCoordinator: ListNoteNavigator {
+extension ListNoteCoordinator: ListItemNavigator {
     func back() {
         navigationController.popViewController(animated: true)
     }
@@ -54,9 +58,10 @@ extension ListNoteCoordinator: ListNoteNavigator {
         guard let note = item.item as? Note else { return }
         launchNoteEditor(session: .edit(note))
     }
-    
-    func newItem<T>(_ type: T.Type) where T : ListItemSelected {
-        guard type == Note.self else { return }
+}
+
+extension ListNoteCoordinator: ListItemContainerNavigator {
+    func makeNewItem() {
         launchNoteEditor(session: .new)
     }
 }

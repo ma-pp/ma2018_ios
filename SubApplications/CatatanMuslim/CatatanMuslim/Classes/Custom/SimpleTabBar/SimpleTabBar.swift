@@ -10,7 +10,7 @@ import UIKit
 import Common
 
 class SimpleTabBar: UIView {
-    @IBOutlet weak var new: UIButton!
+    @IBOutlet weak var newButton: UIButton!
     // See XIB configuration!
     @IBOutlet weak var buttonsStackView: UIStackView!
     

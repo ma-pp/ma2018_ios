@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         do {
+            setupThirdPartyLibrary()
+            
             let window = UIWindow(frame: UIScreen.main.bounds)
             try Application.shared.start(window: window)
             self.window = window
