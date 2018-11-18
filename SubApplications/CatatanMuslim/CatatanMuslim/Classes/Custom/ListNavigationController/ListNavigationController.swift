@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Common
 
 public class ListNavigationController: UINavigationController {
     override public func viewDidLoad() {
@@ -16,7 +17,7 @@ public class ListNavigationController: UINavigationController {
     }
     
     lazy var tabBar: SimpleTabBar = {
-        return UIView.load(type: SimpleTabBar.self)!
+        return NibLoader.load(SimpleTabBar.self)!
     }()
     
     private let badgeSetting = (
@@ -27,7 +28,7 @@ public class ListNavigationController: UINavigationController {
         )
     )
     
-    private let toggleUnreadButton = BadgedButton()
+    let toggleUnreadButton = BadgedButton()
     private func setupToggleUnreadButton() {
         toggleUnreadButton.setTitle("Unread", for: .normal)
         toggleUnreadButton.setTitleColor(.black, for: .normal)
@@ -37,13 +38,13 @@ public class ListNavigationController: UINavigationController {
         btn.badge.rightPadding = badgeSetting.padding.right
     }
     
-    private let toggleGridButton = UIButton()
+    let toggleGridButton = UIButton()
     private func setupToggleGridButton() {
         toggleGridButton.setTitle("Grid", for: .normal)
         toggleGridButton.setTitleColor(.black, for: .normal)
     }
     
-    private let showDiscussionButton = BadgedButton()
+    let showDiscussionButton = BadgedButton()
     private func setupShowDiscussionButton() {
         showDiscussionButton.setTitle("Discuss", for: .normal)
         showDiscussionButton.setTitleColor(.black, for: .normal)

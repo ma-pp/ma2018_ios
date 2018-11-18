@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFAA18E4218D1FDC003C7508 /* SubApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E3218D1FDC003C7508 /* SubApplicationManager.swift */; };
-		EFAA18E8218D2293003C7508 /* LauncherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E6218D2293003C7508 /* LauncherCell.swift */; };
-		EFAA18E9218D2293003C7508 /* LauncherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA18E7218D2293003C7508 /* LauncherCell.xib */; };
 		EFAA191A218D29DA003C7508 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; };
 		EFAA191B218D29DA003C7508 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFAA191D218D2A75003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA191C218D2A75003C7508 /* Configuration.swift */; };
@@ -21,8 +18,6 @@
 		EFAA1927218D2C82003C7508 /* LowonganKerjaMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFAA1929218D2C82003C7508 /* AgendaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */; };
 		EFAA192A218D2C82003C7508 /* AgendaMuslim.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFAA192C218D2D92003C7508 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA192B218D2D92003C7508 /* HomeController.xib */; };
-		EFAA192E218D3A23003C7508 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA192D218D3A23003C7508 /* UIView+Extension.swift */; };
 		EFAA19E0218D54B6003C7508 /* KakakAsuh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19DF218D54B6003C7508 /* KakakAsuh.framework */; };
 		EFAA19E1218D54B6003C7508 /* KakakAsuh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19DF218D54B6003C7508 /* KakakAsuh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFAA19E3218D54BD003C7508 /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */; };
@@ -31,15 +26,6 @@
 		EFAA19E7218D54CE003C7508 /* JadwalShalat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFAA19E9218D54CE003C7508 /* AmalanYaumiyah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */; };
 		EFAA19EA218D54CE003C7508 /* AmalanYaumiyah.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFAA1A0A218D76E9003C7508 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A09218D76E9003C7508 /* ProfileController.swift */; };
-		EFAA1A0C218D7722003C7508 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A0B218D7722003C7508 /* NotificationController.swift */; };
-		EFAA1A0E218D77D8003C7508 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A0D218D77D8003C7508 /* Coordinator.swift */; };
-		EFAA1A11218D7823003C7508 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A10218D7823003C7508 /* Navigator.swift */; };
-		EFAA1A13218D78ED003C7508 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A12218D78ED003C7508 /* HomeCoordinator.swift */; };
-		EFAA1A16218D7B03003C7508 /* SubApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A15218D7B03003C7508 /* SubApplicationCoordinator.swift */; };
-		EFAA1A18218D7BD7003C7508 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A17218D7BD7003C7508 /* ProfileCoordinator.swift */; };
-		EFAA1A1A218D7C9B003C7508 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A19218D7C9B003C7508 /* HomePresenter.swift */; };
-		EFAA1A1C218D7D50003C7508 /* NotificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A1B218D7D50003C7508 /* NotificationCoordinator.swift */; };
 		EFAA1A26218DAE5C003C7508 /* AssetsFileNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A25218DAE5C003C7508 /* AssetsFileNames.swift */; };
 		EFAA1A35218DE136003C7508 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A33218DE135003C7508 /* CocoaLumberjack.framework */; };
 		EFAA1A36218DE136003C7508 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A33218DE135003C7508 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -47,12 +33,45 @@
 		EFAA1A38218DE136003C7508 /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A34218DE135003C7508 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFAA1A75218DEA2A003C7508 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A65218DE315003C7508 /* Logging.framework */; };
 		EFAA1A76218DEA2A003C7508 /* Logging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1A65218DE315003C7508 /* Logging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFAA1A78218DF4BA003C7508 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A77218DF4BA003C7508 /* LoginController.swift */; };
-		EFAA1A7A218DF568003C7508 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A79218DF568003C7508 /* LoginCoordinator.swift */; };
-		EFAA1A7C218E6F7B003C7508 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1A7B218E6F7B003C7508 /* LoginController.xib */; };
-		EFAA1A7F218E711E003C7508 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A7D218E711E003C7508 /* RegistrationController.swift */; };
-		EFAA1A80218E711E003C7508 /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1A7E218E711E003C7508 /* RegistrationController.xib */; };
-		EFAA1A82218E72A5003C7508 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A81218E72A5003C7508 /* RegistrationCoordinator.swift */; };
+		EFB25E37219E56A200B644B3 /* AppsLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB25E35219E56A200B644B3 /* AppsLauncher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFB25E3A219E56A200B644B3 /* AppsLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB25E33219E56A200B644B3 /* AppsLauncher.framework */; };
+		EFB25E3B219E56A200B644B3 /* AppsLauncher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB25E33219E56A200B644B3 /* AppsLauncher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFB25E43219E56E500B644B3 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25E42219E56E500B644B3 /* Configuration.swift */; };
+		EFB25E47219E56F400B644B3 /* AssetFileNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25E46219E56F400B644B3 /* AssetFileNames.swift */; };
+		EFB25E48219E577500B644B3 /* SubApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A15218D7B03003C7508 /* SubApplicationCoordinator.swift */; };
+		EFB25E49219E577500B644B3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A0B218D7722003C7508 /* NotificationController.swift */; };
+		EFB25E4A219E577500B644B3 /* NotificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A1B218D7D50003C7508 /* NotificationCoordinator.swift */; };
+		EFB25E4B219E577500B644B3 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A09218D76E9003C7508 /* ProfileController.swift */; };
+		EFB25E4C219E577500B644B3 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A17218D7BD7003C7508 /* ProfileCoordinator.swift */; };
+		EFB25E4D219E577500B644B3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A77218DF4BA003C7508 /* LoginController.swift */; };
+		EFB25E4E219E577500B644B3 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A79218DF568003C7508 /* LoginCoordinator.swift */; };
+		EFB25E4F219E577500B644B3 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1A7B218E6F7B003C7508 /* LoginController.xib */; };
+		EFB25E50219E577500B644B3 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A7D218E711E003C7508 /* RegistrationController.swift */; };
+		EFB25E51219E577500B644B3 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A81218E72A5003C7508 /* RegistrationCoordinator.swift */; };
+		EFB25E52219E577500B644B3 /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA1A7E218E711E003C7508 /* RegistrationController.xib */; };
+		EFB25E53219E577500B644B3 /* LauncherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E6218D2293003C7508 /* LauncherCell.swift */; };
+		EFB25E54219E577500B644B3 /* LauncherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA18E7218D2293003C7508 /* LauncherCell.xib */; };
+		EFB25E55219E577500B644B3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90C5F218C899500CAEC2E /* HomeController.swift */; };
+		EFB25E56219E577500B644B3 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAA192B218D2D92003C7508 /* HomeController.xib */; };
+		EFB25E57219E577500B644B3 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A12218D78ED003C7508 /* HomeCoordinator.swift */; };
+		EFB25E58219E577500B644B3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A19218D7C9B003C7508 /* HomePresenter.swift */; };
+		EFB25E59219E579B00B644B3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A0D218D77D8003C7508 /* Coordinator.swift */; };
+		EFB25E5A219E579B00B644B3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1A10218D7823003C7508 /* Navigator.swift */; };
+		EFB25E67219E58BA00B644B3 /* SubApplicationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB25E65219E58BA00B644B3 /* SubApplicationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFB25E6A219E58BA00B644B3 /* SubApplicationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB25E63219E58BA00B644B3 /* SubApplicationManager.framework */; };
+		EFB25E6B219E58BA00B644B3 /* SubApplicationManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB25E63219E58BA00B644B3 /* SubApplicationManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFB25E6F219E58C500B644B3 /* SubApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA18E3218D1FDC003C7508 /* SubApplicationManager.swift */; };
+		EFB25E70219E58E200B644B3 /* SubApplicationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB25E63219E58BA00B644B3 /* SubApplicationManager.framework */; };
+		EFB25E71219E590600B644B3 /* SubApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; };
+		EFB25E72219E590C00B644B3 /* SubApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; };
+		EFB25E76219E5A8500B644B3 /* AppsLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB25E75219E5A8500B644B3 /* AppsLauncher.swift */; };
+		EFB25E79219E64F800B644B3 /* AgendaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */; };
+		EFB25E7A219E650E00B644B3 /* LowonganKerjaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */; };
+		EFB25E7B219E651600B644B3 /* AmalanYaumiyah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E8218D54CE003C7508 /* AmalanYaumiyah.framework */; };
+		EFB25E7C219E651D00B644B3 /* KakakAsuh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19DF218D54B6003C7508 /* KakakAsuh.framework */; };
+		EFB25E7D219E652900B644B3 /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */; };
+		EFB25E7E219E652F00B644B3 /* JadwalShalat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */; };
+		EFB25E7F219E66CA00B644B3 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1919218D29DA003C7508 /* Common.framework */; };
 		EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */; };
 		EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90B13218C7CAE00CAEC2E /* ViewController.swift */; };
 		EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB90B18218C7CAE00CAEC2E /* Assets.xcassets */; };
@@ -64,10 +83,23 @@
 		EFB90BDB218C7F4000CAEC2E /* SubApplication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFB90BE4218C7F8B00CAEC2E /* SubApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90BE3218C7F8B00CAEC2E /* SubApplication.swift */; };
 		EFB90C5E218C883800CAEC2E /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90C5D218C883800CAEC2E /* Application.swift */; };
-		EFB90C60218C899500CAEC2E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB90C5F218C899500CAEC2E /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EFB25E38219E56A200B644B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB90B06218C7CAE00CAEC2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB25E32219E56A200B644B3;
+			remoteInfo = AppsLauncher;
+		};
+		EFB25E68219E58BA00B644B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB90B06218C7CAE00CAEC2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB25E62219E58BA00B644B3;
+			remoteInfo = SubApplicationManager;
+		};
 		EFB90BCF218C7F4000CAEC2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EFB90B06218C7CAE00CAEC2E /* Project object */;
@@ -100,8 +132,10 @@
 			files = (
 				EFB90BDB218C7F4000CAEC2E /* SubApplication.framework in Embed Frameworks */,
 				EFAA191B218D29DA003C7508 /* Common.framework in Embed Frameworks */,
+				EFB25E3B219E56A200B644B3 /* AppsLauncher.framework in Embed Frameworks */,
 				EFAA19E1218D54B6003C7508 /* KakakAsuh.framework in Embed Frameworks */,
 				EFAA19E7218D54CE003C7508 /* JadwalShalat.framework in Embed Frameworks */,
+				EFB25E6B219E58BA00B644B3 /* SubApplicationManager.framework in Embed Frameworks */,
 				EFAA1921218D2C82003C7508 /* Networking.framework in Embed Frameworks */,
 				EFAA1A36218DE136003C7508 /* CocoaLumberjack.framework in Embed Frameworks */,
 				EFAA1A76218DEA2A003C7508 /* Logging.framework in Embed Frameworks */,
@@ -128,7 +162,6 @@
 		EFAA1925218D2C82003C7508 /* LowonganKerjaMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LowonganKerjaMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA1928218D2C82003C7508 /* AgendaMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AgendaMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA192B218D2D92003C7508 /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
-		EFAA192D218D3A23003C7508 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		EFAA19DF218D54B6003C7508 /* KakakAsuh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KakakAsuh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA19E2218D54BD003C7508 /* CatatanMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatatanMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA19E5218D54CE003C7508 /* JadwalShalat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JadwalShalat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +188,15 @@
 		EFAA1A7D218E711E003C7508 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		EFAA1A7E218E711E003C7508 /* RegistrationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationController.xib; sourceTree = "<group>"; };
 		EFAA1A81218E72A5003C7508 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
+		EFB25E33219E56A200B644B3 /* AppsLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppsLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB25E35219E56A200B644B3 /* AppsLauncher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppsLauncher.h; sourceTree = "<group>"; };
+		EFB25E36219E56A200B644B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB25E42219E56E500B644B3 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		EFB25E46219E56F400B644B3 /* AssetFileNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetFileNames.swift; sourceTree = "<group>"; };
+		EFB25E63219E58BA00B644B3 /* SubApplicationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubApplicationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB25E65219E58BA00B644B3 /* SubApplicationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubApplicationManager.h; sourceTree = "<group>"; };
+		EFB25E66219E58BA00B644B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB25E75219E5A8500B644B3 /* AppsLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsLauncher.swift; sourceTree = "<group>"; };
 		EFB90B0E218C7CAE00CAEC2E /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB90B11218C7CAE00CAEC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB90B13218C7CAE00CAEC2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,14 +215,40 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EFB25E2F219E56A200B644B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB25E7F219E66CA00B644B3 /* Common.framework in Frameworks */,
+				EFB25E71219E590600B644B3 /* SubApplication.framework in Frameworks */,
+				EFB25E70219E58E200B644B3 /* SubApplicationManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB25E5F219E58BA00B644B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB25E7E219E652F00B644B3 /* JadwalShalat.framework in Frameworks */,
+				EFB25E7D219E652900B644B3 /* CatatanMuslim.framework in Frameworks */,
+				EFB25E7C219E651D00B644B3 /* KakakAsuh.framework in Frameworks */,
+				EFB25E7B219E651600B644B3 /* AmalanYaumiyah.framework in Frameworks */,
+				EFB25E7A219E650E00B644B3 /* LowonganKerjaMuslim.framework in Frameworks */,
+				EFB25E79219E64F800B644B3 /* AgendaMuslim.framework in Frameworks */,
+				EFB25E72219E590C00B644B3 /* SubApplication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFB90B0B218C7CAE00CAEC2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EFB90BDA218C7F4000CAEC2E /* SubApplication.framework in Frameworks */,
 				EFAA191A218D29DA003C7508 /* Common.framework in Frameworks */,
+				EFB25E3A219E56A200B644B3 /* AppsLauncher.framework in Frameworks */,
 				EFAA19E0218D54B6003C7508 /* KakakAsuh.framework in Frameworks */,
 				EFAA19E6218D54CE003C7508 /* JadwalShalat.framework in Frameworks */,
+				EFB25E6A219E58BA00B644B3 /* SubApplicationManager.framework in Frameworks */,
 				EFAA1920218D2C82003C7508 /* Networking.framework in Frameworks */,
 				EFAA1A35218DE136003C7508 /* CocoaLumberjack.framework in Frameworks */,
 				EFAA1A75218DEA2A003C7508 /* Logging.framework in Frameworks */,
@@ -277,7 +345,6 @@
 			isa = PBXGroup;
 			children = (
 				EFAA191C218D2A75003C7508 /* Configuration.swift */,
-				EFAA192D218D3A23003C7508 /* UIView+Extension.swift */,
 				EFAA1A25218DAE5C003C7508 /* AssetsFileNames.swift */,
 			);
 			path = Extensions;
@@ -328,6 +395,45 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		EFB25E34219E56A200B644B3 /* AppsLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA1A0F218D77F3003C7508 /* Utilities */,
+				EF1B88B5218D0DAE00A71AFE /* Scenes */,
+				EFB25E41219E56DB00B644B3 /* Extensions */,
+				EFB25E35219E56A200B644B3 /* AppsLauncher.h */,
+				EFB25E36219E56A200B644B3 /* Info.plist */,
+				EFB25E75219E5A8500B644B3 /* AppsLauncher.swift */,
+			);
+			path = AppsLauncher;
+			sourceTree = "<group>";
+		};
+		EFB25E41219E56DB00B644B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFB25E42219E56E500B644B3 /* Configuration.swift */,
+				EFB25E46219E56F400B644B3 /* AssetFileNames.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EFB25E5C219E585600B644B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFB25E64219E58BA00B644B3 /* SubApplicationManager */ = {
+			isa = PBXGroup;
+			children = (
+				EFAA18E3218D1FDC003C7508 /* SubApplicationManager.swift */,
+				EFB25E65219E58BA00B644B3 /* SubApplicationManager.h */,
+				EFB25E66219E58BA00B644B3 /* Info.plist */,
+			);
+			path = SubApplicationManager;
+			sourceTree = "<group>";
+		};
 		EFB90B05218C7CAE00CAEC2E = {
 			isa = PBXGroup;
 			children = (
@@ -346,7 +452,10 @@
 				EFB90B10218C7CAE00CAEC2E /* MuslimApp */,
 				EFB90BC6218C7F4000CAEC2E /* SubApplication */,
 				EFB90BD3218C7F4000CAEC2E /* SubApplicationTests */,
+				EFB25E34219E56A200B644B3 /* AppsLauncher */,
+				EFB25E64219E58BA00B644B3 /* SubApplicationManager */,
 				EFB90B0F218C7CAE00CAEC2E /* Products */,
+				EFB25E5C219E585600B644B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -356,6 +465,8 @@
 				EFB90B0E218C7CAE00CAEC2E /* MuslimApp.app */,
 				EFB90BC5218C7F4000CAEC2E /* SubApplication.framework */,
 				EFB90BCD218C7F4000CAEC2E /* SubApplicationTests.xctest */,
+				EFB25E33219E56A200B644B3 /* AppsLauncher.framework */,
+				EFB25E63219E58BA00B644B3 /* SubApplicationManager.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -370,10 +481,7 @@
 				EFB90B1A218C7CAE00CAEC2E /* LaunchScreen.storyboard */,
 				EFB90B1D218C7CAE00CAEC2E /* Info.plist */,
 				EFB90C5D218C883800CAEC2E /* Application.swift */,
-				EFAA18E3218D1FDC003C7508 /* SubApplicationManager.swift */,
-				EF1B88B5218D0DAE00A71AFE /* Scenes */,
 				EFAA191E218D2A7C003C7508 /* Extensions */,
-				EFAA1A0F218D77F3003C7508 /* Utilities */,
 			);
 			path = MuslimApp;
 			sourceTree = "<group>";
@@ -408,6 +516,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		EFB25E30219E56A200B644B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB25E37219E56A200B644B3 /* AppsLauncher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB25E60219E58BA00B644B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB25E67219E58BA00B644B3 /* SubApplicationManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFB90BC2218C7F4000CAEC2E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,6 +543,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		EFB25E32219E56A200B644B3 /* AppsLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB25E3E219E56A200B644B3 /* Build configuration list for PBXNativeTarget "AppsLauncher" */;
+			buildPhases = (
+				EFB25E2E219E56A200B644B3 /* Sources */,
+				EFB25E2F219E56A200B644B3 /* Frameworks */,
+				EFB25E30219E56A200B644B3 /* Headers */,
+				EFB25E31219E56A200B644B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppsLauncher;
+			productName = AppsLauncher;
+			productReference = EFB25E33219E56A200B644B3 /* AppsLauncher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFB25E62219E58BA00B644B3 /* SubApplicationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB25E6C219E58BA00B644B3 /* Build configuration list for PBXNativeTarget "SubApplicationManager" */;
+			buildPhases = (
+				EFB25E5E219E58BA00B644B3 /* Sources */,
+				EFB25E5F219E58BA00B644B3 /* Frameworks */,
+				EFB25E60219E58BA00B644B3 /* Headers */,
+				EFB25E61219E58BA00B644B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubApplicationManager;
+			productName = SubApplicationManager;
+			productReference = EFB25E63219E58BA00B644B3 /* SubApplicationManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		EFB90B0D218C7CAE00CAEC2E /* MuslimApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFB90B20218C7CAE00CAEC2E /* Build configuration list for PBXNativeTarget "MuslimApp" */;
@@ -433,6 +593,8 @@
 			);
 			dependencies = (
 				EFB90BD9218C7F4000CAEC2E /* PBXTargetDependency */,
+				EFB25E39219E56A200B644B3 /* PBXTargetDependency */,
+				EFB25E69219E58BA00B644B3 /* PBXTargetDependency */,
 			);
 			name = MuslimApp;
 			productName = MuslimApp;
@@ -486,6 +648,15 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = PondokiOS;
 				TargetAttributes = {
+					EFB25E32219E56A200B644B3 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					EFB25E62219E58BA00B644B3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					EFB90B0D218C7CAE00CAEC2E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -518,20 +689,36 @@
 				EFB90B0D218C7CAE00CAEC2E /* MuslimApp */,
 				EFB90BC4218C7F4000CAEC2E /* SubApplication */,
 				EFB90BCC218C7F4000CAEC2E /* SubApplicationTests */,
+				EFB25E32219E56A200B644B3 /* AppsLauncher */,
+				EFB25E62219E58BA00B644B3 /* SubApplicationManager */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EFB25E31219E56A200B644B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB25E56219E577500B644B3 /* HomeController.xib in Resources */,
+				EFB25E52219E577500B644B3 /* RegistrationController.xib in Resources */,
+				EFB25E54219E577500B644B3 /* LauncherCell.xib in Resources */,
+				EFB25E4F219E577500B644B3 /* LoginController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB25E61219E58BA00B644B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFB90B0C218C7CAE00CAEC2E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFAA192C218D2D92003C7508 /* HomeController.xib in Resources */,
 				EFB90B1C218C7CAE00CAEC2E /* LaunchScreen.storyboard in Resources */,
-				EFAA1A80218E711E003C7508 /* RegistrationController.xib in Resources */,
-				EFAA18E9218D2293003C7508 /* LauncherCell.xib in Resources */,
-				EFAA1A7C218E6F7B003C7508 /* LoginController.xib in Resources */,
 				EFB90B19218C7CAE00CAEC2E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,32 +758,48 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EFB25E2E219E56A200B644B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB25E4C219E577500B644B3 /* ProfileCoordinator.swift in Sources */,
+				EFB25E4B219E577500B644B3 /* ProfileController.swift in Sources */,
+				EFB25E57219E577500B644B3 /* HomeCoordinator.swift in Sources */,
+				EFB25E55219E577500B644B3 /* HomeController.swift in Sources */,
+				EFB25E4E219E577500B644B3 /* LoginCoordinator.swift in Sources */,
+				EFB25E49219E577500B644B3 /* NotificationController.swift in Sources */,
+				EFB25E53219E577500B644B3 /* LauncherCell.swift in Sources */,
+				EFB25E4A219E577500B644B3 /* NotificationCoordinator.swift in Sources */,
+				EFB25E4D219E577500B644B3 /* LoginController.swift in Sources */,
+				EFB25E50219E577500B644B3 /* RegistrationController.swift in Sources */,
+				EFB25E59219E579B00B644B3 /* Coordinator.swift in Sources */,
+				EFB25E5A219E579B00B644B3 /* Navigator.swift in Sources */,
+				EFB25E76219E5A8500B644B3 /* AppsLauncher.swift in Sources */,
+				EFB25E48219E577500B644B3 /* SubApplicationCoordinator.swift in Sources */,
+				EFB25E47219E56F400B644B3 /* AssetFileNames.swift in Sources */,
+				EFB25E43219E56E500B644B3 /* Configuration.swift in Sources */,
+				EFB25E51219E577500B644B3 /* RegistrationCoordinator.swift in Sources */,
+				EFB25E58219E577500B644B3 /* HomePresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB25E5E219E58BA00B644B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB25E6F219E58C500B644B3 /* SubApplicationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFB90B0A218C7CAE00CAEC2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFAA1A78218DF4BA003C7508 /* LoginController.swift in Sources */,
-				EFAA1A1C218D7D50003C7508 /* NotificationCoordinator.swift in Sources */,
-				EFAA1A7A218DF568003C7508 /* LoginCoordinator.swift in Sources */,
-				EFAA1A0C218D7722003C7508 /* NotificationController.swift in Sources */,
-				EFAA1A82218E72A5003C7508 /* RegistrationCoordinator.swift in Sources */,
-				EFB90C60218C899500CAEC2E /* HomeController.swift in Sources */,
-				EFAA1A18218D7BD7003C7508 /* ProfileCoordinator.swift in Sources */,
 				EFAA191D218D2A75003C7508 /* Configuration.swift in Sources */,
-				EFAA1A7F218E711E003C7508 /* RegistrationController.swift in Sources */,
-				EFAA192E218D3A23003C7508 /* UIView+Extension.swift in Sources */,
-				EFAA18E8218D2293003C7508 /* LauncherCell.swift in Sources */,
 				EFAA1A26218DAE5C003C7508 /* AssetsFileNames.swift in Sources */,
-				EFAA1A11218D7823003C7508 /* Navigator.swift in Sources */,
 				EFB90C5E218C883800CAEC2E /* Application.swift in Sources */,
-				EFAA1A0E218D77D8003C7508 /* Coordinator.swift in Sources */,
-				EFAA1A16218D7B03003C7508 /* SubApplicationCoordinator.swift in Sources */,
-				EFAA1A13218D78ED003C7508 /* HomeCoordinator.swift in Sources */,
-				EFAA1A0A218D76E9003C7508 /* ProfileController.swift in Sources */,
 				EFB90B14218C7CAE00CAEC2E /* ViewController.swift in Sources */,
 				EFB90B12218C7CAE00CAEC2E /* AppDelegate.swift in Sources */,
-				EFAA18E4218D1FDC003C7508 /* SubApplicationManager.swift in Sources */,
-				EFAA1A1A218D7C9B003C7508 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +822,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EFB25E39219E56A200B644B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB25E32219E56A200B644B3 /* AppsLauncher */;
+			targetProxy = EFB25E38219E56A200B644B3 /* PBXContainerItemProxy */;
+		};
+		EFB25E69219E58BA00B644B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB25E62219E58BA00B644B3 /* SubApplicationManager */;
+			targetProxy = EFB25E68219E58BA00B644B3 /* PBXContainerItemProxy */;
+		};
 		EFB90BD0218C7F4000CAEC2E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EFB90BC4218C7F4000CAEC2E /* SubApplication */;
@@ -648,6 +861,105 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EFB25E3C219E56A200B644B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AppsLauncher/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.AppsLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFB25E3D219E56A200B644B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AppsLauncher/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.AppsLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFB25E6D219E58BA00B644B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SubApplicationManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.SubApplicationManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFB25E6E219E58BA00B644B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SubApplicationManager/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.SubApplicationManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		EFB90B1E218C7CAE00CAEC2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EFAA1A6A218DE405003C7508 /* Development.xcconfig */;
@@ -883,6 +1195,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EFB25E3E219E56A200B644B3 /* Build configuration list for PBXNativeTarget "AppsLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB25E3C219E56A200B644B3 /* Debug */,
+				EFB25E3D219E56A200B644B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB25E6C219E58BA00B644B3 /* Build configuration list for PBXNativeTarget "SubApplicationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB25E6D219E58BA00B644B3 /* Debug */,
+				EFB25E6E219E58BA00B644B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EFB90B09218C7CAE00CAEC2E /* Build configuration list for PBXProject "MuslimApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
