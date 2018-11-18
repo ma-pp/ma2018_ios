@@ -88,21 +88,6 @@ class FolderEditorController: UIViewController {
     private func setupTextView() {
         titleTextView.delegate = self
         descriptionTextView.delegate = self
-        
-        let b = UIButton()
-        b.setTitle("Done", for: .normal)
-        b.addTarget(self, action: #selector(doneEdit), for: .touchUpInside)
-        let textAccesoryView = InputAccesory(
-            buttons: [
-                b
-            ]
-        )
-        textAccesoryView.frame.origin = .zero
-        textAccesoryView.frame.size = CGSize(width: view.bounds.width, height: 44)
-        textAccesoryView.backgroundColor = .red
-        
-        titleTextView.inputAccessoryView = textAccesoryView
-        descriptionTextView.inputAccessoryView = textAccesoryView
     }
     
     
