@@ -2,7 +2,7 @@
 //  SubApplicationManager.h
 //  SubApplicationManager
 //
-//  Created by PondokiOS on 11/16/18.
+//  Created by PondokiOS on 11/19/18.
 //  Copyright © 2018 PondokiOS. All rights reserved.
 //
 
