@@ -46,7 +46,7 @@
       </FileRef>
    </Group>
    <FileRef
-      location = "group:MainApplication/MuslimApp.xcodeproj">
+      location = "group:MuslimApp/MuslimApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

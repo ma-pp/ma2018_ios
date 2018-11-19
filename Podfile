@@ -2,7 +2,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 def project_muslim_app
-  project 'MainApplication/MuslimApp.xcodeproj'
+  project 'MuslimApp/MuslimApp.xcodeproj'
 end
 
 def project_catatan_muslim
@@ -17,7 +17,7 @@ end
 
 # PODFILE START
 
-workspace 'MuslimApp.xcworkspace'
+workspace 'MuslimAppWorkspace.xcworkspace'
 
 project_muslim_app
 project_catatan_muslim

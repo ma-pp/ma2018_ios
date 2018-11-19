@@ -1,3 +1,7 @@
+# MISC
+
+.ignorables/
+
 # BEGIN PROJECT IGNORE
 Config/
 

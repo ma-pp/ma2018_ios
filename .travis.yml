@@ -1,1 +1,13 @@
-language: swift
+language: objective-c
+osx_image: xcode9.2
+cache:
+ - cocoapods
+ - carthage
+
+before_install:
+ - carthage bootstrap --cache-builds --platform iOS
+ - pod install
+
+notifications:
+ email:
+  - m.muizzsuddin@gmail.com
