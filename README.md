@@ -1,5 +1,7 @@
 # Muslim App
 
+[![Build Status](https://travis-ci.com/mmuiz/ma2018.svg?branch=develop)](https://travis-ci.com/mmuiz/ma2018)
+
 This is open source project implementation for Muslim App.
 
 Feel free to contribute.

@@ -549,6 +549,7 @@
 				EF310C8421A267A900C35E36 /* Frameworks */,
 				EF310C8521A267A900C35E36 /* Headers */,
 				EF310C8621A267A900C35E36 /* Resources */,
+				EF4A680021A2C9E700C6DFDE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -702,6 +703,22 @@
 			showEnvVarsInLog = 0;
 		};
 		EF21DC7021A26E000094A596 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		EF4A680021A2C9E700C6DFDE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
