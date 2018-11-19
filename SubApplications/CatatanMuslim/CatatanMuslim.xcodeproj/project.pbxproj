@@ -130,11 +130,12 @@
 		EF08E1AB21919206004A897D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF08E1AE21919206004A897D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF08E1B021919206004A897D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF08E1B521919231004A897D /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
 		EF08E1B621919393004A897D /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		EF08E1B921919446004A897D /* ListItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemController.swift; sourceTree = "<group>"; };
 		EF08E1BC219194E4004A897D /* Logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF08E1C02191952F004A897D /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF21DC9821A27DDC0094A596 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		EF21DC9921A27DE70094A596 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		EF310C3221A0055300C35E36 /* Folder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+Extension.swift"; sourceTree = "<group>"; };
 		EF310C3421A008DB00C35E36 /* Note+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extension.swift"; sourceTree = "<group>"; };
 		EF310C3621A011C900C35E36 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = ../../Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
@@ -148,8 +149,6 @@
 		EFAA19F2218D55EB003C7508 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		EFAA19FB218D563F003C7508 /* SubApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SubApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA1A03218D5895003C7508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EFB25D7B219BFC5900B644B3 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
-		EFB25D7C219BFC9200B644B3 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		EFB25DAB219C28E600B644B3 /* SimpleTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTabBar.swift; sourceTree = "<group>"; };
 		EFB25DAD219C2A3A00B644B3 /* SimpleTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTabBar.xib; sourceTree = "<group>"; };
 		EFB25DB9219C324200B644B3 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
@@ -264,14 +263,6 @@
 			path = CatatanMuslimApp;
 			sourceTree = "<group>";
 		};
-		EF08E1B421919218004A897D /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				EFB25DA7219C1C7500B644B3 /* App */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
 		EF08E1B821919420004A897D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +279,15 @@
 				EFB25E9E219FB36900B644B3 /* ListItemContainer */,
 			);
 			path = ListItem;
+			sourceTree = "<group>";
+		};
+		EF21DC9721A27DC80094A596 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EF21DC9821A27DDC0094A596 /* Production.xcconfig */,
+				EF21DC9921A27DE70094A596 /* Development.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		EF310C3121A0053700C35E36 /* ModelExtensions */ = {
@@ -307,6 +307,7 @@
 				EFD987982191A411009A7F12 /* CocoaLumberjack.framework */,
 				EF08E1C02191952F004A897D /* Common.framework */,
 				EF08E1BC219194E4004A897D /* Logging.framework */,
+				EF21DC9721A27DC80094A596 /* Config */,
 				EFAA196B218D5266003C7508 /* CatatanMuslim */,
 				EFAA1976218D5266003C7508 /* CatatanMuslimTests */,
 				EF08E1A321919206004A897D /* CatatanMuslimApp */,
@@ -331,7 +332,6 @@
 			children = (
 				EFB25E06219D526700B644B3 /* Models */,
 				EFB25DC8219D0D6900B644B3 /* Utilities */,
-				EF08E1B421919218004A897D /* Config */,
 				EFAA19D7218D5392003C7508 /* Classes */,
 				EFAA19D6218D538C003C7508 /* Extension */,
 				EFAA196C218D5266003C7508 /* CatatanMuslim.h */,
@@ -376,16 +376,6 @@
 				1572AF5137678AEDE0A2DE56 /* Pods_CatatanMuslimApp.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EFB25DA7219C1C7500B644B3 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				EF08E1B521919231004A897D /* Configuration.xcconfig */,
-				EFB25D7B219BFC5900B644B3 /* Production.xcconfig */,
-				EFB25D7C219BFC9200B644B3 /* Development.xcconfig */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 		EFB25DAA219C289C00B644B3 /* Custom */ = {
@@ -931,7 +921,7 @@
 		};
 		EFAA197B218D5266003C7508 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFB25D7C219BFC9200B644B3 /* Development.xcconfig */;
+			baseConfigurationReference = EF21DC9921A27DE70094A596 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -992,7 +982,7 @@
 		};
 		EFAA197C218D5266003C7508 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFB25D7B219BFC5900B644B3 /* Production.xcconfig */;
+			baseConfigurationReference = EF21DC9821A27DDC0094A596 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

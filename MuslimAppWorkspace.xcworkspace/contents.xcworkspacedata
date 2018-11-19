@@ -5,14 +5,14 @@
       location = "group:MuslimApp/MuslimApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Carthage.xcconfig">
-   </FileRef>
-   <FileRef
       location = "group:MainApplication/../README.md">
    </FileRef>
    <Group
       location = "container:"
       name = "Modules">
+      <FileRef
+         location = "group:Modules/Carthage.xcconfig">
+      </FileRef>
       <FileRef
          location = "group:Modules/Logging/Logging.xcodeproj">
       </FileRef>
@@ -29,6 +29,9 @@
    <Group
       location = "container:"
       name = "SubApplications">
+      <FileRef
+         location = "group:SubApplications/Carthage.xcconfig">
+      </FileRef>
       <FileRef
          location = "group:SubApplications/KakakAsuh/KakakAsuh.xcodeproj">
       </FileRef>

@@ -3,7 +3,8 @@
 .ignorables/
 
 # BEGIN PROJECT IGNORE
-Config/
+
+Development.xcconfig
 
 # END PROJECT IGNORE
 

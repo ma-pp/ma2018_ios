@@ -1,9 +1,9 @@
 //
 //  Configuration.xcconfig
-//  Logging
+//  MuslimApp
 //
 //  Created by PondokiOS on 11/19/18.
 //  Copyright © 2018 PondokiOS. All rights reserved.
 //
 
-#include "../../../Carthage.xcconfig"
+FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS/"

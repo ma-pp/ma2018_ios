@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF4A67DB21A28C7600C6DFDE /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
 		EFAA1A43218DE20D003C7508 /* Logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA1A46218DE20D003C7508 /* Logging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
 		EFAA1A47218DE20D003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		EFAA1A5E218DE22E003C7508 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		EFAA1A61218DE2CE003C7508 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = ../../Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		EFAA1A62218DE2CE003C7508 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = ../../Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
-		EFAA1A71218DE621003C7508 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
 		EFAA1A73218DE75E003C7508 /* CustomLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLogging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +121,7 @@
 		EFAA1A70218DE5F3003C7508 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				EFAA1A71218DE621003C7508 /* Configuration.xcconfig */,
+				EF4A67DB21A28C7600C6DFDE /* Configuration.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 /* Begin XCBuildConfiguration section */
 		EFAA1A55218DE20D003C7508 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A71218DE621003C7508 /* Configuration.xcconfig */;
+			baseConfigurationReference = EF4A67DB21A28C7600C6DFDE /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -324,6 +324,7 @@
 		};
 		EFAA1A56218DE20D003C7508 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4A67DB21A28C7600C6DFDE /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -377,7 +378,6 @@
 		};
 		EFAA1A58218DE20D003C7508 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFAA1A71218DE621003C7508 /* Configuration.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

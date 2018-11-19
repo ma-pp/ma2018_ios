@@ -40,9 +40,6 @@
 		EF310C6221A2663200C35E36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF310C6021A2663200C35E36 /* Main.storyboard */; };
 		EF310C6421A2663200C35E36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF310C6321A2663200C35E36 /* Assets.xcassets */; };
 		EF310C6721A2663200C35E36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF310C6521A2663200C35E36 /* LaunchScreen.storyboard */; };
-		EF310C7921A266A300C35E36 /* Configuration.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EF310C7621A266A200C35E36 /* Configuration.xcconfig */; };
-		EF310C7A21A266A300C35E36 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EF310C7721A266A200C35E36 /* Development.xcconfig */; };
-		EF310C7B21A266A300C35E36 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EF310C7821A266A200C35E36 /* Production.xcconfig */; };
 		EF310C8021A2674300C35E36 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310C7D21A2674300C35E36 /* Application.swift */; };
 		EF310C8121A2674300C35E36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310C7E21A2674300C35E36 /* ViewController.swift */; };
 		EF310C8221A2674300C35E36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310C7F21A2674300C35E36 /* AppDelegate.swift */; };
@@ -79,6 +76,12 @@
 		EF310D0121A2683400C35E36 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310CEA21A2683400C35E36 /* ProfileController.swift */; };
 		EF310D0221A2683400C35E36 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310CEB21A2683400C35E36 /* ProfileCoordinator.swift */; };
 		EF310D0321A2683400C35E36 /* SubApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310CED21A2683400C35E36 /* SubApplicationCoordinator.swift */; };
+		EF4A67DC21A2987200C6DFDE /* KakakAsuh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF21DC7D21A26EBA0094A596 /* KakakAsuh.framework */; };
+		EF4A67DD21A2987A00C6DFDE /* JadwalShalat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF21DC8021A26EC20094A596 /* JadwalShalat.framework */; };
+		EF4A67DE21A2988500C6DFDE /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF21DC8321A26ECC0094A596 /* CatatanMuslim.framework */; };
+		EF4A67DF21A2989100C6DFDE /* AmalanYaumiyah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF21DC8621A26ED60094A596 /* AmalanYaumiyah.framework */; };
+		EF4A67E021A2989900C6DFDE /* LowonganKerjaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF21DC8921A26EDC0094A596 /* LowonganKerjaMuslim.framework */; };
+		EF4A67E121A298A000C6DFDE /* AgendaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF21DC8C21A26EE30094A596 /* AgendaMuslim.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,14 +154,14 @@
 		EF21DC8621A26ED60094A596 /* AmalanYaumiyah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AmalanYaumiyah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF21DC8921A26EDC0094A596 /* LowonganKerjaMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LowonganKerjaMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF21DC8C21A26EE30094A596 /* AgendaMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AgendaMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF21DC9321A27CFE0094A596 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
+		EF21DC9421A27D0E0094A596 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		EF21DC9521A27D190094A596 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		EF310C5921A2663100C35E36 /* MuslimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuslimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF310C6121A2663200C35E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF310C6321A2663200C35E36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF310C6621A2663200C35E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF310C6821A2663300C35E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF310C7621A266A200C35E36 /* Configuration.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
-		EF310C7721A266A200C35E36 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
-		EF310C7821A266A200C35E36 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		EF310C7C21A2674200C35E36 /* MuslimApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MuslimApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		EF310C7D21A2674300C35E36 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		EF310C7E21A2674300C35E36 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +230,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4A67E121A298A000C6DFDE /* AgendaMuslim.framework in Frameworks */,
+				EF4A67E021A2989900C6DFDE /* LowonganKerjaMuslim.framework in Frameworks */,
+				EF4A67DF21A2989100C6DFDE /* AmalanYaumiyah.framework in Frameworks */,
+				EF4A67DE21A2988500C6DFDE /* CatatanMuslim.framework in Frameworks */,
+				EF4A67DD21A2987A00C6DFDE /* JadwalShalat.framework in Frameworks */,
+				EF4A67DC21A2987200C6DFDE /* KakakAsuh.framework in Frameworks */,
 				EF21DC9121A26F050094A596 /* SubApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +274,16 @@
 				34D8A52B32E6047CA665E9A8 /* Pods_MuslimApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF21DC9221A27CE50094A596 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EF21DC9321A27CFE0094A596 /* Configuration.xcconfig */,
+				EF21DC9421A27D0E0094A596 /* Production.xcconfig */,
+				EF21DC9521A27D190094A596 /* Development.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		EF310C5021A2663100C35E36 = {
@@ -307,7 +326,7 @@
 		EF310C5B21A2663100C35E36 /* MuslimApp */ = {
 			isa = PBXGroup;
 			children = (
-				EF310C7521A266A200C35E36 /* Config */,
+				EF21DC9221A27CE50094A596 /* Config */,
 				EF310C6021A2663200C35E36 /* Main.storyboard */,
 				EF310C7F21A2674300C35E36 /* AppDelegate.swift */,
 				EF310C7D21A2674300C35E36 /* Application.swift */,
@@ -318,16 +337,6 @@
 				EF310C7C21A2674200C35E36 /* MuslimApp-Bridging-Header.h */,
 			);
 			path = MuslimApp;
-			sourceTree = "<group>";
-		};
-		EF310C7521A266A200C35E36 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				EF310C7621A266A200C35E36 /* Configuration.xcconfig */,
-				EF310C7721A266A200C35E36 /* Development.xcconfig */,
-				EF310C7821A266A200C35E36 /* Production.xcconfig */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		EF310C8921A267A900C35E36 /* SubApplicationManager */ = {
@@ -644,11 +653,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF310C6721A2663200C35E36 /* LaunchScreen.storyboard in Resources */,
-				EF310C7921A266A300C35E36 /* Configuration.xcconfig in Resources */,
 				EF310C6421A2663200C35E36 /* Assets.xcassets in Resources */,
 				EF310C6221A2663200C35E36 /* Main.storyboard in Resources */,
-				EF310C7A21A266A300C35E36 /* Development.xcconfig in Resources */,
-				EF310C7B21A266A300C35E36 /* Production.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,7 +849,7 @@
 /* Begin XCBuildConfiguration section */
 		EF310C6921A2663300C35E36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF310C7721A266A200C35E36 /* Development.xcconfig */;
+			baseConfigurationReference = EF21DC9521A27D190094A596 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -901,7 +907,7 @@
 		};
 		EF310C6A21A2663300C35E36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF310C7821A266A200C35E36 /* Production.xcconfig */;
+			baseConfigurationReference = EF21DC9421A27D0E0094A596 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
