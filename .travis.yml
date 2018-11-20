@@ -1,28 +1,31 @@
 language: objective-c
 osx_image: xcode9.2
+gemfile: Gemfile
+
+branches:
+  only:
+    - master
+    - develop
+
 cache:
- - cocoapods
- - carthage
+  - cocoapods
+  - carthage
 
 before_install:
- - bundle install
- - bundle exec pod repo update
- - bundle exec pod install
- - carthage bootstrap --cache-builds --platform iOS
+  - bundle install
+  - bundle exec pod repo update --silent
+  - bundle exec pod install
+  - carthage bootstrap --cache-builds --platform iOS
 
 notifications:
  email:
   - m.muizzsuddin@gmail.com
 
-script:
-  # TESTING
-  # BUILD
-  - xcodebuild -workspace MuslimAppWorkspace.xcworkspace -scheme MuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Debug build-for-testing
-  #- xcodebuild -workspace MuslimAppWorkspace.xcworkspace -scheme CatatanMuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Debug build-for-testing
-  # TEST
-  - xctool -workspace MuslimAppWorkspace.xcworkspace -scheme MuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Debug run-tests
-  #- xctool -workspace MuslimAppWorkspace.xcworkspace -scheme CatatanMuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Debug run-tests
-  
-  # PRODUCTION
-  - xcodebuild -workspace MuslimAppWorkspace.xcworkspace -scheme MuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Release
-  #- xcodebuild -workspace MuslimAppWorkspace.xcworkspace -scheme CatatanMuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Release
+jobs:
+  include:
+    - name: Catatan Muslim App Testing
+      if: branch = apps/catatan-muslim-app/main
+      script: bash scripts/branches/catatan_muslim_app.sh
+    - name: Development Testing
+      if: branch = develop
+      script: bash scripts/branches/catatan_muslim_app.sh
