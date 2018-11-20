@@ -1,23 +1,23 @@
 # PRODUCTION Release
 xcodebuild \
-    -quiet
     -workspace MuslimAppWorkspace.xcworkspace \
     -scheme CatatanMuslimApp \
     -sdk iphonesimulator \
     ONLY_ACTIVE_ARCH=NO \
-    -configuration Release
+    -configuration Release \
+    -quiet
 
 if [ $TEST ]; then
 
 # DEVELOPMENT Debug
 # TESTING
 xcodebuild \
-    -quiet
     -workspace MuslimAppWorkspace.xcworkspace \
     -scheme CatatanMuslimApp \
     -sdk iphonesimulator \
     ONLY_ACTIVE_ARCH=NO \
     -configuration Debug \
+    -quiet \
     build-for-testing
 
 xctool \

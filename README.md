@@ -1,6 +1,6 @@
 # Muslim App
 
-[![Build Status](https://travis-ci.com/mmuiz/ma2018.svg?branch=develop)](https://travis-ci.com/mmuiz/ma2018)
+**DEVELOP** [![Build Status](https://travis-ci.com/ma-pp/ma2018_ios.svg?branch=develop)](https://travis-ci.com/ma-pp/ma2018_ios)
 
 This is open source project implementation for Muslim App.
 
@@ -44,7 +44,7 @@ git checkout -b feature/catatan-muslim-app/image-picker
 ## Want to Contribute?
 
 ```
-git clone --branch develop https://github.com/mmuiz/ma2018.git MuslimAppiOS
+git clone --branch develop https://github.com/ma-pp/ma2018_ios.git MuslimAppiOS
 cd MuslimAppiOS
 bash scripts/setup.sh
 open MuslimAppWorkspace.xcworkspace
