@@ -6,6 +6,7 @@ branches:
   only:
     - master
     - develop
+    - apps/catatan-muslim-app/main
 
 cache:
   - cocoapods
