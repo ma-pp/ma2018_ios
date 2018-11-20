@@ -47,7 +47,7 @@ Some notes about configuration file
 
 Please take a look at `Development.xcconfig`!
 
-```
+```yaml
 // Developer Configuration is set to be untracked in .gitignore
 // If you need to specify BUILD_SETTING for your own DEBUG
 // Please make your own Developer.xcconfig
