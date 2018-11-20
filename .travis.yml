@@ -4,8 +4,8 @@ gemfile: Gemfile
 
 branches:
   only:
-    - master
-    - develop
+    - master # Build all executables as Production
+    - develop # Build all executables as Development + Testing
     - apps/catatan-muslim-app/main
 
 cache:
@@ -13,10 +13,7 @@ cache:
   - carthage
 
 before_install:
-  - bundle install
-  - bundle exec pod repo update --silent
-  - bundle exec pod install
-  - carthage bootstrap --cache-builds --platform iOS
+  - bash scripts/setup.sh
 
 notifications:
  email:
@@ -24,8 +21,17 @@ notifications:
 
 jobs:
   include:
-    - name: Development Release
+    - name: Production
+      if: branch = master
+      script: scrips/ci/production.sh
+    
+    - name: Development
       if: branch = develop
+      env: TEST=true
+      script: bash scripts/ci/development.sh
+
+    - name: Muslim App Release
+      if: branch = apps/muslim_app/main
       script: bash scripts/ci/muslim_app.sh
 
     - name: Catatan Muslim App Release

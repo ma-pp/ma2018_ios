@@ -82,6 +82,7 @@
 		EF4A67DF21A2989100C6DFDE /* AmalanYaumiyah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF21DC8621A26ED60094A596 /* AmalanYaumiyah.framework */; };
 		EF4A67E021A2989900C6DFDE /* LowonganKerjaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF21DC8921A26EDC0094A596 /* LowonganKerjaMuslim.framework */; };
 		EF4A67E121A298A000C6DFDE /* AgendaMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF21DC8C21A26EE30094A596 /* AgendaMuslim.framework */; };
+		EF4A6A3421A451CF00C6DFDE /* MuslimAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A3321A451CF00C6DFDE /* MuslimAppTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EF310CC021A2682300C35E36;
 			remoteInfo = AppsLauncher;
+		};
+		EF4A6A3621A451CF00C6DFDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF310C5121A2663100C35E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF310C5821A2663100C35E36;
+			remoteInfo = MuslimApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -199,6 +207,9 @@
 		EF310CEA21A2683400C35E36 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		EF310CEB21A2683400C35E36 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		EF310CED21A2683400C35E36 /* SubApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubApplicationCoordinator.swift; sourceTree = "<group>"; };
+		EF4A6A3121A451CF00C6DFDE /* MuslimAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuslimAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4A6A3321A451CF00C6DFDE /* MuslimAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuslimAppTests.swift; sourceTree = "<group>"; };
+		EF4A6A3521A451CF00C6DFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +267,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF4A6A2E21A451CF00C6DFDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -306,6 +324,7 @@
 				EF310C8921A267A900C35E36 /* SubApplicationManager */,
 				EF310C9B21A267BF00C35E36 /* SubApplication */,
 				EF310CC221A2682300C35E36 /* AppsLauncher */,
+				EF4A6A3221A451CF00C6DFDE /* MuslimAppTests */,
 				EF310C5A21A2663100C35E36 /* Products */,
 				160D46363C1A0F851C82D502 /* Pods */,
 				7D727A87EE34BDA8F57742A3 /* Frameworks */,
@@ -319,6 +338,7 @@
 				EF310C8821A267A900C35E36 /* SubApplicationManager.framework */,
 				EF310C9A21A267BF00C35E36 /* SubApplication.framework */,
 				EF310CC121A2682300C35E36 /* AppsLauncher.framework */,
+				EF4A6A3121A451CF00C6DFDE /* MuslimAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -486,6 +506,15 @@
 			path = SubApplication;
 			sourceTree = "<group>";
 		};
+		EF4A6A3221A451CF00C6DFDE /* MuslimAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A6A3321A451CF00C6DFDE /* MuslimAppTests.swift */,
+				EF4A6A3521A451CF00C6DFDE /* Info.plist */,
+			);
+			path = MuslimAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -596,6 +625,24 @@
 			productReference = EF310CC121A2682300C35E36 /* AppsLauncher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EF4A6A3021A451CF00C6DFDE /* MuslimAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4A6A3A21A451CF00C6DFDE /* Build configuration list for PBXNativeTarget "MuslimAppTests" */;
+			buildPhases = (
+				EF4A6A2D21A451CF00C6DFDE /* Sources */,
+				EF4A6A2E21A451CF00C6DFDE /* Frameworks */,
+				EF4A6A2F21A451CF00C6DFDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF4A6A3721A451CF00C6DFDE /* PBXTargetDependency */,
+			);
+			name = MuslimAppTests;
+			productName = MuslimAppTests;
+			productReference = EF4A6A3121A451CF00C6DFDE /* MuslimAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -625,6 +672,11 @@
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
+					EF4A6A3021A451CF00C6DFDE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF310C5821A2663100C35E36;
+					};
 				};
 			};
 			buildConfigurationList = EF310C5421A2663100C35E36 /* Build configuration list for PBXProject "MuslimApp" */;
@@ -644,6 +696,7 @@
 				EF310C8721A267A900C35E36 /* SubApplicationManager */,
 				EF310C9921A267BF00C35E36 /* SubApplication */,
 				EF310CC021A2682300C35E36 /* AppsLauncher */,
+				EF4A6A3021A451CF00C6DFDE /* MuslimAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -681,6 +734,13 @@
 				EF310CF721A2683400C35E36 /* RegistrationController.xib in Resources */,
 				EF310CFA21A2683400C35E36 /* LauncherCell.xib in Resources */,
 				EF310CF421A2683400C35E36 /* LoginController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4A6A2F21A451CF00C6DFDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,6 +884,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF4A6A2D21A451CF00C6DFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4A6A3421A451CF00C6DFDE /* MuslimAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -841,6 +909,11 @@
 			isa = PBXTargetDependency;
 			target = EF310CC021A2682300C35E36 /* AppsLauncher */;
 			targetProxy = EF310CC621A2682300C35E36 /* PBXContainerItemProxy */;
+		};
+		EF4A6A3721A451CF00C6DFDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF310C5821A2663100C35E36 /* MuslimApp */;
+			targetProxy = EF4A6A3621A451CF00C6DFDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1162,6 +1235,40 @@
 			};
 			name = Release;
 		};
+		EF4A6A3821A451CF00C6DFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				INFOPLIST_FILE = MuslimAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.MuslimAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuslimApp.app/MuslimApp";
+			};
+			name = Debug;
+		};
+		EF4A6A3921A451CF00C6DFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				INFOPLIST_FILE = MuslimAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.MuslimAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuslimApp.app/MuslimApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1206,6 +1313,15 @@
 			buildConfigurations = (
 				EF310CCB21A2682300C35E36 /* Debug */,
 				EF310CCC21A2682300C35E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4A6A3A21A451CF00C6DFDE /* Build configuration list for PBXNativeTarget "MuslimAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4A6A3821A451CF00C6DFDE /* Debug */,
+				EF4A6A3921A451CF00C6DFDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

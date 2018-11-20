@@ -29,6 +29,16 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EF4A6A3021A451CF00C6DFDE"
+               BuildableName = "MuslimAppTests.xctest"
+               BlueprintName = "MuslimAppTests"
+               ReferencedContainer = "container:MuslimApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
