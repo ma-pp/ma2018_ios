@@ -1,5 +1,6 @@
 # PRODUCTION Release
 xcodebuild \
+    -quiet
     -workspace MuslimAppWorkspace.xcworkspace \
     -scheme CatatanMuslimApp \
     -sdk iphonesimulator \
@@ -11,6 +12,7 @@ if [ $TEST ]; then
 # DEVELOPMENT Debug
 # TESTING
 xcodebuild \
+    -quiet
     -workspace MuslimAppWorkspace.xcworkspace \
     -scheme CatatanMuslimApp \
     -sdk iphonesimulator \

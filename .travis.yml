@@ -4,8 +4,8 @@ gemfile: Gemfile
 
 branches:
   only:
-    - master # Build all executables as Production
-    - develop # Build all executables as Development + Testing
+    - master # Build all executables for Production
+    - develop # Build all executables for Development + Testing
     - apps/catatan-muslim-app/main
 
 cache:
