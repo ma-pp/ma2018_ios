@@ -5,14 +5,24 @@ cache:
  - carthage
 
 before_install:
+ - bundle install
+ - bundle exec pod repo update
+ - bundle exec pod install
  - carthage bootstrap --cache-builds --platform iOS
- - pod install
 
 notifications:
  email:
   - m.muizzsuddin@gmail.com
 
 script:
-  - xcodebuild -workspace MuslimAppWorkspace.xcworkspace -scheme MuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO 
-  - xcodebuild -workspace MuslimAppWorkspace.xcworkspace -scheme CatatanMuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-
+  # TESTING
+    # BUILD
+    - xcodebuild -workspace MuslimAppWorkspace.xcworkspace -scheme MuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Debug build-for-testing
+      #- xcodebuild -workspace MuslimAppWorkspace.xcworkspace -scheme CatatanMuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Debug build-for-testing
+    # TEST
+    - xctool -workspace MuslimAppWorkspace.xcworkspace -scheme MuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Debug run-tests
+      #- xctool -workspace MuslimAppWorkspace.xcworkspace -scheme CatatanMuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Debug run-tests
+  
+  # PRODUCTION
+  - xcodebuild -workspace MuslimAppWorkspace.xcworkspace -scheme MuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Release
+    #- xcodebuild -workspace MuslimAppWorkspace.xcworkspace -scheme CatatanMuslimApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Release
