@@ -1,14 +1,16 @@
 # PRODUCTION Release
-- xcodebuild \
+xcodebuild \
     -workspace MuslimAppWorkspace.xcworkspace \
     -scheme MuslimApp \
     -sdk iphonesimulator \
     ONLY_ACTIVE_ARCH=NO \
     -configuration Release
 
+if [ $TEST ]; then
+
 # DEVELOPEMENT Debug
 # TESTING
-- xcodebuild \
+xcodebuild \
     -workspace MuslimAppWorkspace.xcworkspace \
     -scheme MuslimApp \
     -sdk iphonesimulator \
@@ -16,7 +18,7 @@
     -configuration Debug \
     build-for-testing
 
-- xctool \
+xctool \
     -workspace MuslimAppWorkspace.xcworkspace \
     -scheme MuslimApp \
     -sdk iphonesimulator \
@@ -24,3 +26,4 @@
     -configuration Debug \
     run-tests
 
+fi

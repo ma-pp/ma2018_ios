@@ -6,6 +6,8 @@ xcodebuild \
     ONLY_ACTIVE_ARCH=NO \
     -configuration Release
 
+if [ $TEST ]; then
+
 # DEVELOPMENT Debug
 # TESTING
 xcodebuild \
@@ -23,3 +25,5 @@ xctool \
     ONLY_ACTIVE_ARCH=NO \
     -configuration Debug \
     run-tests
+
+fi

@@ -24,9 +24,14 @@ notifications:
 
 jobs:
   include:
+    - name: Development Release
+      if: branch = develop
+      script: bash scripts/ci/muslim_app.sh
+
+    - name: Catatan Muslim App Release
+      if: branch = apps/catatan-muslim-app/main
+      script: bash scripts/ci/catatan_muslim_app.sh
     - name: Catatan Muslim App Testing
       if: branch = apps/catatan-muslim-app/main
-      script: bash scripts/branches/catatan_muslim_app.sh
-    - name: Development Testing
-      if: branch = develop
-      script: bash scripts/branches/catatan_muslim_app.sh
+      env: TEST=true
+      script: bash scripts/ci/catatan_muslim_app.sh
