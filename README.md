@@ -36,3 +36,22 @@ Others apply!
 Sprint
 
 [Trello](https://trello.com/b/X50CJI6Z)
+
+### Configuration
+
+Some notes about configuration file
+
+1. `Production.xcconfig` is supposed for **PRODUCTION** build (_Release_)
+2. `Development.xcconfig` is supposed for **DEVELOPMENT** build (_Debug_)
+3. `Developer.xcconfig` is supposed for **DEVELOPMENT** local machine build (_Debug_)
+
+Please take a look at `Development.xcconfig`!
+
+```
+// Developer Configuration is set to be untracked in .gitignore
+// If you need to specify BUILD_SETTING for your own DEBUG
+// Please make your own Developer.xcconfig
+#include "Developer.xcconfig"
+```
+
+**`Developer.xcconfig` is untracked by git**

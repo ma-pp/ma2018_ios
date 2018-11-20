@@ -1,0 +1,14 @@
+//
+//  Development.xcconfig
+//  CatatanMuslim
+//
+//  Created by PondokiOS on 11/19/18.
+//  Copyright © 2018 PondokiOS. All rights reserved.
+//
+
+#include "../../Carthage.xcconfig"
+
+// Developer Configuration is set to be untracked in .gitignore
+// If you need to specify BUILD_SETTING for your own DEBUG
+// Please make your own Developer.xcconfig
+#include "Developer.xcconfig"

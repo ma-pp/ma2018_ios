@@ -26,6 +26,7 @@
 		EF310C3521A008DB00C35E36 /* Note+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310C3421A008DB00C35E36 /* Note+Extension.swift */; };
 		EF310C3721A011CA00C35E36 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF310C3621A011C900C35E36 /* IQKeyboardManagerSwift.framework */; };
 		EF310C3821A011CA00C35E36 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF310C3621A011C900C35E36 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF4A681C21A30C8800C6DFDE /* CatatanMuslimAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A681B21A30C8800C6DFDE /* CatatanMuslimAppTests.swift */; };
 		EFAA1973218D5266003C7508 /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1969218D5266003C7508 /* CatatanMuslim.framework */; };
 		EFAA1978218D5266003C7508 /* CatatanMuslimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1977218D5266003C7508 /* CatatanMuslimTests.swift */; };
 		EFAA197A218D5266003C7508 /* CatatanMuslim.h in Headers */ = {isa = PBXBuildFile; fileRef = EFAA196C218D5266003C7508 /* CatatanMuslim.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,6 +90,20 @@
 			remoteGlobalIDString = EFAA1968218D5266003C7508;
 			remoteInfo = CatatanMuslim;
 		};
+		EF4A681321A2ECBD00C6DFDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFAA1960218D5266003C7508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF08E1A121919206004A897D;
+			remoteInfo = CatatanMuslimApp;
+		};
+		EF4A681E21A30C8800C6DFDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFAA1960218D5266003C7508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF08E1A121919206004A897D;
+			remoteInfo = CatatanMuslimApp;
+		};
 		EFAA1974218D5266003C7508 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EFAA1960218D5266003C7508 /* Project object */;
@@ -139,6 +154,10 @@
 		EF310C3221A0055300C35E36 /* Folder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+Extension.swift"; sourceTree = "<group>"; };
 		EF310C3421A008DB00C35E36 /* Note+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extension.swift"; sourceTree = "<group>"; };
 		EF310C3621A011C900C35E36 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = ../../Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
+		EF4A681921A30C8800C6DFDE /* CatatanMuslimAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatatanMuslimAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4A681B21A30C8800C6DFDE /* CatatanMuslimAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatatanMuslimAppTests.swift; sourceTree = "<group>"; };
+		EF4A681D21A30C8800C6DFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF4A6A2821A407B900C6DFDE /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
 		EFAA1969218D5266003C7508 /* CatatanMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatatanMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA196C218D5266003C7508 /* CatatanMuslim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatatanMuslim.h; sourceTree = "<group>"; };
 		EFAA196D218D5266003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -206,6 +225,13 @@
 				EF08E1C12191952F004A897D /* Common.framework in Frameworks */,
 				EFD9879C2191A68A009A7F12 /* CocoaLumberjackSwift.framework in Frameworks */,
 				4D04478848C689D98D5D9799 /* Pods_CatatanMuslimApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4A681621A30C8800C6DFDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +312,7 @@
 			children = (
 				EF21DC9821A27DDC0094A596 /* Production.xcconfig */,
 				EF21DC9921A27DE70094A596 /* Development.xcconfig */,
+				EF4A6A2821A407B900C6DFDE /* Developer.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -297,6 +324,15 @@
 				EF310C3421A008DB00C35E36 /* Note+Extension.swift */,
 			);
 			path = ModelExtensions;
+			sourceTree = "<group>";
+		};
+		EF4A681A21A30C8800C6DFDE /* CatatanMuslimAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A681B21A30C8800C6DFDE /* CatatanMuslimAppTests.swift */,
+				EF4A681D21A30C8800C6DFDE /* Info.plist */,
+			);
+			path = CatatanMuslimAppTests;
 			sourceTree = "<group>";
 		};
 		EFAA195F218D5266003C7508 = {
@@ -311,6 +347,7 @@
 				EFAA196B218D5266003C7508 /* CatatanMuslim */,
 				EFAA1976218D5266003C7508 /* CatatanMuslimTests */,
 				EF08E1A321919206004A897D /* CatatanMuslimApp */,
+				EF4A681A21A30C8800C6DFDE /* CatatanMuslimAppTests */,
 				EFAA196A218D5266003C7508 /* Products */,
 				EFAA19F9218D563F003C7508 /* Frameworks */,
 				E6A4C91B3CBA2721C0F29ADF /* Pods */,
@@ -323,6 +360,7 @@
 				EFAA1969218D5266003C7508 /* CatatanMuslim.framework */,
 				EFAA1972218D5266003C7508 /* CatatanMuslimTests.xctest */,
 				EF08E1A221919206004A897D /* CatatanMuslimApp.app */,
+				EF4A681921A30C8800C6DFDE /* CatatanMuslimAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -578,6 +616,24 @@
 			productReference = EF08E1A221919206004A897D /* CatatanMuslimApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EF4A681821A30C8800C6DFDE /* CatatanMuslimAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4A682021A30C8800C6DFDE /* Build configuration list for PBXNativeTarget "CatatanMuslimAppTests" */;
+			buildPhases = (
+				EF4A681521A30C8800C6DFDE /* Sources */,
+				EF4A681621A30C8800C6DFDE /* Frameworks */,
+				EF4A681721A30C8800C6DFDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF4A681F21A30C8800C6DFDE /* PBXTargetDependency */,
+			);
+			name = CatatanMuslimAppTests;
+			productName = CatatanMuslimAppTests;
+			productReference = EF4A681921A30C8800C6DFDE /* CatatanMuslimAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EFAA1968218D5266003C7508 /* CatatanMuslim */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFAA197D218D5266003C7508 /* Build configuration list for PBXNativeTarget "CatatanMuslim" */;
@@ -610,6 +666,7 @@
 			);
 			dependencies = (
 				EFAA1975218D5266003C7508 /* PBXTargetDependency */,
+				EF4A681421A2ECBD00C6DFDE /* PBXTargetDependency */,
 			);
 			name = CatatanMuslimTests;
 			productName = CatatanMuslimTests;
@@ -630,6 +687,11 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					EF4A681821A30C8800C6DFDE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF08E1A121919206004A897D;
+					};
 					EFAA1968218D5266003C7508 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
@@ -638,6 +700,7 @@
 					EFAA1971218D5266003C7508 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						TestTargetID = EF08E1A121919206004A897D;
 					};
 				};
 			};
@@ -657,6 +720,7 @@
 				EFAA1968218D5266003C7508 /* CatatanMuslim */,
 				EFAA1971218D5266003C7508 /* CatatanMuslimTests */,
 				EF08E1A121919206004A897D /* CatatanMuslimApp */,
+				EF4A681821A30C8800C6DFDE /* CatatanMuslimAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -668,6 +732,13 @@
 			files = (
 				EF08E1AF21919206004A897D /* LaunchScreen.storyboard in Resources */,
 				EF08E1AC21919206004A897D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4A681721A30C8800C6DFDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,6 +876,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF4A681521A30C8800C6DFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4A681C21A30C8800C6DFDE /* CatatanMuslimAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFAA1964218D5266003C7508 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -869,6 +948,16 @@
 			target = EFAA1968218D5266003C7508 /* CatatanMuslim */;
 			targetProxy = EF08E1C721919578004A897D /* PBXContainerItemProxy */;
 		};
+		EF4A681421A2ECBD00C6DFDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF08E1A121919206004A897D /* CatatanMuslimApp */;
+			targetProxy = EF4A681321A2ECBD00C6DFDE /* PBXContainerItemProxy */;
+		};
+		EF4A681F21A30C8800C6DFDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF08E1A121919206004A897D /* CatatanMuslimApp */;
+			targetProxy = EF4A681E21A30C8800C6DFDE /* PBXContainerItemProxy */;
+		};
 		EFAA1975218D5266003C7508 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EFAA1968218D5266003C7508 /* CatatanMuslim */;
@@ -917,6 +1006,40 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF4A682121A30C8800C6DFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				INFOPLIST_FILE = CatatanMuslimAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.CatatanMuslimAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatatanMuslimApp.app/CatatanMuslimApp";
+			};
+			name = Debug;
+		};
+		EF4A682221A30C8800C6DFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				INFOPLIST_FILE = CatatanMuslimAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.CatatanMuslimAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatatanMuslimApp.app/CatatanMuslimApp";
 			};
 			name = Release;
 		};
@@ -1086,6 +1209,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDSLU2QT5X;
 				INFOPLIST_FILE = CatatanMuslimTests/Info.plist;
@@ -1094,6 +1218,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatatanMuslimApp.app/CatatanMuslimApp";
 			};
 			name = Debug;
 		};
@@ -1101,6 +1226,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDSLU2QT5X;
 				INFOPLIST_FILE = CatatanMuslimTests/Info.plist;
@@ -1109,6 +1235,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatatanMuslimApp.app/CatatanMuslimApp";
 			};
 			name = Release;
 		};
@@ -1120,6 +1247,15 @@
 			buildConfigurations = (
 				EF08E1B221919206004A897D /* Debug */,
 				EF08E1B321919206004A897D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4A682021A30C8800C6DFDE /* Build configuration list for PBXNativeTarget "CatatanMuslimAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4A682121A30C8800C6DFDE /* Debug */,
+				EF4A682221A30C8800C6DFDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
