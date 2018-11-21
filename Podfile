@@ -12,7 +12,7 @@ end
 # LIBRARY
 
 def pod_text_editor
-  pod 'ZSSRichTextEditor', '~> 0.5'
+  pod "RichEditorView"
 end
 
 # PODFILE START

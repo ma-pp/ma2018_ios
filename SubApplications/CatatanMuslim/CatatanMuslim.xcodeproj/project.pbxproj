@@ -26,6 +26,13 @@
 		EF310C3521A008DB00C35E36 /* Note+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310C3421A008DB00C35E36 /* Note+Extension.swift */; };
 		EF310C3721A011CA00C35E36 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF310C3621A011C900C35E36 /* IQKeyboardManagerSwift.framework */; };
 		EF310C3821A011CA00C35E36 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF310C3621A011C900C35E36 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF4A6A3D21A4DDCD00C6DFDE /* NoteEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A3C21A4DDCD00C6DFDE /* NoteEditorController.swift */; };
+		EF4A6A3F21A4DDDC00C6DFDE /* NoteEditorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A3E21A4DDDC00C6DFDE /* NoteEditorCoordinator.swift */; };
+		EF4A6A4121A4DDE700C6DFDE /* NoteEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A4021A4DDE700C6DFDE /* NoteEditorPresenter.swift */; };
+		EF4A6A4521A4FD1B00C6DFDE /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A4421A4FD1B00C6DFDE /* EditorView.swift */; };
+		EF4A6A4A21A51F2400C6DFDE /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A4921A51F2400C6DFDE /* NoteViewModel.swift */; };
+		EF4A6A4C21A524B000C6DFDE /* HTMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A4B21A524B000C6DFDE /* HTMLBuilder.swift */; };
+		EF4A6A4F21A5308600C6DFDE /* HTMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A4E21A5308600C6DFDE /* HTMLElement.swift */; };
 		EFAA1973218D5266003C7508 /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1969218D5266003C7508 /* CatatanMuslim.framework */; };
 		EFAA1978218D5266003C7508 /* CatatanMuslimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1977218D5266003C7508 /* CatatanMuslimTests.swift */; };
 		EFAA197A218D5266003C7508 /* CatatanMuslim.h in Headers */ = {isa = PBXBuildFile; fileRef = EFAA196C218D5266003C7508 /* CatatanMuslim.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -147,6 +154,13 @@
 		EF310C3421A008DB00C35E36 /* Note+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extension.swift"; sourceTree = "<group>"; };
 		EF310C3621A011C900C35E36 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = ../../Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 		EF4A6A2821A407B900C6DFDE /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		EF4A6A3C21A4DDCD00C6DFDE /* NoteEditorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditorController.swift; sourceTree = "<group>"; };
+		EF4A6A3E21A4DDDC00C6DFDE /* NoteEditorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditorCoordinator.swift; sourceTree = "<group>"; };
+		EF4A6A4021A4DDE700C6DFDE /* NoteEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditorPresenter.swift; sourceTree = "<group>"; };
+		EF4A6A4421A4FD1B00C6DFDE /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		EF4A6A4921A51F2400C6DFDE /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		EF4A6A4B21A524B000C6DFDE /* HTMLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLBuilder.swift; sourceTree = "<group>"; };
+		EF4A6A4E21A5308600C6DFDE /* HTMLElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLElement.swift; sourceTree = "<group>"; };
 		EFAA1969218D5266003C7508 /* CatatanMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatatanMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA196C218D5266003C7508 /* CatatanMuslim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatatanMuslim.h; sourceTree = "<group>"; };
 		EFAA196D218D5266003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -274,6 +288,7 @@
 		EF08E1B821919420004A897D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EF4A6A3B21A4DD9E00C6DFDE /* NoteEditor */,
 				EFB25E92219EAC5500B644B3 /* FolderEditor */,
 				EFB25DCF219D0E8200B644B3 /* List */,
 			);
@@ -306,6 +321,36 @@
 				EF310C3421A008DB00C35E36 /* Note+Extension.swift */,
 			);
 			path = ModelExtensions;
+			sourceTree = "<group>";
+		};
+		EF4A6A3B21A4DD9E00C6DFDE /* NoteEditor */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A6A3C21A4DDCD00C6DFDE /* NoteEditorController.swift */,
+				EF4A6A3E21A4DDDC00C6DFDE /* NoteEditorCoordinator.swift */,
+				EF4A6A4021A4DDE700C6DFDE /* NoteEditorPresenter.swift */,
+				EF4A6A4621A4FD2200C6DFDE /* EditorView */,
+			);
+			path = NoteEditor;
+			sourceTree = "<group>";
+		};
+		EF4A6A4621A4FD2200C6DFDE /* EditorView */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A6A4421A4FD1B00C6DFDE /* EditorView.swift */,
+				EF4A6A4921A51F2400C6DFDE /* NoteViewModel.swift */,
+				EF4A6A4D21A5306D00C6DFDE /* HTML */,
+			);
+			path = EditorView;
+			sourceTree = "<group>";
+		};
+		EF4A6A4D21A5306D00C6DFDE /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A6A4B21A524B000C6DFDE /* HTMLBuilder.swift */,
+				EF4A6A4E21A5308600C6DFDE /* HTMLElement.swift */,
+			);
+			path = HTML;
 			sourceTree = "<group>";
 		};
 		EFAA195F218D5266003C7508 = {
@@ -744,11 +789,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../../Pods/Target Support Files/Pods-CatatanMuslimApp/Pods-CatatanMuslimApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZSSRichTextEditor/ZSSRichTextEditor.framework",
+				"${BUILT_PRODUCTS_DIR}/RichEditorView/RichEditorView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZSSRichTextEditor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RichEditorView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -822,20 +867,24 @@
 			files = (
 				EFB25E01219D448D00B644B3 /* ListItemDelegate.swift in Sources */,
 				EFB25DF5219D378C00B644B3 /* ListFolderContext.swift in Sources */,
+				EF4A6A4521A4FD1B00C6DFDE /* EditorView.swift in Sources */,
 				EFB25E9A219ED5C100B644B3 /* ListItemContainerController.swift in Sources */,
 				EFB25E03219D44CD00B644B3 /* ConfiguratorProvider.swift in Sources */,
 				EFB25DE9219D180B00B644B3 /* Privacy.swift in Sources */,
 				EFB25E96219EAC7700B644B3 /* FolderEditorCoordinator.swift in Sources */,
 				EFB25E94219EAC6700B644B3 /* FolderEditorController.swift in Sources */,
 				EFB25E0E219D6DEE00B644B3 /* ListItemSelected.swift in Sources */,
+				EF4A6A4C21A524B000C6DFDE /* HTMLBuilder.swift in Sources */,
 				EFB25E08219D527A00B644B3 /* Note.swift in Sources */,
 				EFB25DF1219D20A000B644B3 /* ListFolderCoordinator.swift in Sources */,
+				EF4A6A3D21A4DDCD00C6DFDE /* NoteEditorController.swift in Sources */,
 				EFB25EA6219FE44C00B644B3 /* EditableField.swift in Sources */,
 				EFB25DFF219D3E9C00B644B3 /* ListNoteCoordinator.swift in Sources */,
 				EFB25DEF219D1E6C00B644B3 /* ListItemDataSource.swift in Sources */,
 				EF310C3321A0055300C35E36 /* Folder+Extension.swift in Sources */,
 				EFB25EA4219FDFA300B644B3 /* FolderEditorPresenter.swift in Sources */,
 				EFB25DC7219D0D2700B644B3 /* ListItemNavigator.swift in Sources */,
+				EF4A6A4A21A51F2400C6DFDE /* NoteViewModel.swift in Sources */,
 				EFB25DCA219D0D7200B644B3 /* Coordinator.swift in Sources */,
 				EFB25DE6219D122400B644B3 /* NoteCell.swift in Sources */,
 				EFB25DC1219D063A00B644B3 /* BadgedButton.swift in Sources */,
@@ -848,6 +897,7 @@
 				EFB25DCC219D0D7900B644B3 /* Navigator.swift in Sources */,
 				EFB25DBA219C324200B644B3 /* BadgeView.swift in Sources */,
 				EFB25DFD219D3E9300B644B3 /* ListNoteContext.swift in Sources */,
+				EF4A6A4121A4DDE700C6DFDE /* NoteEditorPresenter.swift in Sources */,
 				EFAA19DB218D5430003C7508 /* Configuration.swift in Sources */,
 				EFB25DC3219D0BEF00B644B3 /* ListItemPresenter.swift in Sources */,
 				EFB25DDD219D0F6700B644B3 /* ListItemTableViewSetup.swift in Sources */,
@@ -858,8 +908,10 @@
 				EFB25DFB219D3E8900B644B3 /* ListNotePresenter.swift in Sources */,
 				EFB25DAC219C28E600B644B3 /* SimpleTabBar.swift in Sources */,
 				EFB25DF3219D2CEF00B644B3 /* StartCoordinator.swift in Sources */,
+				EF4A6A4F21A5308600C6DFDE /* HTMLElement.swift in Sources */,
 				EF310C3521A008DB00C35E36 /* Note+Extension.swift in Sources */,
 				EFB25E19219E367400B644B3 /* ListNavigationController.swift in Sources */,
+				EF4A6A3F21A4DDDC00C6DFDE /* NoteEditorCoordinator.swift in Sources */,
 				EFB25DE2219D120A00B644B3 /* FolderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

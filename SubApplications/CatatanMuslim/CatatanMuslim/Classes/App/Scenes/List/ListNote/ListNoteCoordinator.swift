@@ -70,6 +70,10 @@ extension ListNoteCoordinator {
     // MARK: NoteNavigation
     
     func launchNoteEditor(session: EditorSession<Note>) {
-        
+        let coordinator = NoteEditorCoordinator(
+            navigationController: navigationController,
+            session: session
+        )
+        coordinator.start()
     }
 }

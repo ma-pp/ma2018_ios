@@ -1,12 +1,12 @@
 PODS:
-  - ZSSRichTextEditor (0.5.2.1)
+  - RichEditorView (5.0.0)
 
 DEPENDENCIES:
-  - ZSSRichTextEditor (~> 0.5)
+  - RichEditorView
 
 SPEC CHECKSUMS:
-  ZSSRichTextEditor: 56ed060d6d7a98fb6be9fceb8074ced22160349b
+  RichEditorView: 1bbb07b87ca2d479ac29a6877014b38b8df233ef
 
-PODFILE CHECKSUM: 9a99233604d5fdaaac2b162200816e846aa8573f
+PODFILE CHECKSUM: 89d71e8f13963a017ae3528d238050aaeb1ffa42
 
 COCOAPODS: 1.4.0

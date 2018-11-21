@@ -36,7 +36,8 @@ class ListItemContainerController: UIViewController {
         navigationItem.title = listItemController.presenter.title
         
         if #available(iOS 11.0, *) {
-            self.navigationController?.navigationBar.prefersLargeTitles = true
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationItem.largeTitleDisplayMode = .automatic
         } else {
             // Fallback on earlier versions
         }

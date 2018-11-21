@@ -11,6 +11,8 @@ import Common
 
 extension Note {
     struct New {
-        
+        let title: String
+        let privacy: Privacy
+        let content: String
     }
 }
