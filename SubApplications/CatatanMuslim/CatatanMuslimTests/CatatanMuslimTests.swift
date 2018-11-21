@@ -2,12 +2,11 @@
 //  CatatanMuslimTests.swift
 //  CatatanMuslimTests
 //
-//  Created by PondokiOS on 11/3/18.
+//  Created by PondokiOS on 11/21/18.
 //  Copyright © 2018 PondokiOS. All rights reserved.
 //
 
 import XCTest
-@testable import CatatanMuslim
 
 class CatatanMuslimTests: XCTestCase {
     

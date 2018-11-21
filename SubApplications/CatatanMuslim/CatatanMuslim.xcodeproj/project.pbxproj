@@ -34,8 +34,10 @@
 		EF4A6A4C21A524B000C6DFDE /* HTMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A4B21A524B000C6DFDE /* HTMLBuilder.swift */; };
 		EF4A6A4F21A5308600C6DFDE /* HTMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A4E21A5308600C6DFDE /* HTMLElement.swift */; };
 		EF4A6A5121A555E800C6DFDE /* ListNavTabBarResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A5021A555E800C6DFDE /* ListNavTabBarResponder.swift */; };
-		EFAA1973218D5266003C7508 /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1969218D5266003C7508 /* CatatanMuslim.framework */; };
-		EFAA1978218D5266003C7508 /* CatatanMuslimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1977218D5266003C7508 /* CatatanMuslimTests.swift */; };
+		EF4A6A5B21A55B1D00C6DFDE /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1969218D5266003C7508 /* CatatanMuslim.framework */; };
+		EF4A6A6621A55B9300C6DFDE /* CatatanMuslimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A6421A55B9200C6DFDE /* CatatanMuslimTests.swift */; };
+		EF4A6A6721A55B9300C6DFDE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF4A6A6521A55B9200C6DFDE /* Info.plist */; };
+		EF4A6A6921A567BD00C6DFDE /* NoteEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A6821A567BD00C6DFDE /* NoteEditorTests.swift */; };
 		EFAA197A218D5266003C7508 /* CatatanMuslim.h in Headers */ = {isa = PBXBuildFile; fileRef = EFAA196C218D5266003C7508 /* CatatanMuslim.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFAA19DB218D5430003C7508 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA19DA218D5430003C7508 /* Configuration.swift */; };
 		EFAA19F3218D55EB003C7508 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA19F2218D55EB003C7508 /* Application.swift */; };
@@ -97,19 +99,19 @@
 			remoteGlobalIDString = EFAA1968218D5266003C7508;
 			remoteInfo = CatatanMuslim;
 		};
-		EF4A681321A2ECBD00C6DFDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFAA1960218D5266003C7508 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EF08E1A121919206004A897D;
-			remoteInfo = CatatanMuslimApp;
-		};
-		EFAA1974218D5266003C7508 /* PBXContainerItemProxy */ = {
+		EF4A6A5C21A55B1D00C6DFDE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EFAA1960218D5266003C7508 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EFAA1968218D5266003C7508;
 			remoteInfo = CatatanMuslim;
+		};
+		EF4A6A6121A55B2D00C6DFDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFAA1960218D5266003C7508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF08E1A121919206004A897D;
+			remoteInfo = CatatanMuslimApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -163,12 +165,13 @@
 		EF4A6A4B21A524B000C6DFDE /* HTMLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLBuilder.swift; sourceTree = "<group>"; };
 		EF4A6A4E21A5308600C6DFDE /* HTMLElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLElement.swift; sourceTree = "<group>"; };
 		EF4A6A5021A555E800C6DFDE /* ListNavTabBarResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavTabBarResponder.swift; sourceTree = "<group>"; };
+		EF4A6A5621A55B1D00C6DFDE /* CatatanMuslimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatatanMuslimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4A6A6421A55B9200C6DFDE /* CatatanMuslimTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatatanMuslimTests.swift; sourceTree = "<group>"; };
+		EF4A6A6521A55B9200C6DFDE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF4A6A6821A567BD00C6DFDE /* NoteEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditorTests.swift; sourceTree = "<group>"; };
 		EFAA1969218D5266003C7508 /* CatatanMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatatanMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA196C218D5266003C7508 /* CatatanMuslim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatatanMuslim.h; sourceTree = "<group>"; };
 		EFAA196D218D5266003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFAA1972218D5266003C7508 /* CatatanMuslimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatatanMuslimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFAA1977218D5266003C7508 /* CatatanMuslimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatatanMuslimTests.swift; sourceTree = "<group>"; };
-		EFAA1979218D5266003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFAA19DA218D5430003C7508 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		EFAA19F2218D55EB003C7508 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		EFAA19FB218D563F003C7508 /* SubApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SubApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,6 +236,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF4A6A5321A55B1D00C6DFDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4A6A5B21A55B1D00C6DFDE /* CatatanMuslim.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFAA1965218D5266003C7508 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,14 +252,6 @@
 				EF08E1C321919544004A897D /* Logging.framework in Frameworks */,
 				EFAA19FA218D563F003C7508 /* SubApplication.framework in Frameworks */,
 				E74B366F7AD7661DB191F62D /* Pods_CatatanMuslim.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFAA196F218D5266003C7508 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EFAA1973218D5266003C7508 /* CatatanMuslim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +358,16 @@
 			path = HTML;
 			sourceTree = "<group>";
 		};
+		EF4A6A6321A55B9200C6DFDE /* CatatanMuslimTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A6A6821A567BD00C6DFDE /* NoteEditorTests.swift */,
+				EF4A6A6421A55B9200C6DFDE /* CatatanMuslimTests.swift */,
+				EF4A6A6521A55B9200C6DFDE /* Info.plist */,
+			);
+			path = CatatanMuslimTests;
+			sourceTree = "<group>";
+		};
 		EFAA195F218D5266003C7508 = {
 			isa = PBXGroup;
 			children = (
@@ -365,8 +378,8 @@
 				EF08E1BC219194E4004A897D /* Logging.framework */,
 				EF21DC9721A27DC80094A596 /* Config */,
 				EFAA196B218D5266003C7508 /* CatatanMuslim */,
-				EFAA1976218D5266003C7508 /* CatatanMuslimTests */,
 				EF08E1A321919206004A897D /* CatatanMuslimApp */,
+				EF4A6A6321A55B9200C6DFDE /* CatatanMuslimTests */,
 				EFAA196A218D5266003C7508 /* Products */,
 				EFAA19F9218D563F003C7508 /* Frameworks */,
 				E6A4C91B3CBA2721C0F29ADF /* Pods */,
@@ -377,8 +390,8 @@
 			isa = PBXGroup;
 			children = (
 				EFAA1969218D5266003C7508 /* CatatanMuslim.framework */,
-				EFAA1972218D5266003C7508 /* CatatanMuslimTests.xctest */,
 				EF08E1A221919206004A897D /* CatatanMuslimApp.app */,
+				EF4A6A5621A55B1D00C6DFDE /* CatatanMuslimTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -395,15 +408,6 @@
 				EFAA1A03218D5895003C7508 /* Assets.xcassets */,
 			);
 			path = CatatanMuslim;
-			sourceTree = "<group>";
-		};
-		EFAA1976218D5266003C7508 /* CatatanMuslimTests */ = {
-			isa = PBXGroup;
-			children = (
-				EFAA1977218D5266003C7508 /* CatatanMuslimTests.swift */,
-				EFAA1979218D5266003C7508 /* Info.plist */,
-			);
-			path = CatatanMuslimTests;
 			sourceTree = "<group>";
 		};
 		EFAA19D6218D538C003C7508 /* Extension */ = {
@@ -635,6 +639,25 @@
 			productReference = EF08E1A221919206004A897D /* CatatanMuslimApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EF4A6A5521A55B1D00C6DFDE /* CatatanMuslimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4A6A5E21A55B1D00C6DFDE /* Build configuration list for PBXNativeTarget "CatatanMuslimTests" */;
+			buildPhases = (
+				EF4A6A5221A55B1D00C6DFDE /* Sources */,
+				EF4A6A5321A55B1D00C6DFDE /* Frameworks */,
+				EF4A6A5421A55B1D00C6DFDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF4A6A5D21A55B1D00C6DFDE /* PBXTargetDependency */,
+				EF4A6A6221A55B2D00C6DFDE /* PBXTargetDependency */,
+			);
+			name = CatatanMuslimTests;
+			productName = CatatanMuslimTests;
+			productReference = EF4A6A5621A55B1D00C6DFDE /* CatatanMuslimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EFAA1968218D5266003C7508 /* CatatanMuslim */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFAA197D218D5266003C7508 /* Build configuration list for PBXNativeTarget "CatatanMuslim" */;
@@ -655,25 +678,6 @@
 			productReference = EFAA1969218D5266003C7508 /* CatatanMuslim.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EFAA1971218D5266003C7508 /* CatatanMuslimTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EFAA1980218D5266003C7508 /* Build configuration list for PBXNativeTarget "CatatanMuslimTests" */;
-			buildPhases = (
-				EFAA196E218D5266003C7508 /* Sources */,
-				EFAA196F218D5266003C7508 /* Frameworks */,
-				EFAA1970218D5266003C7508 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EFAA1975218D5266003C7508 /* PBXTargetDependency */,
-				EF4A681421A2ECBD00C6DFDE /* PBXTargetDependency */,
-			);
-			name = CatatanMuslimTests;
-			productName = CatatanMuslimTests;
-			productReference = EFAA1972218D5266003C7508 /* CatatanMuslimTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -688,15 +692,15 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					EF4A6A5521A55B1D00C6DFDE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF08E1A121919206004A897D;
+					};
 					EFAA1968218D5266003C7508 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
-					};
-					EFAA1971218D5266003C7508 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = EF08E1A121919206004A897D;
 					};
 				};
 			};
@@ -714,7 +718,7 @@
 			projectRoot = "";
 			targets = (
 				EFAA1968218D5266003C7508 /* CatatanMuslim */,
-				EFAA1971218D5266003C7508 /* CatatanMuslimTests */,
+				EF4A6A5521A55B1D00C6DFDE /* CatatanMuslimTests */,
 				EF08E1A121919206004A897D /* CatatanMuslimApp */,
 			);
 		};
@@ -730,6 +734,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF4A6A5421A55B1D00C6DFDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4A6A6721A55B9300C6DFDE /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFAA1967218D5266003C7508 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -739,13 +751,6 @@
 				EFB25DAE219C2A3A00B644B3 /* SimpleTabBar.xib in Resources */,
 				EFB25DE7219D122400B644B3 /* NoteCell.xib in Resources */,
 				EFB25E98219EB3BD00B644B3 /* FolderEditorController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFAA1970218D5266003C7508 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,6 +869,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF4A6A5221A55B1D00C6DFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4A6A6921A567BD00C6DFDE /* NoteEditorTests.swift in Sources */,
+				EF4A6A6621A55B9300C6DFDE /* CatatanMuslimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFAA1964218D5266003C7508 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -920,14 +934,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFAA196E218D5266003C7508 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EFAA1978218D5266003C7508 /* CatatanMuslimTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -936,15 +942,15 @@
 			target = EFAA1968218D5266003C7508 /* CatatanMuslim */;
 			targetProxy = EF08E1C721919578004A897D /* PBXContainerItemProxy */;
 		};
-		EF4A681421A2ECBD00C6DFDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EF08E1A121919206004A897D /* CatatanMuslimApp */;
-			targetProxy = EF4A681321A2ECBD00C6DFDE /* PBXContainerItemProxy */;
-		};
-		EFAA1975218D5266003C7508 /* PBXTargetDependency */ = {
+		EF4A6A5D21A55B1D00C6DFDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EFAA1968218D5266003C7508 /* CatatanMuslim */;
-			targetProxy = EFAA1974218D5266003C7508 /* PBXContainerItemProxy */;
+			targetProxy = EF4A6A5C21A55B1D00C6DFDE /* PBXContainerItemProxy */;
+		};
+		EF4A6A6221A55B2D00C6DFDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF08E1A121919206004A897D /* CatatanMuslimApp */;
+			targetProxy = EF4A6A6121A55B2D00C6DFDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -989,6 +995,40 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF4A6A5F21A55B1D00C6DFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				INFOPLIST_FILE = CatatanMuslimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.CatatanMuslimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatatanMuslimApp.app/CatatanMuslimApp";
+			};
+			name = Debug;
+		};
+		EF4A6A6021A55B1D00C6DFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				INFOPLIST_FILE = CatatanMuslimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.CatatanMuslimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatatanMuslimApp.app/CatatanMuslimApp";
 			};
 			name = Release;
 		};
@@ -1154,40 +1194,6 @@
 			};
 			name = Release;
 		};
-		EFAA1981218D5266003C7508 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SDSLU2QT5X;
-				INFOPLIST_FILE = CatatanMuslimTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.CatatanMuslimTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatatanMuslimApp.app/CatatanMuslimApp";
-			};
-			name = Debug;
-		};
-		EFAA1982218D5266003C7508 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SDSLU2QT5X;
-				INFOPLIST_FILE = CatatanMuslimTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pondokios.CatatanMuslimTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatatanMuslimApp.app/CatatanMuslimApp";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1196,6 +1202,15 @@
 			buildConfigurations = (
 				EF08E1B221919206004A897D /* Debug */,
 				EF08E1B321919206004A897D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4A6A5E21A55B1D00C6DFDE /* Build configuration list for PBXNativeTarget "CatatanMuslimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4A6A5F21A55B1D00C6DFDE /* Debug */,
+				EF4A6A6021A55B1D00C6DFDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1214,15 +1229,6 @@
 			buildConfigurations = (
 				EFAA197E218D5266003C7508 /* Debug */,
 				EFAA197F218D5266003C7508 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EFAA1980218D5266003C7508 /* Build configuration list for PBXNativeTarget "CatatanMuslimTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EFAA1981218D5266003C7508 /* Debug */,
-				EFAA1982218D5266003C7508 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

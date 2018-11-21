@@ -32,8 +32,7 @@ struct NoteViewModel {
     
     private func _createNoteEditableField() -> Note.EditableField? {
         
-        let parsed = _parse()
-        
+        guard let parsed = _parse() else  { return nil }
         guard let field = noteEditableField else { return nil }
         
         return Note.EditableField(
@@ -43,14 +42,13 @@ struct NoteViewModel {
         )
     }
     
-    private func _parse() -> (title: String, content: String) {
-        let defaultReturn = ("", "")
-        guard let content = content else { return defaultReturn }
+    private func _parse() -> (title: String, content: String)? {
+        guard let content = content else { return nil }
         guard let _titleContent = content.untilOccurence(of: "</h1>") else {
-            return defaultReturn
+            return nil
         }
         guard let _content = content.afterOccurence(of: "</h1>") else {
-            return defaultReturn
+            return nil
         }
         
         let _title = HTMLElement.content(
