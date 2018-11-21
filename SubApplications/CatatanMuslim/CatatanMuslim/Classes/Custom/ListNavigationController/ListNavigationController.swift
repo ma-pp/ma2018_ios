@@ -10,6 +10,7 @@ import UIKit
 import Common
 
 public class ListNavigationController: UINavigationController {
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +29,11 @@ public class ListNavigationController: UINavigationController {
         )
     )
     
+    private func setupNewItemButton() {
+        let newButton = tabBar.newButton
+        newButton?.addTarget(self, action: #selector(makeNewItem), for: .touchUpInside)
+    }
+    
     let toggleUnreadButton = BadgedButton()
     private func setupToggleUnreadButton() {
         toggleUnreadButton.setTitle("Unread", for: .normal)
@@ -36,12 +42,14 @@ public class ListNavigationController: UINavigationController {
         btn.badge.size = badgeSetting.size
         btn.badge.topPadding = badgeSetting.padding.top
         btn.badge.rightPadding = badgeSetting.padding.right
+        toggleUnreadButton.addTarget(self, action: #selector(toggleUnread), for: .touchUpInside)
     }
     
     let toggleGridButton = UIButton()
     private func setupToggleGridButton() {
         toggleGridButton.setTitle("Grid", for: .normal)
         toggleGridButton.setTitleColor(.black, for: .normal)
+        toggleGridButton.addTarget(self, action: #selector(toggleGrid), for: .touchUpInside)
     }
     
     let showDiscussionButton = BadgedButton()
@@ -52,7 +60,7 @@ public class ListNavigationController: UINavigationController {
         btn.badge.size = badgeSetting.size
         btn.badge.topPadding = badgeSetting.padding.top
         btn.badge.rightPadding = badgeSetting.padding.right
-        
+        showDiscussionButton.addTarget(self, action: #selector(showDiscussion), for: .touchUpInside)
     }
     
     private func setupTabBar() {
@@ -62,6 +70,7 @@ public class ListNavigationController: UINavigationController {
         
         setupTabBarConstraint()
         
+        setupNewItemButton()
         setupToggleUnreadButton()
         setupToggleGridButton()
         setupShowDiscussionButton()
@@ -78,5 +87,45 @@ public class ListNavigationController: UINavigationController {
         tabBar.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tabBar.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         tabBar.heightAnchor.constraint(equalToConstant: tabBarViewHeight).isActive = true
+    }
+    
+    private var tabBarResponders: [ListNavTabBarResponder] = []
+    
+    private var currentResponder: ListNavTabBarResponder? {
+        return tabBarResponders.last
+    }
+    
+    public override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        guard let responder = viewController as? ListNavTabBarResponder else { return }
+        tabBarResponders.append(responder)
+        super.pushViewController(viewController, animated: animated)
+    }
+    
+    public override func popViewController(animated: Bool) -> UIViewController? {
+        let vc = super.popViewController(animated: animated)
+        let responder = tabBarResponders.removeLast()
+        assert(vc?.isEqual(responder) ?? false)
+        return vc
+        
+    }
+    
+    @objc
+    private func makeNewItem() {
+        currentResponder?.makeNewItem()
+    }
+    
+    @objc
+    private func toggleUnread() {
+        currentResponder?.toggleUnread()
+    }
+    
+    @objc
+    private func toggleGrid() {
+        currentResponder?.toggleGrid()
+    }
+    
+    @objc
+    private func showDiscussion() {
+        currentResponder?.showDiscussion()
     }
 }

@@ -22,7 +22,6 @@ class ListItemContainerController: UIViewController {
         super.viewDidLoad()
         setupChildController()
         setupNavigationBar()
-        setupTabBar()
     }
     
     private func setupChildController() {
@@ -72,58 +71,24 @@ class ListItemContainerController: UIViewController {
         }
     }
     
-    
-    private var listNavController: ListNavigationController {
-        guard let nav = navigationController as? ListNavigationController else {
-            fatalError()
-        }
-        return nav
-    }
-    
-    private var tabBar: SimpleTabBar {
-        return listNavController.tabBar
-    }
-    
-    private var toggleUnreadButton: BadgedButton {
-        return listNavController.toggleUnreadButton
-    }
-    
-    private var toggleGridButton: UIButton {
-        return listNavController.toggleGridButton
-    }
-    
-    private var showDiscussionButton: BadgedButton {
-        return listNavController.showDiscussionButton
-    }
-    
-    private var newButton: UIButton {
-        return tabBar.newButton
-    }
-    
-    private func setupTabBar() {
-        newButton.addTarget(self, action: #selector(newItem), for: .touchUpInside)
-        toggleUnreadButton.addTarget(self, action: #selector(filterUnread), for: .touchUpInside)
-        toggleGridButton.addTarget(self, action: #selector(toggleGrid), for: .touchUpInside)
-        showDiscussionButton.addTarget(self, action: #selector(showDiscussion), for: .touchUpInside)
-    }
-    
-    @objc
-    private func filterUnread() {
+}
+
+extension ListItemContainerController: ListNavTabBarResponder {
+    func toggleUnread() {
         
     }
     
-    @objc
-    private func toggleGrid() {
+    func toggleGrid() {
         
     }
     
-    @objc
-    private func showDiscussion() {
+    func showDiscussion() {
         
     }
     
-    @objc
-    private func newItem() {
+    func makeNewItem() {
         navigator.makeNewItem()
     }
+    
+    
 }

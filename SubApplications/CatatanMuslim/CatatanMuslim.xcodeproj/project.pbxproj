@@ -33,6 +33,7 @@
 		EF4A6A4A21A51F2400C6DFDE /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A4921A51F2400C6DFDE /* NoteViewModel.swift */; };
 		EF4A6A4C21A524B000C6DFDE /* HTMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A4B21A524B000C6DFDE /* HTMLBuilder.swift */; };
 		EF4A6A4F21A5308600C6DFDE /* HTMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A4E21A5308600C6DFDE /* HTMLElement.swift */; };
+		EF4A6A5121A555E800C6DFDE /* ListNavTabBarResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A6A5021A555E800C6DFDE /* ListNavTabBarResponder.swift */; };
 		EFAA1973218D5266003C7508 /* CatatanMuslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA1969218D5266003C7508 /* CatatanMuslim.framework */; };
 		EFAA1978218D5266003C7508 /* CatatanMuslimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAA1977218D5266003C7508 /* CatatanMuslimTests.swift */; };
 		EFAA197A218D5266003C7508 /* CatatanMuslim.h in Headers */ = {isa = PBXBuildFile; fileRef = EFAA196C218D5266003C7508 /* CatatanMuslim.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -161,6 +162,7 @@
 		EF4A6A4921A51F2400C6DFDE /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		EF4A6A4B21A524B000C6DFDE /* HTMLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLBuilder.swift; sourceTree = "<group>"; };
 		EF4A6A4E21A5308600C6DFDE /* HTMLElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLElement.swift; sourceTree = "<group>"; };
+		EF4A6A5021A555E800C6DFDE /* ListNavTabBarResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavTabBarResponder.swift; sourceTree = "<group>"; };
 		EFAA1969218D5266003C7508 /* CatatanMuslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatatanMuslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAA196C218D5266003C7508 /* CatatanMuslim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatatanMuslim.h; sourceTree = "<group>"; };
 		EFAA196D218D5266003C7508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -547,6 +549,7 @@
 			isa = PBXGroup;
 			children = (
 				EFB25E18219E367400B644B3 /* ListNavigationController.swift */,
+				EF4A6A5021A555E800C6DFDE /* ListNavTabBarResponder.swift */,
 			);
 			path = ListNavigationController;
 			sourceTree = "<group>";
@@ -881,6 +884,7 @@
 				EFB25EA6219FE44C00B644B3 /* EditableField.swift in Sources */,
 				EFB25DFF219D3E9C00B644B3 /* ListNoteCoordinator.swift in Sources */,
 				EFB25DEF219D1E6C00B644B3 /* ListItemDataSource.swift in Sources */,
+				EF4A6A5121A555E800C6DFDE /* ListNavTabBarResponder.swift in Sources */,
 				EF310C3321A0055300C35E36 /* Folder+Extension.swift in Sources */,
 				EFB25EA4219FDFA300B644B3 /* FolderEditorPresenter.swift in Sources */,
 				EFB25DC7219D0D2700B644B3 /* ListItemNavigator.swift in Sources */,
